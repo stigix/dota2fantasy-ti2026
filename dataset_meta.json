@@ -1,0 +1,14 @@
+{
+  "event": "The International 2026",
+  "generated_at": "2026-07-13T01:16:48.059025+00:00",
+  "leagues": [
+    "19435",
+    "19422",
+    "19543",
+    "19696",
+    "19101",
+    "19785"
+  ],
+  "players": 80,
+  "stratz_enabled": false
+}

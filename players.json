@@ -1,0 +1,610 @@
+{
+  "event": "The International 2026",
+  "updated": "2026-07-13",
+  "players": [
+    {
+      "name": "Nightfall",
+      "team": "Aurora Gaming",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Mikoto",
+      "team": "Aurora Gaming",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Ws",
+      "team": "Aurora Gaming",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Mira",
+      "team": "Aurora Gaming",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "kaori",
+      "team": "Aurora Gaming",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Kiritych~",
+      "team": "BoomBoys",
+      "position": 1,
+      "pos": 0,
+      "aliases": [
+        "Kiritych"
+      ]
+    },
+    {
+      "name": "gpk~",
+      "team": "BoomBoys",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "MieRo`",
+      "team": "BoomBoys",
+      "position": 3,
+      "pos": 0,
+      "aliases": [
+        "MieRo"
+      ]
+    },
+    {
+      "name": "Save-",
+      "team": "BoomBoys",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Kataomi",
+      "team": "BoomBoys",
+      "position": 5,
+      "pos": 2,
+      "aliases": [
+        "Kataomi`"
+      ]
+    },
+    {
+      "name": "skiter",
+      "team": "Team Falcons",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Malr1ne",
+      "team": "Team Falcons",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "ATF",
+      "team": "Team Falcons",
+      "position": 3,
+      "pos": 0,
+      "aliases": [
+        "AMMAR_THE_F"
+      ]
+    },
+    {
+      "name": "Cr1t-",
+      "team": "Team Falcons",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Sneyking",
+      "team": "Team Falcons",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "m1CKe",
+      "team": "Team Liquid",
+      "position": 1,
+      "pos": 0,
+      "aliases": [
+        "miCKe"
+      ]
+    },
+    {
+      "name": "Nisha",
+      "team": "Team Liquid",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Ace",
+      "team": "Team Liquid",
+      "position": 3,
+      "pos": 0,
+      "aliases": [
+        "Ace ♠"
+      ]
+    },
+    {
+      "name": "Boxi",
+      "team": "Team Liquid",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "tOfu",
+      "team": "Team Liquid",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Pure",
+      "team": "1win Team",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "bzm",
+      "team": "1win Team",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "33",
+      "team": "1win Team",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Ari",
+      "team": "1win Team",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Whitemon",
+      "team": "1win Team",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Ame",
+      "team": "Xtreme Gaming",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "NothingToSay",
+      "team": "Xtreme Gaming",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Xxs",
+      "team": "Xtreme Gaming",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "fy",
+      "team": "Xtreme Gaming",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "xNova",
+      "team": "Xtreme Gaming",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "watson",
+      "team": "Team Yandex",
+      "position": 1,
+      "pos": 0,
+      "aliases": [
+        "医者watson`"
+      ]
+    },
+    {
+      "name": "CHIRA_JUNIOR",
+      "team": "Team Yandex",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "DM",
+      "team": "Team Yandex",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Saksa",
+      "team": "Team Yandex",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Malady",
+      "team": "Team Yandex",
+      "position": 5,
+      "pos": 2,
+      "aliases": [
+        "Maladych"
+      ]
+    },
+    {
+      "name": "Yatoro",
+      "team": "Team Spirit",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Larl",
+      "team": "Team Spirit",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Collapse",
+      "team": "Team Spirit",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "not me",
+      "team": "Team Spirit",
+      "position": 4,
+      "pos": 2,
+      "aliases": [
+        "not_me",
+        "notme"
+      ]
+    },
+    {
+      "name": "rue",
+      "team": "Team Spirit",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Satanic",
+      "team": "TEAM VISION",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "No[o]ne-",
+      "team": "TEAM VISION",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Noticed",
+      "team": "TEAM VISION",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "9Class",
+      "team": "TEAM VISION",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Dukalis",
+      "team": "TEAM VISION",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "SumaiL",
+      "team": "Nigma Galaxy",
+      "position": 1,
+      "pos": 0,
+      "aliases": [
+        "SumaiL-"
+      ]
+    },
+    {
+      "name": "lorenof",
+      "team": "Nigma Galaxy",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Davai",
+      "team": "Nigma Galaxy",
+      "position": 3,
+      "pos": 0,
+      "aliases": [
+        "No!ob™",
+        "No!ob"
+      ]
+    },
+    {
+      "name": "OmaR",
+      "team": "Nigma Galaxy",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "GH",
+      "team": "Nigma Galaxy",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "ssnovv1",
+      "team": "HULIGANI",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Mirage`",
+      "team": "HULIGANI",
+      "position": 2,
+      "pos": 1,
+      "aliases": [
+        "Mirage",
+        "Mirage`雨"
+      ]
+    },
+    {
+      "name": "Corrupted",
+      "team": "HULIGANI",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "sayuw",
+      "team": "HULIGANI",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "RESPECT",
+      "team": "HULIGANI",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "YSR-04E",
+      "team": "Team Resilience",
+      "position": 1,
+      "pos": 0,
+      "aliases": [
+        "Erika",
+        "poyoyo",
+        "YSR04E",
+        "YSR_04E"
+      ]
+    },
+    {
+      "name": "Echozz",
+      "team": "Team Resilience",
+      "position": 2,
+      "pos": 1,
+      "aliases": [
+        "Echo",
+        "EchozZ"
+      ]
+    },
+    {
+      "name": "niu",
+      "team": "Team Resilience",
+      "position": 3,
+      "pos": 0,
+      "aliases": [
+        "b a b",
+        "bab"
+      ]
+    },
+    {
+      "name": "planet",
+      "team": "Team Resilience",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "zzq",
+      "team": "Team Resilience",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "shiro",
+      "team": "Vici Gaming",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Xm",
+      "team": "Vici Gaming",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Bach",
+      "team": "Vici Gaming",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "XinQ",
+      "team": "Vici Gaming",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "y`",
+      "team": "Vici Gaming",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Natsumi",
+      "team": "OG",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Yopaj-",
+      "team": "OG",
+      "position": 2,
+      "pos": 1,
+      "aliases": [
+        "Yopaj"
+      ]
+    },
+    {
+      "name": "Raven",
+      "team": "OG",
+      "position": 3,
+      "pos": 0,
+      "aliases": [
+        "raven"
+      ]
+    },
+    {
+      "name": "TIMS",
+      "team": "OG",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "skem",
+      "team": "OG",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Yuma",
+      "team": "LGD Gaming",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "TaiLung",
+      "team": "LGD Gaming",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Wisper",
+      "team": "LGD Gaming",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Thiolicor",
+      "team": "LGD Gaming",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "KJ",
+      "team": "LGD Gaming",
+      "position": 5,
+      "pos": 2,
+      "aliases": [
+        "KingJungles"
+      ]
+    },
+    {
+      "name": "Ghost",
+      "team": "GamerLegion",
+      "position": 1,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "RCY",
+      "team": "GamerLegion",
+      "position": 2,
+      "pos": 1,
+      "aliases": []
+    },
+    {
+      "name": "Fayde",
+      "team": "GamerLegion",
+      "position": 3,
+      "pos": 0,
+      "aliases": []
+    },
+    {
+      "name": "Bignum",
+      "team": "GamerLegion",
+      "position": 4,
+      "pos": 2,
+      "aliases": []
+    },
+    {
+      "name": "Speeed",
+      "team": "GamerLegion",
+      "position": 5,
+      "pos": 2,
+      "aliases": []
+    }
+  ]
+}
