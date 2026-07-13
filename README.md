@@ -1,7 +1,5 @@
 # Dota 2 Fantasy — The International 2026
 
-Обновлённая версия калькулятора `bydoodle/dota2fantasy` для **The International 2026**.
-
 ## Что уже сделано
 
 - 16 команд и 80 игроков TI 2026 в `players.json`.
