@@ -1,0 +1,64 @@
+name: Update Tier-2 fantasy data
+
+on:
+  workflow_dispatch:
+    inputs:
+      reset:
+        description: 'Rebuild the three Tier-2 tournaments from scratch'
+        required: false
+        type: boolean
+        default: false
+  push:
+    branches: [main, master]
+    paths:
+      - 'tier2_catalog.json'
+      - 'main.py'
+      - '.github/workflows/update-tier2.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tier2-fantasy-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install parser dependencies
+        run: pip install -r requirements.txt
+
+      - name: Resolve and parse Tier-2 tournaments
+        env:
+          STRATZ_TOKEN: ${{ secrets.STRATZ_TOKEN }}
+          RESET_DATA: ${{ inputs.reset }}
+        run: |
+          if [[ "$RESET_DATA" == "true" ]]; then
+            python main.py --tier2-only --reset
+          else
+            python main.py --tier2-only
+          fi
+
+      - name: Commit changed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add players_stat.json leagues.json dataset_meta.json
+          if git diff --cached --quiet; then
+            echo "No Tier-2 dataset changes."
+          else
+            git commit -m "Add or update Tier-2 fantasy data"
+            git push
+          fi

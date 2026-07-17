@@ -1,8 +1,15 @@
-// UI_PATCH_VERSION: 2026-07-17-donate-time-subtitle
+// UI_PATCH_VERSION: 2026-07-17-tier2-extended-v1
 import { useMemo, useState } from 'react'
+import TI2026 from './TI2026'
 import data from './../../players_stat.json'
 import leagues from './../../leagues.json'
 import meta from './../../dataset_meta.json'
+import teamLogoData from './../../team_logos.json'
+
+
+const getTeamLogo = (teamName, fallback = '') => (
+  teamLogoData?.teams?.[teamName]?.logo_url || fallback || ''
+)
 
 const ROLE_COLORS = {
   0: ['red', 'green', 'red', 'green', 'red'],
@@ -84,6 +91,13 @@ const TEXT = {
     playerNote: 'Player subtitles and titles use only that player’s matches.', dataStatus: 'Parsed matches', language: 'Language',
     addPoint: 'Add point', removePoint: 'Remove last', pointCount: 'points enabled', manualHint: 'Type any value: 1, 1.5, 2.7…',
     noMatches: 'No matches', players: 'players', teamsLabel: 'TI 2026 teams', tournamentsLabel: 'pre-TI tournaments', localTime: 'local time', rankHint: 'Ranking updates instantly when you change stats, multipliers, titles or tournaments.',
+    dataMode: 'Fantasy data source', preTiMode: 'Pre-TI only', tiLiveMode: 'TI 2026 live', combinedMode: 'Combined',
+    preTiModeHint: 'Uses only the checked tournaments before TI.', tiLiveModeHint: 'Uses only maps already played at The International 2026.', combinedModeHint: 'Combines checked pre-TI events with TI maps at double weight.',
+    automaticTi: 'TI auto-sync', activeDataset: 'Active calculation set', activeMatches: 'maps in active mode', tiWeightNote: 'TI maps have ×2 freshness weight in Combined mode.', tiNoDataBody: 'TI 2026 has not started or OpenDota has not published its League ID yet. The hourly bot will add maps automatically.', emptySelectionBody: 'Select at least one pre-TI tournament or switch the data source mode.',
+    sampleMode: 'Pre-TI sample', mainSample: 'Main sample', extendedSample: 'Extended + Tier 2',
+    mainSampleHint: 'Only the six main pre-TI tournaments are used.', extendedSampleHint: 'Adds three Tier-2 events with reduced influence and gap-filling protection.',
+    tier2Badge: 'Tier 2', tier2GapFill: 'Tier-2 influence is reduced when a player already has 20+ maps in the main sample.',
+    primaryEvents: 'main events', tier2Events: 'Tier-2 events', baseWeight: 'base weight', effectiveWeight: 'effective weight',
   },
   ru: {
     appTitle: 'Калькулятор Dota 2 Fantasy', event: 'The International 2026', source: 'Оригинальный проект', how: 'Как считается', donate: 'Поддержать проект',
@@ -98,6 +112,13 @@ const TEXT = {
     playerNote: 'Персональные титулы и субтитулы считаются только по матчам конкретного игрока.', dataStatus: 'Обработано матчей', language: 'Язык',
     addPoint: 'Добавить пункт', removePoint: 'Убрать последний', pointCount: 'пунктов включено', manualHint: 'Можно писать любое значение: 1, 1.5, 2.7…',
     noMatches: 'Нет матчей', players: 'игроков', teamsLabel: 'команд TI 2026', tournamentsLabel: 'предынтовых турниров', localTime: 'местное время', rankHint: 'Рейтинг сразу пересчитывается при смене показателей, множителей, титулов или турниров.',
+    dataMode: 'Источник фэнтези-данных', preTiMode: 'Только до TI', tiLiveMode: 'Только TI 2026', combinedMode: 'Совмещённый',
+    preTiModeHint: 'Учитываются только отмеченные турниры до Инта.', tiLiveModeHint: 'Учитываются только уже сыгранные карты The International 2026.', combinedModeHint: 'Отмеченные предынтовые турниры объединяются с матчами TI, которым даётся двойной вес.',
+    automaticTi: 'TI автообновление', activeDataset: 'Активная выборка расчёта', activeMatches: 'карт в активном режиме', tiWeightNote: 'В совмещённом режиме свежие карты TI имеют вес ×2.', tiNoDataBody: 'TI 2026 ещё не начался или OpenDota пока не опубликовал League ID. Почасовой бот добавит карты автоматически.', emptySelectionBody: 'Выбери хотя бы один предынтовый турнир или переключи источник данных.',
+    sampleMode: 'Предынтовая выборка', mainSample: 'Основная', extendedSample: 'Расширенная + Tier 2',
+    mainSampleHint: 'Учитываются только шесть основных предынтовых турниров.', extendedSampleHint: 'Добавляются три Tier-2 турнира с пониженным весом и защитой от перекоса выборки.',
+    tier2Badge: 'Tier 2', tier2GapFill: 'Влияние Tier 2 уменьшается, если у игрока уже есть 20+ карт в основной выборке.',
+    primaryEvents: 'основных турниров', tier2Events: 'Tier-2 турниров', baseWeight: 'базовый вес', effectiveWeight: 'эффективный вес',
   },
 }
 
@@ -121,10 +142,6 @@ const ROLE_ACCENTS = {
   0: 'from-red-500/15 via-transparent to-transparent',
   1: 'from-violet-500/15 via-transparent to-transparent',
   2: 'from-blue-500/15 via-transparent to-transparent',
-}
-
-function average(values) {
-  return values.length ? values.reduce((sum, value) => sum + Number(value || 0), 0) / values.length : 0
 }
 
 function formatDateOnly(value, language) {
@@ -162,13 +179,41 @@ function parseMultiplier(value) {
   return Number.isFinite(parsed) && parsed >= 0 ? parsed : 0
 }
 
+function isTiLeague(league) {
+  const name = `${league?.name || ''} ${league?.short_name || ''}`.toLowerCase()
+  return Boolean(league?.is_ti) || (name.includes('international') && name.includes('2026'))
+}
+
+function isTier2League(league) {
+  return Number(league?.tier || 1) === 2 || Boolean(league?.catalog_key)
+}
+
+function recordMatchCount(record) {
+  if (!record?.stats) return 0
+  return Object.values(record.stats)
+    .flatMap((group) => Object.values(group || {}))
+    .filter(Array.isArray)
+    .reduce((maximum, values) => Math.max(maximum, values.length), 0)
+}
+
+function leagueTimestamp(league) {
+  const timestamp = Date.parse(`${league?.start_date || '9999-12-31'}T00:00:00Z`)
+  return Number.isFinite(timestamp) ? timestamp : Number.MAX_SAFE_INTEGER
+}
+
+function weightedAverageParts(parts) {
+  const denominator = parts.reduce((sum, item) => sum + Number(item.weight || 0), 0)
+  if (!denominator) return 0
+  return parts.reduce((sum, item) => sum + Number(item.value || 0) * Number(item.weight || 0), 0) / denominator
+}
+
 
 const EXTRA_TEXT = {
   en: {
-    tabs: { calculator: 'Calculator', players: 'All players', recommendations: 'AI recommendations' },
+    tabs: { calculator: 'Calculator', players: 'All players', recommendations: 'AI recommendations', ti: 'TI 2026' },
     allPlayersTitle: 'All player statistics', allPlayersHint: 'Choose a role and sort the full list by any fantasy stat.',
     sortBy: 'Sort by', none: 'None', titlesBlock: 'Titles', subtitlesBlock: 'Subtitles', totalMatches: 'Total matches',
-    aiTitle: 'AI recommendations for maximum points', aiHint: 'The recommendation engine compares every TI player, all available stats, titles and subtitles using the selected tournaments and your current slot multipliers.',
+    aiTitle: 'AI recommendations for maximum points', aiHint: 'The recommendation engine compares every TI player, all available stats, titles and subtitles using the active data source and your current slot multipliers.',
     aiDisclaimer: 'This is a statistical projection, not a guarantee. Drafts, patch changes and opponent strength can affect the real result.',
     recommendedPlayer: 'Recommended player', recommendedSetup: 'Recommended setup', projectedScore: 'Projected score',
     applySetup: 'Apply setup', alternatives: 'Alternatives', confidence: 'Data confidence', high: 'High', medium: 'Medium', low: 'Low',
@@ -177,10 +222,10 @@ const EXTRA_TEXT = {
     noMatchesInTournaments: 'No matches in selected tournaments',
   },
   ru: {
-    tabs: { calculator: 'Калькулятор', players: 'Все игроки', recommendations: 'ИИ-рекомендации' },
+    tabs: { calculator: 'Калькулятор', players: 'Все игроки', recommendations: 'ИИ-рекомендации', ti: 'TI 2026' },
     allPlayersTitle: 'Общая статистика игроков', allPlayersHint: 'Выбери роль и сортируй полный список по любому фэнтези-показателю.',
     sortBy: 'Сортировать по', none: 'Без сортировки', titlesBlock: 'Титулы', subtitlesBlock: 'Субтитулы', totalMatches: 'Всего матчей',
-    aiTitle: 'ИИ-рекомендации для максимального набора очков', aiHint: 'Система сравнивает всех игроков TI, доступные показатели, титулы и субтитулы по выбранным турнирам и текущим множителям карты.',
+    aiTitle: 'ИИ-рекомендации для максимального набора очков', aiHint: 'Система сравнивает всех игроков TI, доступные показатели, титулы и субтитулы по активному источнику данных и текущим множителям карты.',
     aiDisclaimer: 'Это статистический прогноз, а не гарантия. Драфты, патч и сила соперника могут изменить реальный результат.',
     recommendedPlayer: 'Рекомендуемый игрок', recommendedSetup: 'Рекомендуемая сборка', projectedScore: 'Прогноз очков',
     applySetup: 'Применить сборку', alternatives: 'Альтернативы', confidence: 'Надёжность данных', high: 'Высокая', medium: 'Средняя', low: 'Низкая',
@@ -231,7 +276,14 @@ const SUBTITLE_COUNT_LABELS = {
 }
 function App() {
   const [language, setLanguage] = useState(() => localStorage.getItem('d2f-language') || 'ru')
-  const [selectedTournaments, setSelectedTournaments] = useState(Object.keys(leagues))
+  const [dataMode, setDataMode] = useState(() => {
+    const saved = localStorage.getItem('d2f-data-mode')
+    return ['pre', 'ti', 'combined'].includes(saved) ? saved : 'pre'
+  })
+  const [sampleMode, setSampleMode] = useState(() => localStorage.getItem('d2f-sample-mode') === 'extended' ? 'extended' : 'main')
+  const [selectedTournaments, setSelectedTournaments] = useState(() => Object.entries(leagues)
+    .filter(([, league]) => !isTiLeague(league))
+    .map(([leagueId]) => leagueId))
   const [showHow, setShowHow] = useState(false)
   const [activeTab, setActiveTab] = useState('calculator')
   const [selectedRole, setSelectedRole] = useState(0)
@@ -246,31 +298,77 @@ function App() {
   const languageIndex = language === 'en' ? 0 : 1
 
   const players = useMemo(() => Object.entries(data).filter(([, info]) => info?.general), [])
-  const parsedMatches = useMemo(
-    () => Object.values(leagues).reduce((sum, league) => sum + Number(league.total_matches_parsed || 0), 0),
-    [],
-  )
+  const leagueEntries = useMemo(() => Object.entries(leagues)
+    .sort(([, leagueA], [, leagueB]) => leagueTimestamp(leagueA) - leagueTimestamp(leagueB) || String(leagueA.name || '').localeCompare(String(leagueB.name || ''))), [])
+  const preTiLeagueIds = useMemo(() => leagueEntries.filter(([, league]) => !isTiLeague(league) && !isTier2League(league)).map(([leagueId]) => leagueId), [leagueEntries])
+  const tier2LeagueIds = useMemo(() => leagueEntries.filter(([, league]) => !isTiLeague(league) && isTier2League(league)).map(([leagueId]) => leagueId), [leagueEntries])
+  const tiLeagueIds = useMemo(() => leagueEntries.filter(([, league]) => isTiLeague(league)).map(([leagueId]) => leagueId), [leagueEntries])
+  const allowedPreTiLeagueIds = useMemo(() => sampleMode === 'extended' ? [...preTiLeagueIds, ...tier2LeagueIds] : preTiLeagueIds, [preTiLeagueIds, sampleMode, tier2LeagueIds])
+  const selectedPrimaryLeagueIds = useMemo(() => selectedTournaments.filter((leagueId) => preTiLeagueIds.includes(leagueId)), [preTiLeagueIds, selectedTournaments])
+  const effectiveLeagueIds = useMemo(() => {
+    if (dataMode === 'ti') return tiLeagueIds
+    const preTi = selectedTournaments.filter((leagueId) => allowedPreTiLeagueIds.includes(leagueId))
+    if (dataMode === 'combined') return [...preTi, ...tiLeagueIds]
+    return preTi
+  }, [allowedPreTiLeagueIds, dataMode, selectedTournaments, tiLeagueIds])
+  const activeParsedMatches = useMemo(() => effectiveLeagueIds.reduce((sum, leagueId) => sum + Number(leagues[leagueId]?.total_matches_parsed || 0), 0), [effectiveLeagueIds])
+  const dataModeHint = dataMode === 'ti' ? t.tiLiveModeHint : dataMode === 'combined' ? t.combinedModeHint : t.preTiModeHint
+  const sampleModeHint = sampleMode === 'extended' ? t.extendedSampleHint : t.mainSampleHint
+  const sourceLabel = dataMode === 'ti' ? t.tiLiveMode : dataMode === 'combined' ? t.combinedMode : t.preTiMode
+  const sampleLabel = sampleMode === 'extended' ? t.extendedSample : t.mainSample
+  const dataModeLabel = dataMode === 'ti' ? sourceLabel : `${sourceLabel} · ${sampleLabel}`
 
   const chooseLanguage = (nextLanguage) => {
     localStorage.setItem('d2f-language', nextLanguage)
     setLanguage(nextLanguage)
   }
 
+  const chooseDataMode = (nextMode) => {
+    localStorage.setItem('d2f-data-mode', nextMode)
+    setDataMode(nextMode)
+  }
+
+  const chooseSampleMode = (nextMode) => {
+    localStorage.setItem('d2f-sample-mode', nextMode)
+    setSampleMode(nextMode)
+    if (nextMode === 'extended') {
+      setSelectedTournaments((current) => [...new Set([...current, ...tier2LeagueIds])])
+    }
+  }
+
   const updateArray = (setter, index, value) => {
     setter((current) => current.map((item, itemIndex) => itemIndex === index ? value : item))
   }
 
-  const selectedLeagueRecords = (info) => selectedTournaments
-    .map((leagueId) => [leagueId, info?.[leagueId]])
+  const primaryMatchCount = (info) => selectedPrimaryLeagueIds.reduce((sum, leagueId) => sum + recordMatchCount(info?.[leagueId]), 0)
+
+  const leagueWeightForPlayer = (info, leagueId) => {
+    const league = leagues[leagueId] || {}
+    if (dataMode === 'combined' && isTiLeague(league)) return Number(league.fantasy_weight || 2)
+    if (sampleMode !== 'extended' || !isTier2League(league)) return 1
+
+    const baseWeight = Number(league.fantasy_weight || 0.35)
+    const threshold = Math.max(1, Number(league.coverage_threshold_maps || 20))
+    const minimumFactor = Math.min(1, Math.max(0, Number(league.minimum_weight_factor || 0.25)))
+    const coverage = Math.min(1, primaryMatchCount(info) / threshold)
+    const gapFillFactor = 1 - (1 - minimumFactor) * coverage
+    return baseWeight * gapFillFactor
+  }
+
+  const selectedLeagueRecords = (info) => effectiveLeagueIds
+    .map((leagueId) => [leagueId, info?.[leagueId], leagueWeightForPlayer(info, leagueId)])
     .filter(([, record]) => record?.stats)
 
   const statAverage = (info, color, statKey) => {
-    const values = []
-    selectedLeagueRecords(info).forEach(([, record]) => {
+    let numerator = 0
+    let denominator = 0
+    selectedLeagueRecords(info).forEach(([, record, weight]) => {
       const statValues = record?.stats?.[color]?.[statKey]
-      if (Array.isArray(statValues)) values.push(...statValues)
+      if (!Array.isArray(statValues) || statValues.length === 0) return
+      numerator += statValues.reduce((sum, value) => sum + Number(value || 0), 0) * weight
+      denominator += statValues.length * weight
     })
-    return average(values)
+    return denominator ? numerator / denominator : 0
   }
 
   const statPoints = (info, color, statKey, multiplier = 1) => {
@@ -282,11 +380,7 @@ function App() {
   const matchCount = (info) => {
     let total = 0
     selectedLeagueRecords(info).forEach(([, record]) => {
-      const perTournament = Object.values(record.stats || {})
-        .flatMap((group) => Object.values(group || {}))
-        .filter(Array.isArray)
-        .reduce((maximum, values) => Math.max(maximum, values.length), 0)
-      total += perTournament
+      total += recordMatchCount(record)
     })
     return total
   }
@@ -304,35 +398,31 @@ function App() {
   const titleBonus = (info, titleKey) => {
     if (!titleKey) return 0
     const title = TITLES[titleKey]
-    const percentages = selectedLeagueRecords(info).map(([, record]) => {
-      const matches = Object.values(record.stats || {})
-        .flatMap((group) => Object.values(group || {}))
-        .filter(Array.isArray)
-        .reduce((maximum, values) => Math.max(maximum, values.length), 0)
-      return matches ? (Number(record.titles?.[titleKey] || 0) * title.percent) / matches : 0
-    })
-    return average(percentages)
+    const parts = selectedLeagueRecords(info).map(([, record, weight]) => {
+      const matches = recordMatchCount(record)
+      return { value: matches ? (Number(record.titles?.[titleKey] || 0) * title.percent) / matches : 0, weight: matches * weight }
+    }).filter((part) => part.weight > 0)
+    return weightedAverageParts(parts)
   }
 
   const subtitleBonus = (info, subtitleKey) => {
     if (!subtitleKey) return 0
     const subtitle = SUBTITLES[subtitleKey]
-    const percentages = selectedTournaments.map((leagueId) => {
+    const parts = effectiveLeagueIds.map((leagueId) => {
+      const league = leagues[leagueId] || {}
+      const freshnessWeight = leagueWeightForPlayer(info, leagueId)
       if (subtitle.global) {
-        const totalMatches = Number(leagues[leagueId]?.total_matches_parsed || 0)
-        const occurrences = Number(leagues[leagueId]?.[subtitleKey] || 0)
-        return totalMatches ? (occurrences * subtitle.percent) / totalMatches : null
+        const totalMatches = Number(league.total_matches_parsed || 0)
+        const occurrences = Number(league[subtitleKey] || 0)
+        return totalMatches ? { value: (occurrences * subtitle.percent) / totalMatches, weight: totalMatches * freshnessWeight } : null
       }
 
       const record = info?.[leagueId]
       if (!record?.stats) return null
-      const matches = Object.values(record.stats)
-        .flatMap((group) => Object.values(group || {}))
-        .filter(Array.isArray)
-        .reduce((maximum, values) => Math.max(maximum, values.length), 0)
-      return matches ? (Number(record.subtitles?.[subtitleKey] || 0) * subtitle.percent) / matches : null
-    }).filter((value) => value !== null)
-    return average(percentages)
+      const matches = recordMatchCount(record)
+      return matches ? { value: (Number(record.subtitles?.[subtitleKey] || 0) * subtitle.percent) / matches, weight: matches * freshnessWeight } : null
+    }).filter(Boolean)
+    return weightedAverageParts(parts)
   }
 
   const scoreForPlayer = (info) => {
@@ -472,6 +562,7 @@ function App() {
     const subtitles = aggregateCounts(info, 'subtitles')
     const matches = matchCount(info)
     const teamName = info.general.team_name || '—'
+    const teamLogo = getTeamLogo(teamName, info.general.team_logo)
 
     return (
       <article key={playerName} className="flex min-w-0 flex-col gap-4 rounded-xl bg-gradient-to-b from-purple-950 via-purple-950/75 to-transparent p-4 text-white shadow-xl shadow-black/20">
@@ -480,8 +571,8 @@ function App() {
             <h3 className="truncate text-3xl font-black">{playerName}</h3>
             <p className="mt-1 truncate text-xs text-violet-200/60">{teamName}</p>
           </div>
-          {info.general.team_logo ? (
-            <img src={info.general.team_logo} alt={teamName} className="h-10 w-16 shrink-0 object-contain" onError={(event) => { event.currentTarget.style.display = 'none' }} />
+          {teamLogo ? (
+            <img src={teamLogo} alt={teamName} className="h-10 w-16 shrink-0 object-contain" onError={(event) => { event.currentTarget.style.display = 'none' }} />
           ) : (
             <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-white/10 text-xs font-black text-zinc-400">{teamName.slice(0, 2).toUpperCase()}</span>
           )}
@@ -565,7 +656,7 @@ function App() {
                 onClick={() => setActiveTab(tab)}
                 className={`rounded-xl px-4 py-2.5 text-sm font-black transition ${activeTab === tab ? 'bg-violet-600 text-white shadow-lg shadow-violet-950/40' : 'bg-white/5 text-zinc-400 hover:bg-white/10 hover:text-white'}`}
               >
-                {tab === 'recommendations' && '✦ '}{label}
+                {tab === 'recommendations' && '✦ '}{tab === 'ti' && '🏆 '}{label}
               </button>
             ))}
           </nav>
@@ -573,10 +664,10 @@ function App() {
       </header>
 
       <main className="relative z-[1] mx-auto max-w-[1700px] space-y-8 px-5 py-8 lg:px-10">
-        {parsedMatches === 0 && (
+        {activeParsedMatches === 0 && (
           <section className="rounded-2xl border border-amber-400/30 bg-amber-400/10 p-5">
             <h2 className="font-black text-amber-200">{t.noDataTitle}</h2>
-            <p className="mt-1 max-w-4xl text-sm leading-6 text-amber-100/80">{t.noDataBody}</p>
+            <p className="mt-1 max-w-4xl text-sm leading-6 text-amber-100/80">{dataMode === 'ti' ? t.tiNoDataBody : effectiveLeagueIds.length === 0 ? t.emptySelectionBody : t.noDataBody}</p>
           </section>
         )}
 
@@ -585,30 +676,86 @@ function App() {
             <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
               <div>
                 <h2 className="text-xl font-black">{t.tournaments}</h2>
-                <p className="text-sm text-zinc-500">{selectedTournaments.length} / {Object.keys(leagues).length} {t.selected}</p>
+                <p className="text-sm text-zinc-500">{effectiveLeagueIds.length} / {dataMode === 'ti' ? tiLeagueIds.length : allowedPreTiLeagueIds.length + (dataMode === 'combined' ? tiLeagueIds.length : 0)} {t.selected}</p>
               </div>
               <div className="flex gap-2">
-                <button onClick={() => setSelectedTournaments(Object.keys(leagues))} className="rounded-lg bg-violet-600 px-3 py-2 text-xs font-bold hover:bg-violet-500">{t.all}</button>
+                <button onClick={() => setSelectedTournaments(allowedPreTiLeagueIds)} className="rounded-lg bg-violet-600 px-3 py-2 text-xs font-bold hover:bg-violet-500">{t.all}</button>
                 <button onClick={() => setSelectedTournaments([])} className="rounded-lg bg-zinc-800 px-3 py-2 text-xs font-bold hover:bg-zinc-700">{t.clear}</button>
               </div>
             </div>
+            <div className="mb-4 grid gap-3 lg:grid-cols-2">
+              <div className="rounded-xl border border-violet-500/20 bg-violet-500/[.07] p-3">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-black uppercase tracking-[.18em] text-violet-300">{t.dataMode}</p>
+                    <p className="mt-1 text-xs text-zinc-400">{dataModeHint}</p>
+                  </div>
+                  <div className="flex flex-wrap rounded-xl border border-white/10 bg-black/30 p-1">
+                    {[
+                      ['pre', t.preTiMode],
+                      ['ti', t.tiLiveMode],
+                      ['combined', t.combinedMode],
+                    ].map(([mode, label]) => (
+                      <button key={mode} onClick={() => chooseDataMode(mode)} className={`rounded-lg px-3 py-2 text-xs font-black transition ${dataMode === mode ? 'bg-violet-600 text-white' : 'text-zinc-400 hover:text-white'}`}>{label}</button>
+                    ))}
+                  </div>
+                </div>
+                {dataMode === 'combined' && <p className="mt-2 text-xs font-bold text-violet-200/80">{t.tiWeightNote}</p>}
+              </div>
+
+              <div className={`rounded-xl border p-3 transition ${sampleMode === 'extended' ? 'border-amber-400/30 bg-amber-400/[.07]' : 'border-white/10 bg-white/[.025]'} ${dataMode === 'ti' ? 'opacity-50' : ''}`}>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <p className={`text-xs font-black uppercase tracking-[.18em] ${sampleMode === 'extended' ? 'text-amber-300' : 'text-zinc-300'}`}>{t.sampleMode}</p>
+                    <p className="mt-1 text-xs text-zinc-400">{sampleModeHint}</p>
+                  </div>
+                  <div className="flex flex-wrap rounded-xl border border-white/10 bg-black/30 p-1">
+                    {[['main', t.mainSample], ['extended', t.extendedSample]].map(([mode, label]) => (
+                      <button key={mode} disabled={dataMode === 'ti'} onClick={() => chooseSampleMode(mode)} className={`rounded-lg px-3 py-2 text-xs font-black transition disabled:cursor-not-allowed ${sampleMode === mode ? mode === 'extended' ? 'bg-amber-500 text-black' : 'bg-zinc-700 text-white' : 'text-zinc-400 hover:text-white'}`}>{label}</button>
+                    ))}
+                  </div>
+                </div>
+                {sampleMode === 'extended' && dataMode !== 'ti' && <p className="mt-2 text-xs font-bold text-amber-200/80">{t.tier2GapFill}</p>}
+              </div>
+            </div>
+
             <div className="grid gap-3 md:grid-cols-2 2xl:grid-cols-3">
-              {Object.entries(leagues).map(([leagueId, league]) => {
-                const active = selectedTournaments.includes(leagueId)
+              {leagueEntries.map(([leagueId, league]) => {
+                const tiLeague = isTiLeague(league)
+                const tier2League = isTier2League(league)
+                const available = tiLeague ? dataMode !== 'pre' : allowedPreTiLeagueIds.includes(leagueId)
+                const active = tiLeague ? dataMode !== 'pre' : available && selectedTournaments.includes(leagueId)
+                const activeClass = tier2League
+                  ? 'border-amber-400/70 bg-amber-400/10'
+                  : 'border-violet-500/70 bg-violet-500/15'
                 return (
                   <button
                     key={leagueId}
-                    onClick={() => setSelectedTournaments((current) => active ? current.filter((id) => id !== leagueId) : [...current, leagueId])}
-                    className={`rounded-xl border p-4 text-left transition ${active ? 'border-violet-500/70 bg-violet-500/15' : 'border-white/10 bg-black/20 hover:border-white/20'}`}
+                    onClick={() => {
+                      if (tiLeague) {
+                        chooseDataMode(dataMode === 'pre' ? 'ti' : dataMode === 'ti' ? 'combined' : 'pre')
+                        return
+                      }
+                      if (tier2League && sampleMode !== 'extended') {
+                        chooseSampleMode('extended')
+                        setSelectedTournaments((current) => [...new Set([...current, leagueId])])
+                        return
+                      }
+                      setSelectedTournaments((current) => active ? current.filter((id) => id !== leagueId) : [...current, leagueId])
+                    }}
+                    className={`rounded-xl border p-4 text-left transition ${active ? activeClass : tier2League && sampleMode !== 'extended' ? 'border-amber-400/10 bg-black/15 opacity-55 hover:opacity-80' : 'border-white/10 bg-black/20 hover:border-white/20'}`}
                   >
                     <div className="flex items-start justify-between gap-2">
-                      <strong className="leading-5">{league.short_name || league.name}</strong>
-                      <span className={`mt-0.5 size-4 shrink-0 rounded border ${active ? 'border-violet-400 bg-violet-500' : 'border-zinc-600'}`} />
+                      <div>
+                        <strong className="leading-5">{league.short_name || league.name}</strong>
+                        {tier2League && <p className="mt-1 text-[10px] font-black uppercase tracking-wider text-amber-300">{t.tier2Badge} · {t.baseWeight} ×{Number(league.fantasy_weight || 0.35).toFixed(2)}</p>}
+                      </div>
+                      <span className={`mt-0.5 size-4 shrink-0 rounded border ${active ? tier2League ? 'border-amber-300 bg-amber-400' : 'border-violet-400 bg-violet-500' : 'border-zinc-600'}`} />
                     </div>
                     <p className="mt-2 text-xs text-zinc-500">{formatDateOnly(league.start_date, language)} — {formatDateOnly(league.end_date, language)}</p>
                     <div className="mt-2 flex items-center justify-between gap-2 text-xs">
                       <span className="text-zinc-400">{Number(league.total_matches_parsed || 0)} {t.matches}</span>
-                      {league.status === 'ongoing' && <span className="rounded-full bg-emerald-500/15 px-2 py-1 font-bold text-emerald-300">{t.ongoing}</span>}
+                      <span className="flex items-center gap-1.5">{tiLeague && <span className="rounded-full bg-violet-500/15 px-2 py-1 font-bold text-violet-300">{t.automaticTi}</span>}{league.status === 'ongoing' && <span className="rounded-full bg-emerald-500/15 px-2 py-1 font-bold text-emerald-300">{t.ongoing}</span>}</span>
                     </div>
                   </button>
                 )
@@ -618,12 +765,15 @@ function App() {
 
           <aside className="rounded-2xl border border-white/10 bg-white/[.035] p-5">
             <h2 className="text-xl font-black">{t.dataStatus}</h2>
-            <p className="mt-4 text-5xl font-black text-violet-400">{parsedMatches}</p>
+            <p className="mt-1 text-xs font-bold uppercase tracking-wider text-violet-300">{t.activeDataset}: {dataModeLabel}</p>
+            <div className="mt-4 flex items-end gap-2"><p className="text-5xl font-black text-violet-400">{activeParsedMatches}</p><span className="pb-1 text-xs font-bold text-zinc-500">{t.activeMatches}</span></div>
             <p className="mt-2 text-sm text-zinc-500">{t.updated}: {meta.generated_at ? `${formatDateTime(meta.generated_at, language)} (${t.localTime})` : t.notGenerated}</p>
             <div className="mt-5 space-y-2 text-sm text-zinc-400">
               <p>16 {t.teamsLabel}</p>
               <p>{players.length} {t.players}</p>
-              <p>6 {t.tournamentsLabel}</p>
+              <p>{preTiLeagueIds.length} {t.primaryEvents}</p>
+              <p>{tier2LeagueIds.length} {t.tier2Events}</p>
+              <p className="font-bold text-violet-300">{dataModeLabel}</p>
             </div>
           </aside>
         </section>
@@ -772,6 +922,10 @@ function App() {
               {playerListForRole(selectedRole).map(renderPlayerCard)}
             </div>
           </section>
+        )}
+
+        {activeTab === 'ti' && (
+          <TI2026 language={language} selectedTournamentIds={effectiveLeagueIds} />
         )}
 
         {activeTab === 'recommendations' && (

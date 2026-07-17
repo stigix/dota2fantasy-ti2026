@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="38%" r="68%">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="0.58" stop-color="#24113f"/>
+      <stop offset="1" stop-color="#09070f"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a8"/>
+      <stop offset="0.46" stop-color="#f0bd4f"/>
+      <stop offset="1" stop-color="#8a4f13"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#bg)" stroke="#9a6cff" stroke-width="2"/>
+  <path d="M32 8 49 15v15c0 12-6.9 21.2-17 26-10.1-4.8-17-14-17-26V15Z" fill="#120c20" stroke="url(#gold)" stroke-width="3"/>
+  <path d="M32 16c8.6 0 15.5 6.7 15.5 15S40.6 46 32 46 16.5 39.3 16.5 31 23.4 16 32 16Z" fill="none" stroke="#6d39b7" stroke-width="2"/>
+  <path d="M41.8 26.2c-1.4-4.1-5.3-7-9.8-7-6.1 0-11 4.8-11 10.8 0 5.5 4.1 10 9.5 10.7 4.7.6 9.2-2 11.1-6.1-1.8 2.2-4.6 3.6-7.7 3.6-5.3 0-9.6-4.1-9.6-9.2s4.3-9.2 9.6-9.2c3.1 0 6 1.4 7.9 3.7Z" fill="url(#gold)"/>
+  <circle cx="39" cy="31" r="3.2" fill="#fff4c1"/>
+</svg>

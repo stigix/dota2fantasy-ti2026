@@ -5,7 +5,7 @@ on:
     branches: [main, master]
   workflow_dispatch:
   workflow_run:
-    workflows: ["Update tournament statistics"]
+    workflows: ["Update tournament statistics", "Update TI 2026 progress", "Update Tier-2 fantasy data"]
     types:
       - completed
 

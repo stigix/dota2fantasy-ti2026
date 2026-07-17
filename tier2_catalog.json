@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "coverage_threshold_maps": 20,
+  "minimum_weight_factor": 0.25,
+  "tournaments": [
+    {
+      "key": "premier_series_2026",
+      "name": "PREMIER SERIES",
+      "aliases": [
+        "PREMIER SERIES",
+        "Premier Series"
+      ],
+      "short_name": "PREMIER SERIES",
+      "link": "https://liquipedia.net/dota2/NarodCast/PREMIER_SERIES/1",
+      "start_date": "2026-04-01",
+      "end_date": "2026-04-11",
+      "fantasy_weight": 0.5,
+      "tier": 2
+    },
+    {
+      "key": "esl_challenger_china_s3_2026",
+      "name": "ESL Challenger China Season 3 x ACL 2026",
+      "aliases": [
+        "ESL challenger China powered By ACL",
+        "ESL Challenger China Season 3 x ACL 2026",
+        "ESL Challenger China Season 3 Powered by Asian Champions League",
+        "ESL Challenger China Season 3"
+      ],
+      "short_name": "ESL Challenger China S3",
+      "link": "https://liquipedia.net/dota2/ESL/Challenger_China/3",
+      "start_date": "2026-05-01",
+      "end_date": "2026-05-03",
+      "fantasy_weight": 0.3,
+      "tier": 2,
+      "league_id": 19575
+    },
+    {
+      "key": "1win_essence_i_2026",
+      "name": "1win Essence I",
+      "aliases": [
+        "1win Essence I",
+        "1win Essence 2026",
+        "1win Essence"
+      ],
+      "short_name": "1win Essence I",
+      "link": "https://liquipedia.net/dota2/1win/Essence/1",
+      "start_date": "2026-05-02",
+      "end_date": "2026-05-11",
+      "fantasy_weight": 0.35,
+      "tier": 2
+    }
+  ]
+}

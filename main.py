@@ -23,6 +23,7 @@ STRATZ_CACHE = CACHE_DIR / "stratz"
 
 OPENDOTA_BASE = "https://api.opendota.com/api"
 STRATZ_URL = "https://api.stratz.com/graphql"
+TEAM_LOGOS_PATH = ROOT / "team_logos.json"
 
 TITLE_KEYS = (
     "str",
@@ -147,6 +148,11 @@ def parse_args() -> argparse.Namespace:
         default=0,
         help="Limit matches per league for a test run (0 means all).",
     )
+    parser.add_argument(
+        "--tier2-only",
+        action="store_true",
+        help="Resolve and process only tournaments from tier2_catalog.json.",
+    )
     return parser.parse_args()
 
 
@@ -174,6 +180,219 @@ def normalize_name(value: str | None) -> str:
         for char in normalized
     )
     return " ".join(normalized.split())
+
+
+def compact_name(value: str | None) -> str:
+    return "".join(normalize_name(value).split())
+
+
+def canonical_team_logo(team_logos: dict[str, Any], team_name: str) -> str:
+    return str(
+        ((team_logos.get("teams") or {}).get(team_name) or {}).get("logo_url") or ""
+    ).strip()
+
+
+def team_logo_source_epoch(entry: dict[str, Any]) -> int:
+    value = entry.get("source_match_start_time")
+    if not value:
+        return 0
+    try:
+        return int(datetime.fromisoformat(str(value).replace("Z", "+00:00")).timestamp())
+    except (TypeError, ValueError):
+        return 0
+
+
+def update_team_logo_from_match(
+    team_logos: dict[str, Any],
+    roster_team_name: str,
+    match_team: dict[str, Any] | None,
+    match: dict[str, Any],
+) -> None:
+    if not match_team:
+        return
+
+    logo_url = str(match_team.get("logo_url") or "").strip()
+    match_team_name = str(match_team.get("name") or "").strip()
+    if not logo_url or not match_team_name:
+        return
+
+    teams = team_logos.setdefault("teams", {})
+    entry = teams.setdefault(
+        roster_team_name,
+        {
+            "team_id": None,
+            "api_name": roster_team_name,
+            "aliases": [roster_team_name],
+            "logo_url": "",
+            "source_match_id": None,
+            "source_match_start_time": None,
+        },
+    )
+    aliases = {
+        normalize_name(alias)
+        for alias in [roster_team_name, entry.get("api_name"), *(entry.get("aliases") or [])]
+        if alias
+    }
+    if normalize_name(match_team_name) not in aliases:
+        # A current roster player can have historical matches for an old team.
+        # Never let that old badge replace the current team's canonical badge.
+        return
+
+    match_start = int(match.get("start_time") or 0)
+    if match_start < team_logo_source_epoch(entry):
+        return
+
+    entry["team_id"] = int(match_team.get("team_id") or match_team.get("id") or 0) or entry.get("team_id")
+    entry["api_name"] = match_team_name
+    entry["logo_url"] = logo_url
+    entry["source_match_id"] = int(match.get("match_id") or 0) or None
+    entry["source_match_start_time"] = datetime.fromtimestamp(
+        match_start, timezone.utc
+    ).isoformat() if match_start else None
+    team_logos["updated_at"] = datetime.now(timezone.utc).isoformat()
+
+
+def apply_canonical_team_logos(
+    player_stats: dict[str, Any],
+    roster_by_name: dict[str, dict[str, Any]],
+    team_logos: dict[str, Any],
+) -> None:
+    for canonical, roster_player in roster_by_name.items():
+        general = player_stats.setdefault(canonical, {}).setdefault("general", {})
+        general["team_name"] = roster_player["team"]
+        general["team_logo"] = canonical_team_logo(team_logos, roster_player["team"])
+        general["pos"] = int(roster_player["pos"])
+        general["position"] = int(roster_player["position"])
+
+
+def new_league_payload(event: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "name": event["name"],
+        "short_name": event.get("short_name", event["name"]),
+        "link": event.get("link", ""),
+        "start_date": event.get("start_date", ""),
+        "end_date": event.get("end_date", ""),
+        "status": "completed",
+        "tier": int(event.get("tier", 2)),
+        "catalog_key": event["key"],
+        "fantasy_weight": float(event.get("fantasy_weight", 0.35)),
+        "coverage_threshold_maps": int(event.get("coverage_threshold_maps", 20)),
+        "minimum_weight_factor": float(event.get("minimum_weight_factor", 0.25)),
+        "total_deaths_from_torm": 0,
+        "firstblood_before_10min": 0,
+        "firstblood_before_horn": 0,
+        "games<25min": 0,
+        "total_matches_parsed": 0,
+        "processed_match_ids": [],
+    }
+
+
+def sync_optional_leagues(
+    session: requests.Session,
+    leagues: dict[str, Any],
+    catalog: dict[str, Any],
+    delay: float,
+) -> list[str]:
+    events = catalog.get("tournaments", []) if isinstance(catalog, dict) else []
+    if not events:
+        return []
+
+    threshold = int(catalog.get("coverage_threshold_maps", 20))
+    minimum_factor = float(catalog.get("minimum_weight_factor", 0.25))
+    event_keys = {str(event.get("key")) for event in events if event.get("key")}
+    resolved = [
+        league_id
+        for league_id, league in leagues.items()
+        if str(league.get("catalog_key", "")) in event_keys
+    ]
+
+    try:
+        response = session.get(f"{OPENDOTA_BASE}/leagues", timeout=45)
+        response.raise_for_status()
+        listing = response.json()
+        if not isinstance(listing, list):
+            raise ValueError("OpenDota /leagues response is not a list")
+    except Exception as exc:  # noqa: BLE001 - optional catalogue must not block main data
+        print(f"[warning] Tier-2 league discovery skipped: {exc}")
+        return sorted(set(resolved), key=int)
+
+    changed = False
+    for event in events:
+        event = dict(event)
+        event["coverage_threshold_maps"] = int(event.get("coverage_threshold_maps", threshold))
+        event["minimum_weight_factor"] = float(event.get("minimum_weight_factor", minimum_factor))
+        aliases = [event.get("name", ""), *event.get("aliases", [])]
+        normalized_aliases = {compact_name(alias) for alias in aliases if alias}
+
+        candidates = []
+        for item in listing:
+            item_name = compact_name(item.get("name"))
+            if not item_name:
+                continue
+            exact = item_name in normalized_aliases
+            contains = any(alias and (alias in item_name or item_name in alias) for alias in normalized_aliases)
+            if exact or contains:
+                candidates.append((1 if exact else 0, int(item.get("leagueid") or 0), item))
+
+        existing_ids = [
+            league_id
+            for league_id, league in leagues.items()
+            if league.get("catalog_key") == event.get("key")
+        ]
+        configured_id = str(event.get("league_id") or "").strip()
+        if configured_id:
+            # Some OpenDota league names are shortened or renamed. An explicit ID in
+            # tier2_catalog.json is authoritative and avoids fuzzy matches selecting a
+            # newer, unrelated empty league.
+            league_id = configured_id
+        elif candidates:
+            candidates.sort(key=lambda entry: (entry[0], entry[1]), reverse=True)
+            league_id = str(candidates[0][1])
+        elif existing_ids:
+            league_id = str(existing_ids[0])
+        else:
+            print(f"[warning] Tier-2 tournament was not found in OpenDota: {event.get('name')}")
+            continue
+
+        # Remove stale catalogue mappings only when they contain no parsed data. This
+        # safely migrates the old ESL Challenger mapping (19951 -> 19575) without
+        # touching any real statistics.
+        for stale_id in list(existing_ids):
+            if stale_id == league_id:
+                continue
+            stale = leagues.get(stale_id, {})
+            has_data = bool(stale.get("processed_match_ids")) or int(stale.get("total_matches_parsed", 0) or 0) > 0
+            if not has_data:
+                leagues.pop(stale_id, None)
+                if stale_id in resolved:
+                    resolved.remove(stale_id)
+                changed = True
+                print(f"[tier2] removed stale empty League ID {stale_id} for {event.get('short_name', event.get('name'))}")
+
+        current = leagues.setdefault(league_id, new_league_payload(event))
+        metadata = new_league_payload(event)
+        for key in (
+            "name", "short_name", "link", "start_date", "end_date", "tier",
+            "catalog_key", "fantasy_weight", "coverage_threshold_maps",
+            "minimum_weight_factor",
+        ):
+            if current.get(key) != metadata[key]:
+                current[key] = metadata[key]
+                changed = True
+        if league_id not in resolved:
+            resolved.append(league_id)
+            changed = True
+        print(
+            f"[tier2] {event.get('short_name', event.get('name'))}: "
+            f"League ID {league_id}, fantasy weight x{current['fantasy_weight']:.2f}"
+        )
+
+    if changed:
+        write_json(ROOT / "leagues.json", leagues)
+    if delay > 0:
+        time.sleep(min(delay, 1.0))
+    return sorted(set(resolved), key=int)
+
 
 def make_session() -> requests.Session:
     session = requests.Session()
@@ -279,6 +498,7 @@ def ensure_player(
     league_id: str,
     match_player: dict[str, Any],
     match: dict[str, Any],
+    team_logos: dict[str, Any],
 ) -> dict[str, Any]:
     name = roster_player["name"]
     record = player_stats.setdefault(name, {})
@@ -289,11 +509,8 @@ def ensure_player(
 
     radiant = bool(match_player.get("isRadiant", match_player.get("player_slot", 0) < 128))
     team = match.get("radiant_team") if radiant else match.get("dire_team")
-    logo = (team or {}).get("logo_url") or general.get("team_logo", "")
-    if logo:
-        general["team_logo"] = logo
-    else:
-        general.setdefault("team_logo", "")
+    update_team_logo_from_match(team_logos, roster_player["team"], team, match)
+    general["team_logo"] = canonical_team_logo(team_logos, roster_player["team"])
 
     league_record = record.setdefault(league_id, empty_league_record(int(roster_player["pos"])))
     return league_record
@@ -461,6 +678,7 @@ def process_match(
     active_items: set[int],
     firstblood_time: int | float | None,
     hero_mastery: dict[int, int],
+    team_logos: dict[str, Any],
 ) -> dict[str, bool]:
     players = match.get("players") or []
     if not players:
@@ -494,7 +712,7 @@ def process_match(
             continue
         roster_player = roster_by_name[canonical]
         league_record = ensure_player(
-            player_stats, roster_player, league_id, player, match
+            player_stats, roster_player, league_id, player, match, team_logos
         )
         add_player_stats(
             league_record,
@@ -535,7 +753,11 @@ def main() -> None:
     if not use_stratz:
         print("[warning] STRATZ is disabled; hero mastery data will stay at zero.")
 
+    session = make_session()
     leagues = read_json(ROOT / "leagues.json", {})
+    tier2_catalog = read_json(ROOT / "tier2_catalog.json", {})
+    tier2_ids = sync_optional_leagues(session, leagues, tier2_catalog, args.delay)
+
     today = datetime.now(timezone.utc).date()
     for league in leagues.values():
         try:
@@ -548,6 +770,7 @@ def main() -> None:
     heroes = read_json(ROOT / "heroes.json", {})
     active_items = set(int(item) for item in read_json(ROOT / "active_items.json", []))
     player_stats = read_json(ROOT / "players_stat.json", {})
+    team_logos = read_json(TEAM_LOGOS_PATH, {"teams": {}})
 
     roster_by_name, alias_to_name = build_roster_maps(roster_data)
     for roster_player in roster_by_name.values():
@@ -562,8 +785,11 @@ def main() -> None:
                 }
             },
         )
+    apply_canonical_team_logos(player_stats, roster_by_name, team_logos)
 
-    selected_ids = args.league or list(leagues.keys())
+    selected_ids = tier2_ids if args.tier2_only else (args.league or list(leagues.keys()))
+    if args.tier2_only and not selected_ids:
+        raise SystemExit("No Tier-2 tournaments were resolved. Check OpenDota availability and tier2_catalog.json.")
     unknown = [league_id for league_id in selected_ids if league_id not in leagues]
     if unknown:
         raise SystemExit(f"Unknown league ID(s): {', '.join(unknown)}")
@@ -571,7 +797,6 @@ def main() -> None:
     if args.reset:
         reset_selected_leagues(player_stats, leagues, selected_ids)
 
-    session = make_session()
     scraper = cloudscraper.create_scraper()
     OPENDOTA_CACHE.mkdir(parents=True, exist_ok=True)
     STRATZ_CACHE.mkdir(parents=True, exist_ok=True)
@@ -633,6 +858,7 @@ def main() -> None:
                     active_items,
                     firstblood_time,
                     hero_mastery,
+                    team_logos,
                 )
 
                 if flags["tormentor_death"]:
@@ -651,15 +877,19 @@ def main() -> None:
                 print(f"  {index}/{len(matches)} match {match_id} parsed")
 
                 if new_count % 10 == 0:
+                    apply_canonical_team_logos(player_stats, roster_by_name, team_logos)
                     write_json(ROOT / "players_stat.json", player_stats)
                     write_json(ROOT / "leagues.json", leagues)
+                    write_json(TEAM_LOGOS_PATH, team_logos)
 
             except Exception as exc:  # noqa: BLE001 - keep long batch jobs moving
                 failed_count += 1
                 print(f"  {index}/{len(matches)} match {match_id} failed: {exc}")
 
+        apply_canonical_team_logos(player_stats, roster_by_name, team_logos)
         write_json(ROOT / "players_stat.json", player_stats)
         write_json(ROOT / "leagues.json", leagues)
+        write_json(TEAM_LOGOS_PATH, team_logos)
         print(
             f"  done: {new_count} new, {len(processed)} total parsed, "
             f"{failed_count} failed"
@@ -668,10 +898,14 @@ def main() -> None:
     meta = {
         "event": roster_data.get("event", "The International 2026"),
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "leagues": selected_ids,
+        "leagues": list(leagues.keys()),
+        "updated_leagues": selected_ids,
         "players": len(roster_by_name),
         "stratz_enabled": use_stratz,
     }
+    apply_canonical_team_logos(player_stats, roster_by_name, team_logos)
+    write_json(ROOT / "players_stat.json", player_stats)
+    write_json(TEAM_LOGOS_PATH, team_logos)
     write_json(ROOT / "dataset_meta.json", meta)
     print("\nDataset saved to players_stat.json and leagues.json")
 

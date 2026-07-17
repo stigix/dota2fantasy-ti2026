@@ -1,0 +1,62 @@
+name: Update TI 2026 progress
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '12 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ti-2026-live-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check TI update window
+        id: window
+        shell: bash
+        run: |
+          today="$(date -u +%F)"
+          enabled=false
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" || ( "$today" >= "2026-08-12" && "$today" <= "2026-08-24" ) ]]; then
+            enabled=true
+          fi
+          echo "enabled=$enabled" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout
+        if: steps.window.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        if: steps.window.outputs.enabled == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        if: steps.window.outputs.enabled == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Update TI bracket and fantasy statistics
+        if: steps.window.outputs.enabled == 'true'
+        run: python ti_tracker.py
+
+      - name: Commit changed TI data
+        if: steps.window.outputs.enabled == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ti2026.json leagues.json players_stat.json dataset_meta.json
+          if git diff --cached --quiet; then
+            echo "No TI progress or fantasy changes."
+          else
+            git commit -m "Update TI 2026 live data"
+            git push
+          fi
