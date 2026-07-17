@@ -4,16 +4,22 @@ on:
   workflow_dispatch:
     inputs:
       reset:
-        description: 'Rebuild the three Tier-2 tournaments from scratch'
+        description: 'Rebuild all optional Tier-2 tournaments from scratch'
         required: false
         type: boolean
         default: false
+
   push:
     branches: [main, master]
     paths:
       - 'tier2_catalog.json'
       - 'main.py'
       - '.github/workflows/update-tier2.yml'
+
+  schedule:
+    # GOTF discovery and live updates: every two hours before/during the event.
+    - cron: '37 */2 29-31 7 *'
+    - cron: '37 */2 1-6 8 *'
 
 permissions:
   contents: write
@@ -25,25 +31,42 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Check scheduled update year
+        id: window
+        shell: bash
+        run: |
+          enabled=true
+          if [[ "${{ github.event_name }}" == "schedule" ]] && [[ "$(date -u +%Y)" != "2026" ]]; then
+            enabled=false
+          fi
+          echo "enabled=$enabled" >> "$GITHUB_OUTPUT"
+          echo "Event=${{ github.event_name }} enabled=$enabled"
+
       - name: Checkout
+        if: steps.window.outputs.enabled == 'true'
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup Python
+        if: steps.window.outputs.enabled == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
 
       - name: Install parser dependencies
+        if: steps.window.outputs.enabled == 'true'
         run: pip install -r requirements.txt
 
       - name: Resolve and parse Tier-2 tournaments
+        if: steps.window.outputs.enabled == 'true'
         env:
           STRATZ_TOKEN: ${{ secrets.STRATZ_TOKEN }}
           RESET_DATA: ${{ inputs.reset }}
+        shell: bash
         run: |
           if [[ "$RESET_DATA" == "true" ]]; then
             python main.py --tier2-only --reset
@@ -52,13 +75,16 @@ jobs:
           fi
 
       - name: Commit changed data
+        if: steps.window.outputs.enabled == 'true'
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add players_stat.json leagues.json dataset_meta.json
+
           if git diff --cached --quiet; then
             echo "No Tier-2 dataset changes."
           else
-            git commit -m "Add or update Tier-2 fantasy data"
+            git commit -m "Update optional Tier-2 fantasy data"
             git push
           fi
