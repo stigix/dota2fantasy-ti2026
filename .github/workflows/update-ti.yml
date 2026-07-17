@@ -15,17 +15,24 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check TI update window
         id: window
         shell: bash
         run: |
-          today="$(date -u +%F)"
+          today_num="$(date -u +%Y%m%d)"
+          event_name="${{ github.event_name }}"
           enabled=false
-          if [[ "${{ github.event_name }}" == "workflow_dispatch" || ( "$today" >= "2026-08-12" && "$today" <= "2026-08-24" ) ]]; then
+
+          if [[ "$event_name" == "workflow_dispatch" ]]; then
+            enabled=true
+          elif (( today_num >= 20260812 && today_num <= 20260824 )); then
             enabled=true
           fi
+
           echo "enabled=$enabled" >> "$GITHUB_OUTPUT"
+          echo "Event: $event_name; UTC date: $today_num; enabled: $enabled"
 
       - name: Checkout
         if: steps.window.outputs.enabled == 'true'
@@ -54,6 +61,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add ti2026.json leagues.json players_stat.json dataset_meta.json
+
           if git diff --cached --quiet; then
             echo "No TI progress or fantasy changes."
           else
