@@ -1,4 +1,4 @@
-// UI_PATCH_VERSION: 2026-07-13-v2-all-players-ai
+// UI_PATCH_VERSION: 2026-07-17-donate-time-subtitle
 import { useMemo, useState } from 'react'
 import data from './../../players_stat.json'
 import leagues from './../../leagues.json'
@@ -72,7 +72,7 @@ const SUBTITLES = {
 
 const TEXT = {
   en: {
-    appTitle: 'Dota 2 Fantasy Calculator', event: 'The International 2026', source: 'Original project', how: 'How it works',
+    appTitle: 'Dota 2 Fantasy Calculator', event: 'The International 2026', source: 'Original project', how: 'How it works', donate: 'Support the project',
     tournaments: 'Tournaments', all: 'All', clear: 'Clear', selected: 'selected', ongoing: 'ongoing', roles: ['Core', 'Mid', 'Support'],
     cardSetup: 'Fantasy card setup', cardSetupHint: 'Each role starts with three stat lines. Add the fourth and fifth only when your card has them.',
     title: 'Title', subtitle: 'Subtitle', stat: 'Stat', multiplier: 'Multiplier', noSelection: 'Not selected', bestPlayers: 'Best players',
@@ -83,21 +83,21 @@ const TEXT = {
     globalNote: 'Tournament-wide subtitles use the number of qualifying matches in each selected event.',
     playerNote: 'Player subtitles and titles use only that player’s matches.', dataStatus: 'Parsed matches', language: 'Language',
     addPoint: 'Add point', removePoint: 'Remove last', pointCount: 'points enabled', manualHint: 'Type any value: 1, 1.5, 2.7…',
-    noMatches: 'No matches', players: 'players', rankHint: 'Ranking updates instantly when you change stats, multipliers, titles or tournaments.',
+    noMatches: 'No matches', players: 'players', teamsLabel: 'TI 2026 teams', tournamentsLabel: 'pre-TI tournaments', localTime: 'local time', rankHint: 'Ranking updates instantly when you change stats, multipliers, titles or tournaments.',
   },
   ru: {
-    appTitle: 'Калькулятор Dota 2 Fantasy', event: 'The International 2026', source: 'Оригинальный проект', how: 'Как считается',
+    appTitle: 'Калькулятор Dota 2 Fantasy', event: 'The International 2026', source: 'Оригинальный проект', how: 'Как считается', donate: 'Поддержать проект',
     tournaments: 'Турниры', all: 'Все', clear: 'Снять все', selected: 'выбрано', ongoing: 'идёт сейчас', roles: ['Керри / оффлейн', 'Мидер', 'Саппорт'],
     cardSetup: 'Настройка фэнтези-карт', cardSetupHint: 'Сначала открыты три пункта. Четвёртый и пятый добавляй только тогда, когда они есть на твоей карте.',
-    title: 'Титул', subtitle: 'Субтитр', stat: 'Показатель', multiplier: 'Множитель', noSelection: 'Не выбрано', bestPlayers: 'Лучшие игроки',
+    title: 'Титул', subtitle: 'Субтитул', stat: 'Показатель', multiplier: 'Множитель', noSelection: 'Не выбрано', bestPlayers: 'Лучшие игроки',
     score: 'Расчётные очки', matches: 'матчей', noDataTitle: 'Данные турниров ещё не собраны',
     noDataBody: 'Запусти python main.py. После следующей сборки фронтенда сайт прочитает обновлённый players_stat.json.',
     updated: 'Датасет обновлён', notGenerated: 'ещё не создавался', close: 'Закрыть', formula: 'Формула расчёта',
-    formulaText: 'Каждый выбранный показатель усредняется по отмеченным турнирам и умножается на официальный коэффициент и введённый вручную множитель. После этого применяются бонусы титула и субтитра.',
-    globalNote: 'Общие субтитры считаются по числу подходящих матчей на каждом выбранном турнире.',
-    playerNote: 'Персональные титулы и субтитры считаются только по матчам конкретного игрока.', dataStatus: 'Обработано матчей', language: 'Язык',
+    formulaText: 'Каждый выбранный показатель усредняется по отмеченным турнирам и умножается на официальный коэффициент и введённый вручную множитель. После этого применяются бонусы титула и субтитула.',
+    globalNote: 'Общие субтитулы считаются по числу подходящих матчей на каждом выбранном турнире.',
+    playerNote: 'Персональные титулы и субтитулы считаются только по матчам конкретного игрока.', dataStatus: 'Обработано матчей', language: 'Язык',
     addPoint: 'Добавить пункт', removePoint: 'Убрать последний', pointCount: 'пунктов включено', manualHint: 'Можно писать любое значение: 1, 1.5, 2.7…',
-    noMatches: 'Нет матчей', players: 'игроков', rankHint: 'Рейтинг сразу пересчитывается при смене показателей, множителей, титулов или турниров.',
+    noMatches: 'Нет матчей', players: 'игроков', teamsLabel: 'команд TI 2026', tournamentsLabel: 'предынтовых турниров', localTime: 'местное время', rankHint: 'Рейтинг сразу пересчитывается при смене показателей, множителей, титулов или турниров.',
   },
 }
 
@@ -127,6 +127,32 @@ function average(values) {
   return values.length ? values.reduce((sum, value) => sum + Number(value || 0), 0) / values.length : 0
 }
 
+function formatDateOnly(value, language) {
+  if (!value) return ''
+  const match = String(value).match(/^(\d{4})-(\d{2})-(\d{2})$/)
+  if (!match) return value
+  const date = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3])))
+  return new Intl.DateTimeFormat(language === 'ru' ? 'ru-RU' : 'en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    timeZone: 'UTC',
+  }).format(date)
+}
+
+function formatDateTime(value, language) {
+  if (!value) return ''
+  const date = new Date(value)
+  if (Number.isNaN(date.getTime())) return value
+  return new Intl.DateTimeFormat(language === 'ru' ? 'ru-RU' : 'en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  }).format(date)
+}
+
 function formatNumber(value) {
   return Number(value || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 }
@@ -153,8 +179,8 @@ const EXTRA_TEXT = {
   ru: {
     tabs: { calculator: 'Калькулятор', players: 'Все игроки', recommendations: 'ИИ-рекомендации' },
     allPlayersTitle: 'Общая статистика игроков', allPlayersHint: 'Выбери роль и сортируй полный список по любому фэнтези-показателю.',
-    sortBy: 'Сортировать по', none: 'Без сортировки', titlesBlock: 'Титулы', subtitlesBlock: 'Субтитры', totalMatches: 'Всего матчей',
-    aiTitle: 'ИИ-рекомендации для максимального набора очков', aiHint: 'Система сравнивает всех игроков TI, доступные показатели, титулы и субтитры по выбранным турнирам и текущим множителям карты.',
+    sortBy: 'Сортировать по', none: 'Без сортировки', titlesBlock: 'Титулы', subtitlesBlock: 'Субтитулы', totalMatches: 'Всего матчей',
+    aiTitle: 'ИИ-рекомендации для максимального набора очков', aiHint: 'Система сравнивает всех игроков TI, доступные показатели, титулы и субтитулы по выбранным турнирам и текущим множителям карты.',
     aiDisclaimer: 'Это статистический прогноз, а не гарантия. Драфты, патч и сила соперника могут изменить реальный результат.',
     recommendedPlayer: 'Рекомендуемый игрок', recommendedSetup: 'Рекомендуемая сборка', projectedScore: 'Прогноз очков',
     applySetup: 'Применить сборку', alternatives: 'Альтернативы', confidence: 'Надёжность данных', high: 'Высокая', medium: 'Средняя', low: 'Низкая',
@@ -515,6 +541,14 @@ function App() {
               <h1 className="mt-1 text-2xl font-black sm:text-3xl">{t.appTitle}</h1>
             </div>
             <div className="flex flex-wrap items-center gap-2">
+              <a
+                href="https://send.monobank.ua/jar/6Pnjo5o48i"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-xl border border-fuchsia-400/30 bg-gradient-to-r from-violet-600/90 to-fuchsia-600/90 px-4 py-2 text-sm font-black text-white shadow-lg shadow-violet-950/30 transition hover:brightness-110"
+              >
+                ♥ {t.donate}
+              </a>
               <button onClick={() => setShowHow(true)} className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold hover:bg-white/10">{t.how}</button>
               <div className="flex rounded-xl border border-white/10 bg-white/5 p-1" aria-label={t.language}>
                 {['ru', 'en'].map((item) => (
@@ -571,7 +605,7 @@ function App() {
                       <strong className="leading-5">{league.short_name || league.name}</strong>
                       <span className={`mt-0.5 size-4 shrink-0 rounded border ${active ? 'border-violet-400 bg-violet-500' : 'border-zinc-600'}`} />
                     </div>
-                    <p className="mt-2 text-xs text-zinc-500">{league.start_date} — {league.end_date}</p>
+                    <p className="mt-2 text-xs text-zinc-500">{formatDateOnly(league.start_date, language)} — {formatDateOnly(league.end_date, language)}</p>
                     <div className="mt-2 flex items-center justify-between gap-2 text-xs">
                       <span className="text-zinc-400">{Number(league.total_matches_parsed || 0)} {t.matches}</span>
                       {league.status === 'ongoing' && <span className="rounded-full bg-emerald-500/15 px-2 py-1 font-bold text-emerald-300">{t.ongoing}</span>}
@@ -585,11 +619,11 @@ function App() {
           <aside className="rounded-2xl border border-white/10 bg-white/[.035] p-5">
             <h2 className="text-xl font-black">{t.dataStatus}</h2>
             <p className="mt-4 text-5xl font-black text-violet-400">{parsedMatches}</p>
-            <p className="mt-2 text-sm text-zinc-500">{t.updated}: {meta.generated_at || t.notGenerated}</p>
+            <p className="mt-2 text-sm text-zinc-500">{t.updated}: {meta.generated_at ? `${formatDateTime(meta.generated_at, language)} (${t.localTime})` : t.notGenerated}</p>
             <div className="mt-5 space-y-2 text-sm text-zinc-400">
-              <p>16 TI 2026 teams</p>
-              <p>{players.length} players</p>
-              <p>6 pre-TI tournaments</p>
+              <p>16 {t.teamsLabel}</p>
+              <p>{players.length} {t.players}</p>
+              <p>6 {t.tournamentsLabel}</p>
             </div>
           </aside>
         </section>
