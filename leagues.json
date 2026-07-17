@@ -1276,5 +1276,24 @@
     "games<25min": 0,
     "total_matches_parsed": 0,
     "processed_match_ids": []
+  },
+  "19951": {
+    "name": "Games of the Future 2026",
+    "short_name": "Games of the Future 2026",
+    "link": "https://liquipedia.net/dota2/Games_of_the_Future/2026",
+    "start_date": "2026-07-31",
+    "end_date": "2026-08-05",
+    "status": "upcoming",
+    "tier": 2,
+    "catalog_key": "games_of_the_future_2026",
+    "fantasy_weight": 0.3,
+    "coverage_threshold_maps": 20,
+    "minimum_weight_factor": 0.25,
+    "total_deaths_from_torm": 0,
+    "firstblood_before_10min": 0,
+    "firstblood_before_horn": 0,
+    "games<25min": 0,
+    "total_matches_parsed": 0,
+    "processed_match_ids": []
   }
 }
