@@ -757,7 +757,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 5,
-    "total_matches_parsed": 146,
+    "total_matches_parsed": 151,
     "processed_match_ids": [
       8885183102,
       8885195787,
@@ -904,7 +904,12 @@
       8900508749,
       8900623530,
       8900771154,
-      8900882416
+      8900882416,
+      8902107148,
+      8902173969,
+      8902338515,
+      8902431810,
+      8902610619
     ]
   },
   "19255": {
