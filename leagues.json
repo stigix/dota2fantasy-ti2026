@@ -752,12 +752,12 @@
     "link": "https://liquipedia.net/dota2/Esports_World_Cup/2026",
     "start_date": "2026-07-07",
     "end_date": "2026-07-19",
-    "status": "ongoing",
-    "total_deaths_from_torm": 8,
+    "status": "completed",
+    "total_deaths_from_torm": 9,
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
-    "games<25min": 5,
-    "total_matches_parsed": 151,
+    "games<25min": 6,
+    "total_matches_parsed": 157,
     "processed_match_ids": [
       8885183102,
       8885195787,
@@ -909,7 +909,13 @@
       8902173969,
       8902338515,
       8902431810,
-      8902610619
+      8902610619,
+      8903705555,
+      8903789784,
+      8904012666,
+      8904157676,
+      8904322271,
+      8904419709
     ]
   },
   "19255": {
