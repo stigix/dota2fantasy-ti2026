@@ -54,6 +54,10 @@ jobs:
       - name: Update TI bracket and fantasy statistics
         if: steps.window.outputs.enabled == 'true'
         run: python ti_tracker.py
+        
+      - name: Rebuild team standings
+        if: steps.window.outputs.enabled == 'true'
+        run: python build_team_standings.py
 
       - name: Commit changed TI data
         if: steps.window.outputs.enabled == 'true'
