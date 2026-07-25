@@ -3,6 +3,7 @@ import playerData from './../../players_stat.json'
 import leagueData from './../../leagues.json'
 import liveData from './../../ti2026.json'
 import teamLogoData from './../../team_logos.json'
+import teamStandings from './../../team_standings.json'
 
 
 const getTeamLogo = (teamName, fallback = '') => (
@@ -85,7 +86,7 @@ const COPY = {
     champion: 'Твой чемпион',
     probability: 'Шанс победы в серии',
     titleOdds: 'Шансы выиграть TI 2026',
-    oddsHint: 'Модель симулирует весь формат несколько тысяч раз на основе формы игроков. Это не букмекерские коэффициенты и не гарантия.',
+    oddsHint: 'Модель симулирует весь формат несколько тысяч раз на основе результатов команд на турнирах. Это не букмекерские коэффициенты и не гарантия.',
     teamStrength: 'Рейтинг формы',
     confidence: 'Матчей в выборке',
     noMatches: 'Нет матчей в выбранных турнирах',
@@ -117,7 +118,7 @@ const COPY = {
     bestOf5: 'Bo5',
     formRatingLabel: 'Рейтинг формы',
     sampleMapsLabel: 'Карт команды в выборке',
-    ratingExplanation: 'Рейтинг формы — сравнительная сила команды по статистике её игроков. Число карт — примерное количество командных карт в выбранной выборке, а не сумма всех пяти игроков.',
+    ratingExplanation: 'Рейтинг формы — сравнительная сила команды по winrate на выбранных турнирах. Число карт — количество командных матчей в выборке.',
     swissSeriesTotal: 'В Swiss всего 39 серий Bo3: 8 + 8 + 8 + 8 + 7.',
     compactRounds: 'Чтобы экран не был перегружен, показывается только выбранный раунд.',
     eliminatedFromEvent: 'Выбыла из турнира',
@@ -267,57 +268,96 @@ function scoreForStat(statKey, value) {
 }
 
 function buildTeamModels(selectedTournamentIds) {
-  const grouped = new Map()
+  const selected = new Set((selectedTournamentIds || []).map(String))
+  const rosterTeams = new Map()
 
-  Object.entries(playerData).forEach(([playerName, info]) => {
-    if (!info?.general?.team_name) return
-    const teamName = info.general.team_name
-    if (!grouped.has(teamName)) grouped.set(teamName, { name: teamName, logo: getTeamLogo(teamName, info.general.team_logo), players: [] })
-
-    const role = Number(info.general.pos || 0)
-    const stats = ROLE_FORM_STATS[role] || ROLE_FORM_STATS[0]
-    const valuesByStat = Object.fromEntries(stats.map((key) => [key, []]))
-    let matches = 0
-
-    selectedTournamentIds.forEach((leagueId) => {
-      const record = info?.[leagueId]
-      if (!record?.stats) return
-      const allArrays = Object.values(record.stats).flatMap((group) => Object.values(group || {})).filter(Array.isArray)
-      matches += allArrays.reduce((maximum, values) => Math.max(maximum, values.length), 0)
-      stats.forEach((statKey) => {
-        Object.values(record.stats).forEach((group) => {
-          const entries = group?.[statKey]
-          if (Array.isArray(entries)) valuesByStat[statKey].push(...entries)
-        })
+  // список команд из ростера
+  Object.values(playerData).forEach((info) => {
+    const teamName = info?.general?.team_name
+    if (!teamName) return
+    if (!rosterTeams.has(teamName)) {
+      rosterTeams.set(teamName, {
+        name: teamName,
+        logo: getTeamLogo(teamName, info.general?.team_logo),
+        players: [],
       })
-    })
-
-    const form = stats.reduce((sum, statKey) => sum + scoreForStat(statKey, average(valuesByStat[statKey])), 0)
-    grouped.get(teamName).players.push({ name: playerName, role, matches, form })
+    }
   })
 
-  const teams = [...grouped.values()].map((team) => {
-    const playersWithData = team.players.filter((player) => player.matches > 0)
-    const rawForm = playersWithData.length ? average(playersWithData.map((player) => Math.log1p(Math.max(0, player.form)))) : 0
-    const playerAppearances = team.players.reduce((sum, player) => sum + player.matches, 0)
-    const sampleMaps = playersWithData.length ? Math.max(...playersWithData.map((player) => player.matches)) : 0
+  // Bayesian prior: тянем winrate к 50% при малой выборке
+  // prior=10 ≈ "добавить 10 побед и 10 поражений"
+  const PRIOR = 10
+
+  const teams = [...rosterTeams.values()].map((team) => {
+    const standing = teamStandings[team.name]
+    let wins = 0
+    let losses = 0
+    let matches = 0
+    let weightedWins = 0
+    let weightedMatches = 0
+
+    if (standing) {
+      if (selected.size > 0 && standing.by_league) {
+        Object.entries(standing.by_league).forEach(([leagueId, row]) => {
+          if (!selected.has(String(leagueId))) return
+          const w = Number(leagueData?.[leagueId]?.fantasy_weight || 1)
+          wins += Number(row.wins || 0)
+          losses += Number(row.losses || 0)
+          matches += Number(row.matches || 0)
+          weightedWins += Number(row.wins || 0) * w
+          weightedMatches += Number(row.matches || 0) * w
+        })
+      } else {
+        wins = Number(standing.wins || 0)
+        losses = Number(standing.losses || 0)
+        matches = Number(standing.matches || 0)
+        weightedWins = wins
+        weightedMatches = matches
+      }
+    }
+
+    // сырой и сглаженный winrate
+    const rawWinrate = matches > 0 ? wins / matches : 0.5
+    const smoothedWinrate =
+      (weightedWins + PRIOR * 0.5) / (Math.max(weightedMatches, 0) + PRIOR)
+
+    // чем меньше матчей — тем сильнее тянем к среднему
+    const sampleFactor = matches / (matches + PRIOR) // 0..1
+    const rawForm = smoothedWinrate
+
     return {
       ...team,
-      matches: sampleMaps,
-      sampleMaps,
-      playerAppearances,
+      matches,
+      sampleMaps: matches,
+      playerAppearances: matches,
+      wins,
+      losses,
+      winrate: Math.round(rawWinrate * 1000) / 10,
+      smoothedWinrate: Math.round(smoothedWinrate * 1000) / 10,
+      sampleFactor,
       rawForm,
     }
   })
 
-  const forms = teams.filter((team) => team.rawForm > 0).map((team) => team.rawForm)
-  const mean = average(forms)
-  const deviation = Math.sqrt(average(forms.map((value) => (value - mean) ** 2))) || 1
+  // среднее и разброс только по командам с данными
+  const active = teams.filter((t) => t.matches > 0)
+  const forms = active.map((t) => t.rawForm)
+  const mean = forms.length ? average(forms) : 0.5
+  const deviation = Math.sqrt(average(forms.map((v) => (v - mean) ** 2))) || 0.05
 
-  return teams.map((team) => ({
-    ...team,
-    rating: team.rawForm > 0 ? Math.round(1500 + ((team.rawForm - mean) / deviation) * 145) : 1375,
-  })).sort((a, b) => b.rating - a.rating || a.name.localeCompare(b.name))
+  // мягкая шкала: ±120 вместо ±160, + учёт sampleFactor
+  return teams
+    .map((team) => {
+      if (team.matches <= 0) {
+        return { ...team, rating: 1500 }
+      }
+      // отклонение от среднего, сжатое малой выборкой
+      const z = (team.rawForm - mean) / deviation
+      const adjustedZ = z * team.sampleFactor
+      const rating = Math.round(1500 + adjustedZ * 120)
+      return { ...team, rating }
+    })
+    .sort((a, b) => b.rating - a.rating || a.name.localeCompare(b.name))
 }
 
 function normalizeTeamName(value) {
