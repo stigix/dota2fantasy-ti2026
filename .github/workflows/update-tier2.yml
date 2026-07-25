@@ -74,6 +74,10 @@ jobs:
             python main.py --tier2-only
           fi
 
+      - name: Rebuild team standings
+        if: steps.window.outputs.enabled == 'true'
+        run: python build_team_standings.py
+        
       - name: Commit changed data
         if: steps.window.outputs.enabled == 'true'
         shell: bash
