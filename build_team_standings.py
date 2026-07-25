@@ -21,14 +21,22 @@ def load(path: Path, default=None):
 def main() -> None:
     logos = load(LOGOS, {}).get("teams", {})
     id_to_name = {}
+    alias_to_name = {}
+
+    def norm(s: str) -> str:
+        return "".join(ch for ch in str(s or "").casefold() if ch.isalnum())
+
     for name, info in logos.items():
         tid = info.get("team_id")
         if tid:
             id_to_name[int(tid)] = name
+        alias_to_name[norm(name)] = name
+        api = info.get("api_name")
+        if api:
+            alias_to_name[norm(api)] = name
         for alias in info.get("aliases") or []:
             if isinstance(alias, str) and alias.strip():
-                # name aliases are handled by normalize on frontend; keep primary
-                pass
+                alias_to_name[norm(alias)] = name
 
     leagues = load(LEAGUES, {})
     # league_id -> fantasy_weight (TI и tier2)
@@ -62,8 +70,11 @@ def main() -> None:
                 continue
             r_id = m.get("radiant_team_id")
             d_id = m.get("dire_team_id")
-            r_name = m.get("radiant_team_name") or id_to_name.get(int(r_id or 0))
-            d_name = m.get("dire_team_name") or id_to_name.get(int(d_id or 0))
+            r_raw = m.get("radiant_team_name")
+            d_raw = m.get("dire_team_name")
+
+            r_name = alias_to_name.get(norm(r_raw)) or id_to_name.get(int(r_id or 0))
+            d_name = alias_to_name.get(norm(d_raw)) or id_to_name.get(int(d_id or 0))
             if not r_name or not d_name:
                 continue
 
