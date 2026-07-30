@@ -1323,17 +1323,18 @@
     "fantasy_weight": 1.0,
     "coverage_threshold_maps": 20,
     "minimum_weight_factor": 0.25,
-    "total_deaths_from_torm": 0,
+    "total_deaths_from_torm": 1,
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 0,
-    "total_matches_parsed": 5,
+    "total_matches_parsed": 6,
     "processed_match_ids": [
       8920584549,
       8920668670,
       8920770467,
       8920872222,
-      8921021224
+      8921021224,
+      8921134590
     ]
   }
 }
