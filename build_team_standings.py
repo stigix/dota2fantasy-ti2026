@@ -36,7 +36,9 @@ def main() -> None:
             alias_to_name[norm(api)] = name
         for alias in info.get("aliases") or []:
             if isinstance(alias, str) and alias.strip():
-                alias_to_name[norm(alias)] = name
+                if alias.isdigit():
+                    id_to_name[int(alias)] = name
+            alias_to_name[norm(alias)] = name
 
     leagues = load(LEAGUES, {})
     # league_id -> fantasy_weight (TI и tier2)

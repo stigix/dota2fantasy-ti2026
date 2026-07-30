@@ -296,25 +296,29 @@ function buildTeamModels(selectedTournamentIds) {
     let weightedWins = 0
     let weightedMatches = 0
 
-    if (standing) {
-      if (selected.size > 0 && standing.by_league) {
-        Object.entries(standing.by_league).forEach(([leagueId, row]) => {
-          if (!selected.has(String(leagueId))) return
-          const w = Number(leagueData?.[leagueId]?.fantasy_weight || 1)
-          wins += Number(row.wins || 0)
-          losses += Number(row.losses || 0)
-          matches += Number(row.matches || 0)
-          weightedWins += Number(row.wins || 0) * w
-          weightedMatches += Number(row.matches || 0) * w
-        })
-      } else {
-        wins = Number(standing.wins || 0)
-        losses = Number(standing.losses || 0)
-        matches = Number(standing.matches || 0)
-        weightedWins = wins
-        weightedMatches = matches
-      }
-    }
+if (standing && standing.by_league) {
+  const entries = Object.entries(standing.by_league);
+  // Если выбраны турниры - фильтруем, иначе берём все
+  const filtered = selected.size > 0 
+    ? entries.filter(([leagueId]) => selected.has(String(leagueId)))
+    : entries;
+
+  filtered.forEach(([leagueId, row]) => {
+    const w = Number(leagueData?.[leagueId]?.fantasy_weight || 1);
+    wins += Number(row.wins || 0);
+    losses += Number(row.losses || 0);
+    matches += Number(row.matches || 0);
+    weightedWins += Number(row.wins || 0) * w;
+    weightedMatches += Number(row.matches || 0) * w;
+  });
+} else {
+  // fallback, если структура данных другая
+  wins = Number(standing?.wins || 0);
+  losses = Number(standing?.losses || 0);
+  matches = Number(standing?.matches || 0);
+  weightedWins = wins;
+  weightedMatches = matches;
+}
 
     // сырой и сглаженный winrate
     const rawWinrate = matches > 0 ? wins / matches : 0.5

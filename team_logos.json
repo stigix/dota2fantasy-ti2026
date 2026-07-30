@@ -1,19 +1,29 @@
 {
-  "updated_at": "2026-07-25T22:00:00+00:00",
+  "updated_at": "2026-07-30T16:17:30.123743+00:00",
   "source": "Latest matching OpenDota match + Liquipedia aliases for TI 2026 tags",
   "teams": {
     "1win Team": {
       "team_id": 10182357,
       "api_name": "1w",
-      "aliases": ["1w", "1win Team", "1win", "1W", "1win team"],
+      "aliases": [
+        "1w",
+        "1win Team",
+        "1win",
+        "1W",
+        "1win team"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/10678669599334676082/E48827F4A163D4D02F817EA3C32166D5F1D5FC98/",
-      "source_match_id": 8893165071,
-      "source_match_start_time": "2026-07-12T13:02:00+00:00"
+      "source_match_id": 8920668670,
+      "source_match_start_time": "2026-07-30T10:36:44+00:00"
     },
     "Aurora Gaming": {
       "team_id": 9467224,
       "api_name": "Aurora Gaming",
-      "aliases": ["Aurora Gaming", "Aurora", "AR"],
+      "aliases": [
+        "Aurora Gaming",
+        "Aurora",
+        "AR"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/13052583756685508/22B0338D7E09FB2F021E5DB5BBEFFD170D5E5E1A/",
       "source_match_id": 8891497910,
       "source_match_start_time": "2026-07-11T13:37:09+00:00"
@@ -21,7 +31,15 @@
     "BoomBoys": {
       "team_id": 8255888,
       "api_name": "BoomBoys",
-      "aliases": ["BoomBoys", "Boom Boys", "BetBoom Team", "BetBoom", "BB Team", "BB", "Bet Boom"],
+      "aliases": [
+        "BoomBoys",
+        "Boom Boys",
+        "BetBoom Team",
+        "BetBoom",
+        "BB Team",
+        "BB",
+        "Bet Boom"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/9995426432403529725/51E13136D4CCC8C7D8062861541A1D13B8ED87E0/",
       "source_match_id": 8891227605,
       "source_match_start_time": "2026-07-11T10:40:00+00:00"
@@ -29,7 +47,11 @@
     "GamerLegion": {
       "team_id": 9964962,
       "api_name": "GamerLegion",
-      "aliases": ["GamerLegion", "Gamer Legion", "GL"],
+      "aliases": [
+        "GamerLegion",
+        "Gamer Legion",
+        "GL"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/13245379764580870318/1048428BEFAC87EC1C64E15706A4758A173B5BFB/",
       "source_match_id": 8891227605,
       "source_match_start_time": "2026-07-11T10:40:00+00:00"
@@ -37,7 +59,16 @@
     "HULIGANI": {
       "team_id": 10182299,
       "api_name": "L1 TEAM",
-      "aliases": ["HULIGANI", "Huligani", "L1 TEAM", "L1GA TEAM", "L1GA", "L1ga", "L1 Team", "L1GA Team"],
+      "aliases": [
+        "HULIGANI",
+        "Huligani",
+        "L1 TEAM",
+        "L1GA TEAM",
+        "L1GA",
+        "L1ga",
+        "L1 Team",
+        "L1GA Team"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/12840375036858410683/946851F493233AE9BF459B56784400C08A069893/",
       "source_match_id": 8891438996,
       "source_match_start_time": "2026-07-11T13:07:54+00:00"
@@ -45,23 +76,35 @@
     "LGD Gaming": {
       "team_id": 10150538,
       "api_name": "LGD Gaming",
-      "aliases": ["LGD Gaming", "LGD", "PSG.LGD", "PSG LGD"],
+      "aliases": [
+        "LGD Gaming",
+        "LGD",
+        "PSG.LGD",
+        "PSG LGD"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/10055782735581672481/2B2BCEA9CC05286D7164E4548A2EB64CDBC77F31/",
-      "source_match_id": 8893208737,
-      "source_match_start_time": "2026-07-12T13:19:01+00:00"
+      "source_match_id": 8920872222,
+      "source_match_start_time": "2026-07-30T13:08:09+00:00"
     },
     "Nigma Galaxy": {
-      "team_id": 7554697,
+      "team_id": 10136357,
       "api_name": "Nigma Galaxy",
-      "aliases": ["Nigma Galaxy", "Nigma", "NG"],
-      "logo_url": "https://cdn.steamusercontent.com/ugc/1827894588975105240/421C0D8318D71D5DD31FD08A7933AB622AE26590/",
-      "source_match_id": 8802615564,
-      "source_match_start_time": "2026-05-08T13:31:11+00:00"
+      "aliases": [
+        "Nigma Galaxy",
+        "Nigma",
+        "NG",
+        "9895392"
+      ],
+      "logo_url": "https://cdn.steamusercontent.com/ugc/16959999218725724364/1D334B91A52606CA3E0027832D6F646E2A094391/",
+      "source_match_id": 8921021224,
+      "source_match_start_time": "2026-07-30T14:38:54+00:00"
     },
     "OG": {
       "team_id": 2586976,
       "api_name": "OG",
-      "aliases": ["OG"],
+      "aliases": [
+        "OG"
+      ],
       "logo_url": "https://steamcdn-a.akamaihd.net/apps/dota2/images/team_logos/2586976.png",
       "source_match_id": 8893253595,
       "source_match_start_time": "2026-07-12T13:43:00+00:00"
@@ -69,7 +112,18 @@
     "TEAM VISION": {
       "team_id": 9572001,
       "api_name": "TEAM VISION",
-      "aliases": ["TEAM VISION", "Team Vision", "Team VISION", "VISION", "PARIVISION", "PariVision", "PVISION", "PV", "P Vision"],
+      "aliases": [
+        "TEAM VISION",
+        "Team Vision",
+        "Team VISION",
+        "VISION",
+        "PARIVISION",
+        "PariVision",
+        "PVISION",
+        "PV",
+        "P Vision",
+        "9824702"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/10380389074903512947/5D074799695A862D17D4205285315FE20399B28D/",
       "source_match_id": 8824218541,
       "source_match_start_time": "2026-05-24T19:22:34+00:00"
@@ -77,7 +131,11 @@
     "Team Falcons": {
       "team_id": 9247354,
       "api_name": "Team Falcons",
-      "aliases": ["Team Falcons", "Falcons", "TFalcons"],
+      "aliases": [
+        "Team Falcons",
+        "Falcons",
+        "TFalcons"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/2314350571781870059/2B5C9FE9BA0A2DC303A13261444532AA08352843/",
       "source_match_id": 8891240327,
       "source_match_start_time": "2026-07-11T10:45:00+00:00"
@@ -85,7 +143,11 @@
     "Team Liquid": {
       "team_id": 2163,
       "api_name": "Team Liquid",
-      "aliases": ["Team Liquid", "Liquid", "TL"],
+      "aliases": [
+        "Team Liquid",
+        "Liquid",
+        "TL"
+      ],
       "logo_url": "https://steamcdn-a.akamaihd.net/apps/dota2/images/team_logos/2163.png",
       "source_match_id": 8891497910,
       "source_match_start_time": "2026-07-11T13:37:09+00:00"
@@ -93,7 +155,10 @@
     "Team Resilience": {
       "team_id": 5017210,
       "api_name": "Team Resilience",
-      "aliases": ["Team Resilience", "Resilience"],
+      "aliases": [
+        "Team Resilience",
+        "Resilience"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/15907413066975203049/68C9F7C15D104837639C65B11E95D0DF81D268F2/",
       "source_match_id": 8796537475,
       "source_match_start_time": "2026-05-03T14:25:35+00:00"
@@ -101,7 +166,12 @@
     "Team Spirit": {
       "team_id": 7119388,
       "api_name": "Team Spirit",
-      "aliases": ["Team Spirit", "Spirit", "TSpirit", "TS"],
+      "aliases": [
+        "Team Spirit",
+        "Spirit",
+        "TSpirit",
+        "TS"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/1839179120711951766/CD7E0885CB527334205CC7885E9C101B7BC17702/",
       "source_match_id": 8892914077,
       "source_match_start_time": "2026-07-12T10:15:00+00:00"
@@ -109,7 +179,12 @@
     "Team Yandex": {
       "team_id": 9823272,
       "api_name": "Team Yandex",
-      "aliases": ["Team Yandex", "Yandex", "team y", "TeamYandex"],
+      "aliases": [
+        "Team Yandex",
+        "Yandex",
+        "team y",
+        "TeamYandex"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/12970505637628494427/B04C3358F4E815ADFC2F8B1B8BE3AB0CE75C8881/",
       "source_match_id": 8893165071,
       "source_match_start_time": "2026-07-12T13:02:00+00:00"
@@ -117,15 +192,23 @@
     "Vici Gaming": {
       "team_id": 726228,
       "api_name": "Vici Gaming",
-      "aliases": ["Vici Gaming", "VG", "Vici"],
+      "aliases": [
+        "Vici Gaming",
+        "VG",
+        "Vici"
+      ],
       "logo_url": "https://steamcdn-a.akamaihd.net/apps/dota2/images/team_logos/726228.png",
-      "source_match_id": 8892923329,
-      "source_match_start_time": "2026-07-12T10:13:00+00:00"
+      "source_match_id": 8921021224,
+      "source_match_start_time": "2026-07-30T14:38:54+00:00"
     },
     "Xtreme Gaming": {
       "team_id": 8261500,
       "api_name": "Xtreme Gaming",
-      "aliases": ["Xtreme Gaming", "XG", "Xtreme"],
+      "aliases": [
+        "Xtreme Gaming",
+        "XG",
+        "Xtreme"
+      ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/2402194226059610590/E3CF4B6C4B2CFB974A9B415141E4A37317AD4D80/",
       "source_match_id": 8891240327,
       "source_match_start_time": "2026-07-11T10:45:00+00:00"
