@@ -400,10 +400,10 @@
   },
   "Nigma Galaxy": {
     "wins": 17,
-    "losses": 35,
-    "matches": 52,
-    "winrate": 32.7,
-    "weighted_winrate": 32.7,
+    "losses": 36,
+    "matches": 53,
+    "winrate": 32.1,
+    "weighted_winrate": 32.1,
     "by_league": {
       "19422": {
         "wins": 2,
@@ -427,17 +427,17 @@
       },
       "20009": {
         "wins": 0,
-        "losses": 3,
-        "matches": 3
+        "losses": 4,
+        "matches": 4
       }
     }
   },
   "Vici Gaming": {
-    "wins": 23,
+    "wins": 24,
     "losses": 38,
-    "matches": 61,
-    "winrate": 37.7,
-    "weighted_winrate": 35.6,
+    "matches": 62,
+    "winrate": 38.7,
+    "weighted_winrate": 36.8,
     "by_league": {
       "19435": {
         "wins": 6,
@@ -465,9 +465,9 @@
         "matches": 13
       },
       "20009": {
-        "wins": 1,
+        "wins": 2,
         "losses": 0,
-        "matches": 1
+        "matches": 2
       }
     }
   },

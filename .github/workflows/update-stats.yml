@@ -55,6 +55,10 @@ jobs:
             python main.py
           fi
           
+      - name: Refresh all league match lists
+        if: steps.window.outputs.enabled == 'true'
+        run: python refresh_league_match_lists.py
+
       - name: Rebuild team standings
         if: steps.window.outputs.enabled == 'true'
         run: python build_team_standings.py
@@ -64,7 +68,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add players_stat.json leagues.json dataset_meta.json
           git add players_stat.json leagues.json dataset_meta.json team_standings.json
           if git diff --cached --quiet; then
             echo "No dataset changes."
