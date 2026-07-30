@@ -136,11 +136,11 @@
     }
   },
   "Team Falcons": {
-    "wins": 64,
+    "wins": 65,
     "losses": 39,
-    "matches": 103,
-    "winrate": 62.1,
-    "weighted_winrate": 62.1,
+    "matches": 104,
+    "winrate": 62.5,
+    "weighted_winrate": 62.5,
     "by_league": {
       "19101": {
         "wins": 10,
@@ -171,6 +171,11 @@
         "wins": 9,
         "losses": 3,
         "matches": 12
+      },
+      "20009": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
       }
     }
   },
@@ -459,10 +464,10 @@
   },
   "Vici Gaming": {
     "wins": 41,
-    "losses": 44,
-    "matches": 85,
-    "winrate": 48.2,
-    "weighted_winrate": 45.6,
+    "losses": 45,
+    "matches": 86,
+    "winrate": 47.7,
+    "weighted_winrate": 45.0,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -491,8 +496,8 @@
       },
       "20009": {
         "wins": 2,
-        "losses": 0,
-        "matches": 2
+        "losses": 1,
+        "matches": 3
       }
     }
   },
