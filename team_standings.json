@@ -1,85 +1,448 @@
 {
-  "TEAM VISION": {
-    "wins": 7,
-    "losses": 0,
-    "matches": 7,
-    "winrate": 100.0,
-    "weighted_winrate": 100.0,
+  "Team Yandex": {
+    "wins": 46,
+    "losses": 17,
+    "matches": 63,
+    "winrate": 73.0,
+    "weighted_winrate": 73.0,
     "by_league": {
-      "19255": {
-        "wins": 7,
-        "losses": 0,
-        "matches": 7
+      "19101": {
+        "wins": 15,
+        "losses": 7,
+        "matches": 22
+      },
+      "19422": {
+        "wins": 9,
+        "losses": 3,
+        "matches": 12
+      },
+      "19435": {
+        "wins": 13,
+        "losses": 4,
+        "matches": 17
+      },
+      "19543": {
+        "wins": 0,
+        "losses": 2,
+        "matches": 2
+      },
+      "19785": {
+        "wins": 9,
+        "losses": 1,
+        "matches": 10
       }
     }
   },
-  "Nigma Galaxy": {
-    "wins": 6,
-    "losses": 8,
-    "matches": 14,
-    "winrate": 42.9,
-    "weighted_winrate": 42.9,
+  "LGD Gaming": {
+    "wins": 15,
+    "losses": 16,
+    "matches": 31,
+    "winrate": 48.4,
+    "weighted_winrate": 48.4,
     "by_league": {
-      "19255": {
-        "wins": 6,
-        "losses": 8,
-        "matches": 14
+      "19101": {
+        "wins": 13,
+        "losses": 10,
+        "matches": 23
+      },
+      "19785": {
+        "wins": 2,
+        "losses": 6,
+        "matches": 8
       }
     }
   },
-  "GamerLegion": {
-    "wins": 3,
-    "losses": 5,
-    "matches": 8,
-    "winrate": 37.5,
-    "weighted_winrate": 37.5,
+  "BoomBoys": {
+    "wins": 47,
+    "losses": 28,
+    "matches": 75,
+    "winrate": 62.7,
+    "weighted_winrate": 62.7,
     "by_league": {
-      "19255": {
+      "19101": {
+        "wins": 10,
+        "losses": 6,
+        "matches": 16
+      },
+      "19422": {
         "wins": 3,
+        "losses": 4,
+        "matches": 7
+      },
+      "19435": {
+        "wins": 7,
+        "losses": 9,
+        "matches": 16
+      },
+      "19543": {
+        "wins": 13,
+        "losses": 3,
+        "matches": 16
+      },
+      "19696": {
+        "wins": 5,
         "losses": 5,
+        "matches": 10
+      },
+      "19785": {
+        "wins": 9,
+        "losses": 1,
+        "matches": 10
+      }
+    }
+  },
+  "Aurora Gaming": {
+    "wins": 46,
+    "losses": 35,
+    "matches": 81,
+    "winrate": 56.8,
+    "weighted_winrate": 56.8,
+    "by_league": {
+      "19101": {
+        "wins": 10,
+        "losses": 8,
+        "matches": 18
+      },
+      "19422": {
+        "wins": 9,
+        "losses": 3,
+        "matches": 12
+      },
+      "19435": {
+        "wins": 3,
+        "losses": 3,
+        "matches": 6
+      },
+      "19543": {
+        "wins": 9,
+        "losses": 8,
+        "matches": 17
+      },
+      "19696": {
+        "wins": 12,
+        "losses": 12,
+        "matches": 24
+      },
+      "19785": {
+        "wins": 3,
+        "losses": 1,
+        "matches": 4
+      }
+    }
+  },
+  "Team Falcons": {
+    "wins": 46,
+    "losses": 35,
+    "matches": 81,
+    "winrate": 56.8,
+    "weighted_winrate": 56.8,
+    "by_league": {
+      "19101": {
+        "wins": 9,
+        "losses": 6,
+        "matches": 15
+      },
+      "19422": {
+        "wins": 6,
+        "losses": 6,
+        "matches": 12
+      },
+      "19435": {
+        "wins": 2,
+        "losses": 6,
+        "matches": 8
+      },
+      "19543": {
+        "wins": 13,
+        "losses": 8,
+        "matches": 21
+      },
+      "19696": {
+        "wins": 11,
+        "losses": 6,
+        "matches": 17
+      },
+      "19785": {
+        "wins": 5,
+        "losses": 3,
         "matches": 8
       }
     }
   },
   "Team Liquid": {
-    "wins": 1,
-    "losses": 2,
-    "matches": 3,
-    "winrate": 33.3,
-    "weighted_winrate": 33.3,
+    "wins": 41,
+    "losses": 41,
+    "matches": 82,
+    "winrate": 50.0,
+    "weighted_winrate": 50.3,
     "by_league": {
+      "19101": {
+        "wins": 5,
+        "losses": 9,
+        "matches": 14
+      },
       "19255": {
         "wins": 1,
         "losses": 2,
         "matches": 3
+      },
+      "19435": {
+        "wins": 12,
+        "losses": 8,
+        "matches": 20
+      },
+      "19543": {
+        "wins": 8,
+        "losses": 8,
+        "matches": 16
+      },
+      "19696": {
+        "wins": 9,
+        "losses": 10,
+        "matches": 19
+      },
+      "19785": {
+        "wins": 6,
+        "losses": 4,
+        "matches": 10
       }
     }
   },
   "Team Spirit": {
-    "wins": 2,
-    "losses": 4,
-    "matches": 6,
-    "winrate": 33.3,
-    "weighted_winrate": 33.3,
+    "wins": 46,
+    "losses": 45,
+    "matches": 91,
+    "winrate": 50.5,
+    "weighted_winrate": 51.1,
     "by_league": {
+      "19101": {
+        "wins": 4,
+        "losses": 8,
+        "matches": 12
+      },
       "19255": {
+        "wins": 2,
+        "losses": 4,
+        "matches": 6
+      },
+      "19422": {
+        "wins": 9,
+        "losses": 7,
+        "matches": 16
+      },
+      "19435": {
+        "wins": 8,
+        "losses": 6,
+        "matches": 14
+      },
+      "19543": {
+        "wins": 5,
+        "losses": 9,
+        "matches": 14
+      },
+      "19696": {
+        "wins": 14,
+        "losses": 8,
+        "matches": 22
+      },
+      "19785": {
+        "wins": 4,
+        "losses": 3,
+        "matches": 7
+      }
+    }
+  },
+  "OG": {
+    "wins": 6,
+    "losses": 25,
+    "matches": 31,
+    "winrate": 19.4,
+    "weighted_winrate": 19.4,
+    "by_league": {
+      "19101": {
+        "wins": 1,
+        "losses": 9,
+        "matches": 10
+      },
+      "19422": {
+        "wins": 2,
+        "losses": 8,
+        "matches": 10
+      },
+      "19435": {
+        "wins": 1,
+        "losses": 4,
+        "matches": 5
+      },
+      "19785": {
         "wins": 2,
         "losses": 4,
         "matches": 6
       }
     }
   },
-  "Vici Gaming": {
-    "wins": 5,
-    "losses": 4,
-    "matches": 9,
-    "winrate": 55.6,
-    "weighted_winrate": 55.6,
+  "Xtreme Gaming": {
+    "wins": 26,
+    "losses": 42,
+    "matches": 68,
+    "winrate": 38.2,
+    "weighted_winrate": 39.2,
     "by_league": {
+      "19101": {
+        "wins": 2,
+        "losses": 6,
+        "matches": 8
+      },
+      "19422": {
+        "wins": 9,
+        "losses": 10,
+        "matches": 19
+      },
+      "19435": {
+        "wins": 5,
+        "losses": 7,
+        "matches": 12
+      },
+      "19543": {
+        "wins": 3,
+        "losses": 4,
+        "matches": 7
+      },
+      "19575": {
+        "wins": 1,
+        "losses": 4,
+        "matches": 5
+      },
+      "19696": {
+        "wins": 3,
+        "losses": 5,
+        "matches": 8
+      },
+      "19785": {
+        "wins": 3,
+        "losses": 6,
+        "matches": 9
+      }
+    }
+  },
+  "TEAM VISION": {
+    "wins": 32,
+    "losses": 23,
+    "matches": 55,
+    "winrate": 58.2,
+    "weighted_winrate": 55.3,
+    "by_league": {
+      "19255": {
+        "wins": 7,
+        "losses": 0,
+        "matches": 7
+      },
+      "19422": {
+        "wins": 9,
+        "losses": 6,
+        "matches": 15
+      },
+      "19435": {
+        "wins": 1,
+        "losses": 4,
+        "matches": 5
+      },
+      "19543": {
+        "wins": 2,
+        "losses": 6,
+        "matches": 8
+      },
+      "19696": {
+        "wins": 13,
+        "losses": 7,
+        "matches": 20
+      }
+    }
+  },
+  "Nigma Galaxy": {
+    "wins": 8,
+    "losses": 16,
+    "matches": 24,
+    "winrate": 33.3,
+    "weighted_winrate": 29.4,
+    "by_league": {
+      "19255": {
+        "wins": 6,
+        "losses": 8,
+        "matches": 14
+      },
+      "19422": {
+        "wins": 2,
+        "losses": 8,
+        "matches": 10
+      }
+    }
+  },
+  "GamerLegion": {
+    "wins": 9,
+    "losses": 30,
+    "matches": 39,
+    "winrate": 23.1,
+    "weighted_winrate": 21.4,
+    "by_league": {
+      "19255": {
+        "wins": 3,
+        "losses": 5,
+        "matches": 8
+      },
+      "19422": {
+        "wins": 2,
+        "losses": 5,
+        "matches": 7
+      },
+      "19543": {
+        "wins": 3,
+        "losses": 4,
+        "matches": 7
+      },
+      "19696": {
+        "wins": 1,
+        "losses": 10,
+        "matches": 11
+      },
+      "19785": {
+        "wins": 0,
+        "losses": 6,
+        "matches": 6
+      }
+    }
+  },
+  "Vici Gaming": {
+    "wins": 22,
+    "losses": 34,
+    "matches": 56,
+    "winrate": 39.3,
+    "weighted_winrate": 37.2,
+    "by_league": {
+      "19435": {
+        "wins": 6,
+        "losses": 7,
+        "matches": 13
+      },
+      "19543": {
+        "wins": 2,
+        "losses": 6,
+        "matches": 8
+      },
       "19575": {
         "wins": 5,
         "losses": 4,
         "matches": 9
+      },
+      "19696": {
+        "wins": 5,
+        "losses": 10,
+        "matches": 15
+      },
+      "19785": {
+        "wins": 4,
+        "losses": 7,
+        "matches": 11
       }
     }
   },
@@ -97,17 +460,31 @@
       }
     }
   },
-  "Xtreme Gaming": {
-    "wins": 1,
-    "losses": 4,
-    "matches": 5,
-    "winrate": 20.0,
-    "weighted_winrate": 20.0,
+  "1win Team": {
+    "wins": 4,
+    "losses": 5,
+    "matches": 9,
+    "winrate": 44.4,
+    "weighted_winrate": 44.4,
     "by_league": {
-      "19575": {
-        "wins": 1,
+      "19785": {
+        "wins": 4,
+        "losses": 5,
+        "matches": 9
+      }
+    }
+  },
+  "HULIGANI": {
+    "wins": 0,
+    "losses": 4,
+    "matches": 4,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19785": {
+        "wins": 0,
         "losses": 4,
-        "matches": 5
+        "matches": 4
       }
     }
   }
