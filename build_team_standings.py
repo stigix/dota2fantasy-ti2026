@@ -70,6 +70,7 @@ def main() -> None:
         for m in matches:
             if "radiant_win" not in m:
                 continue
+
             r_id = m.get("radiant_team_id")
             d_id = m.get("dire_team_id")
             r_raw = m.get("radiant_team_name")
@@ -77,12 +78,20 @@ def main() -> None:
 
             r_name = alias_to_name.get(norm(r_raw)) or id_to_name.get(int(r_id or 0))
             d_name = alias_to_name.get(norm(d_raw)) or id_to_name.get(int(d_id or 0))
-            if not r_name or not d_name:
+
+            # раньше: if not r_name or not d_name: continue  ← вот это жрало матчи
+            if not r_name and not d_name:
                 continue
 
-            winner, loser = (r_name, d_name) if m["radiant_win"] else (d_name, r_name)
+            radiant_win = bool(m["radiant_win"])
 
-            for team, is_win in ((winner, True), (loser, False)):
+            sides = []
+            if r_name:
+                sides.append((r_name, radiant_win))
+            if d_name:
+                sides.append((d_name, not radiant_win))
+
+            for team, is_win in sides:
                 s = stats[team]
                 s["matches"] += 1
                 s["weighted_matches"] += weight
@@ -91,7 +100,9 @@ def main() -> None:
                     s["weighted_wins"] += weight
                 else:
                     s["losses"] += 1
-                league_bucket = s["by_league"].setdefault(league_id, {"wins": 0, "losses": 0, "matches": 0})
+                league_bucket = s["by_league"].setdefault(
+                    league_id, {"wins": 0, "losses": 0, "matches": 0}
+                )
                 league_bucket["matches"] += 1
                 if is_win:
                     league_bucket["wins"] += 1
