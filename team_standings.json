@@ -1,15 +1,15 @@
 {
   "Team Yandex": {
-    "wins": 46,
-    "losses": 17,
-    "matches": 63,
-    "winrate": 73.0,
-    "weighted_winrate": 73.0,
+    "wins": 50,
+    "losses": 19,
+    "matches": 69,
+    "winrate": 72.5,
+    "weighted_winrate": 72.5,
     "by_league": {
       "19101": {
-        "wins": 15,
+        "wins": 16,
         "losses": 7,
-        "matches": 22
+        "matches": 23
       },
       "19422": {
         "wins": 9,
@@ -27,42 +27,42 @@
         "matches": 2
       },
       "19785": {
-        "wins": 9,
-        "losses": 1,
-        "matches": 10
+        "wins": 12,
+        "losses": 3,
+        "matches": 15
       }
     }
   },
   "LGD Gaming": {
-    "wins": 15,
-    "losses": 16,
-    "matches": 31,
-    "winrate": 48.4,
-    "weighted_winrate": 48.4,
+    "wins": 17,
+    "losses": 17,
+    "matches": 34,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
     "by_league": {
       "19101": {
-        "wins": 13,
+        "wins": 14,
         "losses": 10,
-        "matches": 23
+        "matches": 24
       },
       "19785": {
-        "wins": 2,
-        "losses": 6,
-        "matches": 8
+        "wins": 3,
+        "losses": 7,
+        "matches": 10
       }
     }
   },
   "BoomBoys": {
-    "wins": 47,
-    "losses": 28,
-    "matches": 75,
-    "winrate": 62.7,
-    "weighted_winrate": 62.7,
+    "wins": 54,
+    "losses": 32,
+    "matches": 86,
+    "winrate": 62.8,
+    "weighted_winrate": 62.8,
     "by_league": {
       "19101": {
         "wins": 10,
-        "losses": 6,
-        "matches": 16
+        "losses": 7,
+        "matches": 17
       },
       "19422": {
         "wins": 3,
@@ -75,33 +75,33 @@
         "matches": 16
       },
       "19543": {
-        "wins": 13,
+        "wins": 15,
         "losses": 3,
-        "matches": 16
+        "matches": 18
       },
       "19696": {
-        "wins": 5,
+        "wins": 7,
         "losses": 5,
-        "matches": 10
+        "matches": 12
       },
       "19785": {
-        "wins": 9,
-        "losses": 1,
-        "matches": 10
+        "wins": 12,
+        "losses": 4,
+        "matches": 16
       }
     }
   },
   "Aurora Gaming": {
-    "wins": 46,
-    "losses": 35,
-    "matches": 81,
-    "winrate": 56.8,
-    "weighted_winrate": 56.8,
+    "wins": 49,
+    "losses": 38,
+    "matches": 87,
+    "winrate": 56.3,
+    "weighted_winrate": 56.3,
     "by_league": {
       "19101": {
         "wins": 10,
-        "losses": 8,
-        "matches": 18
+        "losses": 9,
+        "matches": 19
       },
       "19422": {
         "wins": 9,
@@ -119,28 +119,28 @@
         "matches": 17
       },
       "19696": {
-        "wins": 12,
-        "losses": 12,
-        "matches": 24
+        "wins": 14,
+        "losses": 13,
+        "matches": 27
       },
       "19785": {
-        "wins": 3,
-        "losses": 1,
-        "matches": 4
+        "wins": 4,
+        "losses": 2,
+        "matches": 6
       }
     }
   },
   "Team Falcons": {
-    "wins": 46,
-    "losses": 35,
-    "matches": 81,
-    "winrate": 56.8,
-    "weighted_winrate": 56.8,
+    "wins": 48,
+    "losses": 37,
+    "matches": 85,
+    "winrate": 56.5,
+    "weighted_winrate": 56.5,
     "by_league": {
       "19101": {
         "wins": 9,
-        "losses": 6,
-        "matches": 15
+        "losses": 7,
+        "matches": 16
       },
       "19422": {
         "wins": 6,
@@ -158,9 +158,9 @@
         "matches": 21
       },
       "19696": {
-        "wins": 11,
-        "losses": 6,
-        "matches": 17
+        "wins": 13,
+        "losses": 7,
+        "matches": 20
       },
       "19785": {
         "wins": 5,
@@ -170,21 +170,16 @@
     }
   },
   "Team Liquid": {
-    "wins": 41,
-    "losses": 41,
-    "matches": 82,
+    "wins": 42,
+    "losses": 42,
+    "matches": 84,
     "winrate": 50.0,
-    "weighted_winrate": 50.3,
+    "weighted_winrate": 50.0,
     "by_league": {
       "19101": {
         "wins": 5,
-        "losses": 9,
-        "matches": 14
-      },
-      "19255": {
-        "wins": 1,
-        "losses": 2,
-        "matches": 3
+        "losses": 10,
+        "matches": 15
       },
       "19435": {
         "wins": 12,
@@ -197,33 +192,33 @@
         "matches": 16
       },
       "19696": {
-        "wins": 9,
+        "wins": 11,
         "losses": 10,
-        "matches": 19
+        "matches": 21
       },
       "19785": {
         "wins": 6,
-        "losses": 4,
-        "matches": 10
+        "losses": 6,
+        "matches": 12
       }
     }
   },
   "Team Spirit": {
-    "wins": 46,
-    "losses": 45,
-    "matches": 91,
-    "winrate": 50.5,
-    "weighted_winrate": 51.1,
+    "wins": 49,
+    "losses": 44,
+    "matches": 93,
+    "winrate": 52.7,
+    "weighted_winrate": 53.0,
     "by_league": {
       "19101": {
-        "wins": 4,
+        "wins": 5,
         "losses": 8,
-        "matches": 12
+        "matches": 13
       },
       "19255": {
-        "wins": 2,
-        "losses": 4,
-        "matches": 6
+        "wins": 1,
+        "losses": 2,
+        "matches": 3
       },
       "19422": {
         "wins": 9,
@@ -241,28 +236,28 @@
         "matches": 14
       },
       "19696": {
-        "wins": 14,
+        "wins": 16,
         "losses": 8,
-        "matches": 22
+        "matches": 24
       },
       "19785": {
-        "wins": 4,
-        "losses": 3,
-        "matches": 7
+        "wins": 5,
+        "losses": 4,
+        "matches": 9
       }
     }
   },
   "OG": {
     "wins": 6,
-    "losses": 25,
-    "matches": 31,
-    "winrate": 19.4,
-    "weighted_winrate": 19.4,
+    "losses": 28,
+    "matches": 34,
+    "winrate": 17.6,
+    "weighted_winrate": 17.6,
     "by_league": {
       "19101": {
         "wins": 1,
-        "losses": 9,
-        "matches": 10
+        "losses": 10,
+        "matches": 11
       },
       "19422": {
         "wins": 2,
@@ -276,22 +271,66 @@
       },
       "19785": {
         "wins": 2,
+        "losses": 6,
+        "matches": 8
+      }
+    }
+  },
+  "TEAM VISION": {
+    "wins": 43,
+    "losses": 29,
+    "matches": 72,
+    "winrate": 59.7,
+    "weighted_winrate": 59.2,
+    "by_league": {
+      "19101": {
+        "wins": 6,
+        "losses": 3,
+        "matches": 9
+      },
+      "19255": {
+        "wins": 2,
+        "losses": 0,
+        "matches": 2
+      },
+      "19422": {
+        "wins": 9,
+        "losses": 6,
+        "matches": 15
+      },
+      "19435": {
+        "wins": 1,
         "losses": 4,
-        "matches": 6
+        "matches": 5
+      },
+      "19543": {
+        "wins": 2,
+        "losses": 6,
+        "matches": 8
+      },
+      "19696": {
+        "wins": 15,
+        "losses": 7,
+        "matches": 22
+      },
+      "19785": {
+        "wins": 8,
+        "losses": 3,
+        "matches": 11
       }
     }
   },
   "Xtreme Gaming": {
     "wins": 26,
-    "losses": 42,
-    "matches": 68,
-    "winrate": 38.2,
-    "weighted_winrate": 39.2,
+    "losses": 45,
+    "matches": 71,
+    "winrate": 36.6,
+    "weighted_winrate": 37.5,
     "by_league": {
       "19101": {
         "wins": 2,
-        "losses": 6,
-        "matches": 8
+        "losses": 7,
+        "matches": 9
       },
       "19422": {
         "wins": 9,
@@ -315,8 +354,8 @@
       },
       "19696": {
         "wins": 3,
-        "losses": 5,
-        "matches": 8
+        "losses": 7,
+        "matches": 10
       },
       "19785": {
         "wins": 3,
@@ -325,71 +364,18 @@
       }
     }
   },
-  "TEAM VISION": {
-    "wins": 32,
-    "losses": 23,
-    "matches": 55,
-    "winrate": 58.2,
-    "weighted_winrate": 55.3,
+  "GamerLegion": {
+    "wins": 10,
+    "losses": 29,
+    "matches": 39,
+    "winrate": 25.6,
+    "weighted_winrate": 24.7,
     "by_league": {
       "19255": {
-        "wins": 7,
-        "losses": 0,
-        "matches": 7
-      },
-      "19422": {
-        "wins": 9,
-        "losses": 6,
-        "matches": 15
-      },
-      "19435": {
-        "wins": 1,
-        "losses": 4,
+        "wins": 2,
+        "losses": 3,
         "matches": 5
       },
-      "19543": {
-        "wins": 2,
-        "losses": 6,
-        "matches": 8
-      },
-      "19696": {
-        "wins": 13,
-        "losses": 7,
-        "matches": 20
-      }
-    }
-  },
-  "Nigma Galaxy": {
-    "wins": 8,
-    "losses": 16,
-    "matches": 24,
-    "winrate": 33.3,
-    "weighted_winrate": 29.4,
-    "by_league": {
-      "19255": {
-        "wins": 6,
-        "losses": 8,
-        "matches": 14
-      },
-      "19422": {
-        "wins": 2,
-        "losses": 8,
-        "matches": 10
-      }
-    }
-  },
-  "GamerLegion": {
-    "wins": 9,
-    "losses": 30,
-    "matches": 39,
-    "winrate": 23.1,
-    "weighted_winrate": 21.4,
-    "by_league": {
-      "19255": {
-        "wins": 3,
-        "losses": 5,
-        "matches": 8
-      },
       "19422": {
         "wins": 2,
         "losses": 5,
@@ -401,9 +387,9 @@
         "matches": 7
       },
       "19696": {
-        "wins": 1,
-        "losses": 10,
-        "matches": 11
+        "wins": 3,
+        "losses": 11,
+        "matches": 14
       },
       "19785": {
         "wins": 0,
@@ -412,12 +398,46 @@
       }
     }
   },
+  "Nigma Galaxy": {
+    "wins": 17,
+    "losses": 35,
+    "matches": 52,
+    "winrate": 32.7,
+    "weighted_winrate": 32.7,
+    "by_league": {
+      "19422": {
+        "wins": 2,
+        "losses": 8,
+        "matches": 10
+      },
+      "19543": {
+        "wins": 0,
+        "losses": 2,
+        "matches": 2
+      },
+      "19696": {
+        "wins": 7,
+        "losses": 14,
+        "matches": 21
+      },
+      "19785": {
+        "wins": 8,
+        "losses": 8,
+        "matches": 16
+      },
+      "20009": {
+        "wins": 0,
+        "losses": 3,
+        "matches": 3
+      }
+    }
+  },
   "Vici Gaming": {
-    "wins": 22,
-    "losses": 34,
-    "matches": 56,
-    "winrate": 39.3,
-    "weighted_winrate": 37.2,
+    "wins": 23,
+    "losses": 38,
+    "matches": 61,
+    "winrate": 37.7,
+    "weighted_winrate": 35.6,
     "by_league": {
       "19435": {
         "wins": 6,
@@ -436,13 +456,18 @@
       },
       "19696": {
         "wins": 5,
-        "losses": 10,
-        "matches": 15
+        "losses": 12,
+        "matches": 17
       },
       "19785": {
         "wins": 4,
-        "losses": 7,
-        "matches": 11
+        "losses": 9,
+        "matches": 13
+      },
+      "20009": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
       }
     }
   },
@@ -461,30 +486,35 @@
     }
   },
   "1win Team": {
-    "wins": 4,
+    "wins": 8,
     "losses": 5,
-    "matches": 9,
-    "winrate": 44.4,
-    "weighted_winrate": 44.4,
+    "matches": 13,
+    "winrate": 61.5,
+    "weighted_winrate": 61.5,
     "by_league": {
       "19785": {
-        "wins": 4,
+        "wins": 6,
         "losses": 5,
-        "matches": 9
+        "matches": 11
+      },
+      "20009": {
+        "wins": 2,
+        "losses": 0,
+        "matches": 2
       }
     }
   },
   "HULIGANI": {
     "wins": 0,
-    "losses": 4,
-    "matches": 4,
+    "losses": 6,
+    "matches": 6,
     "winrate": 0.0,
     "weighted_winrate": 0.0,
     "by_league": {
       "19785": {
         "wins": 0,
-        "losses": 4,
-        "matches": 4
+        "losses": 6,
+        "matches": 6
       }
     }
   }
