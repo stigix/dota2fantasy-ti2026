@@ -136,11 +136,11 @@
     }
   },
   "Team Falcons": {
-    "wins": 65,
+    "wins": 66,
     "losses": 39,
-    "matches": 104,
-    "winrate": 62.5,
-    "weighted_winrate": 62.5,
+    "matches": 105,
+    "winrate": 62.9,
+    "weighted_winrate": 62.9,
     "by_league": {
       "19101": {
         "wins": 10,
@@ -173,18 +173,18 @@
         "matches": 12
       },
       "20009": {
-        "wins": 1,
+        "wins": 2,
         "losses": 0,
-        "matches": 1
+        "matches": 2
       }
     }
   },
   "Team Liquid": {
-    "wins": 60,
+    "wins": 61,
     "losses": 49,
-    "matches": 109,
-    "winrate": 55.0,
-    "weighted_winrate": 55.2,
+    "matches": 110,
+    "winrate": 55.5,
+    "weighted_winrate": 55.7,
     "by_league": {
       "19101": {
         "wins": 6,
@@ -215,6 +215,11 @@
         "wins": 9,
         "losses": 7,
         "matches": 16
+      },
+      "20009": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
       }
     }
   },
@@ -464,10 +469,10 @@
   },
   "Vici Gaming": {
     "wins": 41,
-    "losses": 45,
-    "matches": 86,
-    "winrate": 47.7,
-    "weighted_winrate": 45.0,
+    "losses": 46,
+    "matches": 87,
+    "winrate": 47.1,
+    "weighted_winrate": 44.4,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -496,8 +501,8 @@
       },
       "20009": {
         "wins": 2,
-        "losses": 1,
-        "matches": 3
+        "losses": 2,
+        "matches": 4
       }
     }
   },
