@@ -58,11 +58,11 @@
     }
   },
   "BoomBoys": {
-    "wins": 74,
+    "wins": 76,
     "losses": 45,
-    "matches": 119,
-    "winrate": 62.2,
-    "weighted_winrate": 62.2,
+    "matches": 121,
+    "winrate": 62.8,
+    "weighted_winrate": 62.8,
     "by_league": {
       "19101": {
         "wins": 12,
@@ -93,6 +93,11 @@
         "wins": 15,
         "losses": 5,
         "matches": 20
+      },
+      "20009": {
+        "wins": 2,
+        "losses": 0,
+        "matches": 2
       }
     }
   },
@@ -468,11 +473,11 @@
     }
   },
   "Vici Gaming": {
-    "wins": 41,
+    "wins": 42,
     "losses": 46,
-    "matches": 87,
-    "winrate": 47.1,
-    "weighted_winrate": 44.4,
+    "matches": 88,
+    "winrate": 47.7,
+    "weighted_winrate": 45.2,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -500,9 +505,9 @@
         "matches": 19
       },
       "20009": {
-        "wins": 2,
+        "wins": 3,
         "losses": 2,
-        "matches": 4
+        "matches": 5
       }
     }
   },
@@ -522,10 +527,10 @@
   },
   "1win Team": {
     "wins": 10,
-    "losses": 5,
-    "matches": 15,
-    "winrate": 66.7,
-    "weighted_winrate": 66.7,
+    "losses": 6,
+    "matches": 16,
+    "winrate": 62.5,
+    "weighted_winrate": 62.5,
     "by_league": {
       "19785": {
         "wins": 8,
@@ -534,8 +539,8 @@
       },
       "20009": {
         "wins": 2,
-        "losses": 0,
-        "matches": 2
+        "losses": 1,
+        "matches": 3
       }
     }
   },
