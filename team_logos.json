@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T16:17:30.123743+00:00",
+  "updated_at": "2026-07-31T22:28:10.274280+00:00",
   "source": "Latest matching OpenDota match + Liquipedia aliases for TI 2026 tags",
   "teams": {
     "1win Team": {
@@ -13,8 +13,8 @@
         "1win team"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/10678669599334676082/E48827F4A163D4D02F817EA3C32166D5F1D5FC98/",
-      "source_match_id": 8920668670,
-      "source_match_start_time": "2026-07-30T10:36:44+00:00"
+      "source_match_id": 8922569208,
+      "source_match_start_time": "2026-07-31T14:50:50+00:00"
     },
     "Aurora Gaming": {
       "team_id": 9467224,
@@ -25,8 +25,8 @@
         "AR"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/13052583756685508/22B0338D7E09FB2F021E5DB5BBEFFD170D5E5E1A/",
-      "source_match_id": 8891497910,
-      "source_match_start_time": "2026-07-11T13:37:09+00:00"
+      "source_match_id": 8897695379,
+      "source_match_start_time": "2026-07-15T12:27:54+00:00"
     },
     "BoomBoys": {
       "team_id": 8255888,
@@ -41,8 +41,8 @@
         "Bet Boom"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/9995426432403529725/51E13136D4CCC8C7D8062861541A1D13B8ED87E0/",
-      "source_match_id": 8891227605,
-      "source_match_start_time": "2026-07-11T10:40:00+00:00"
+      "source_match_id": 8922795717,
+      "source_match_start_time": "2026-07-31T17:15:33+00:00"
     },
     "GamerLegion": {
       "team_id": 9964962,
@@ -96,8 +96,8 @@
         "9895392"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/16959999218725724364/1D334B91A52606CA3E0027832D6F646E2A094391/",
-      "source_match_id": 8921021224,
-      "source_match_start_time": "2026-07-30T14:38:54+00:00"
+      "source_match_id": 8923000652,
+      "source_match_start_time": "2026-07-31T19:44:11+00:00"
     },
     "OG": {
       "team_id": 2586976,
@@ -110,8 +110,8 @@
       "source_match_start_time": "2026-07-12T13:43:00+00:00"
     },
     "TEAM VISION": {
-      "team_id": 9572001,
-      "api_name": "TEAM VISION",
+      "team_id": 9824702,
+      "api_name": "PVISION",
       "aliases": [
         "TEAM VISION",
         "Team Vision",
@@ -124,9 +124,9 @@
         "P Vision",
         "9824702"
       ],
-      "logo_url": "https://cdn.steamusercontent.com/ugc/10380389074903512947/5D074799695A862D17D4205285315FE20399B28D/",
-      "source_match_id": 8824218541,
-      "source_match_start_time": "2026-05-24T19:22:34+00:00"
+      "logo_url": "https://cdn.steamusercontent.com/ugc/11751543457229798134/1569CC553CB72963C8EC4C3F807EE50DA925BDC2/",
+      "source_match_id": 8904419709,
+      "source_match_start_time": "2026-07-19T17:49:01+00:00"
     },
     "Team Falcons": {
       "team_id": 9247354,
@@ -137,8 +137,8 @@
         "TFalcons"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/2314350571781870059/2B5C9FE9BA0A2DC303A13261444532AA08352843/",
-      "source_match_id": 8891240327,
-      "source_match_start_time": "2026-07-11T10:45:00+00:00"
+      "source_match_id": 8923000652,
+      "source_match_start_time": "2026-07-31T19:44:11+00:00"
     },
     "Team Liquid": {
       "team_id": 2163,
@@ -149,8 +149,8 @@
         "TL"
       ],
       "logo_url": "https://steamcdn-a.akamaihd.net/apps/dota2/images/team_logos/2163.png",
-      "source_match_id": 8891497910,
-      "source_match_start_time": "2026-07-11T13:37:09+00:00"
+      "source_match_id": 8922795717,
+      "source_match_start_time": "2026-07-31T17:15:33+00:00"
     },
     "Team Resilience": {
       "team_id": 5017210,
@@ -173,8 +173,8 @@
         "TS"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/1839179120711951766/CD7E0885CB527334205CC7885E9C101B7BC17702/",
-      "source_match_id": 8892914077,
-      "source_match_start_time": "2026-07-12T10:15:00+00:00"
+      "source_match_id": 8899120700,
+      "source_match_start_time": "2026-07-16T12:27:06+00:00"
     },
     "Team Yandex": {
       "team_id": 9823272,
@@ -186,8 +186,8 @@
         "TeamYandex"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/12970505637628494427/B04C3358F4E815ADFC2F8B1B8BE3AB0CE75C8881/",
-      "source_match_id": 8893165071,
-      "source_match_start_time": "2026-07-12T13:02:00+00:00"
+      "source_match_id": 8903789784,
+      "source_match_start_time": "2026-07-19T11:15:01+00:00"
     },
     "Vici Gaming": {
       "team_id": 726228,
@@ -198,8 +198,8 @@
         "Vici"
       ],
       "logo_url": "https://steamcdn-a.akamaihd.net/apps/dota2/images/team_logos/726228.png",
-      "source_match_id": 8921021224,
-      "source_match_start_time": "2026-07-30T14:38:54+00:00"
+      "source_match_id": 8922569208,
+      "source_match_start_time": "2026-07-31T14:50:50+00:00"
     },
     "Xtreme Gaming": {
       "team_id": 8261500,
@@ -210,8 +210,8 @@
         "Xtreme"
       ],
       "logo_url": "https://cdn.steamusercontent.com/ugc/2402194226059610590/E3CF4B6C4B2CFB974A9B415141E4A37317AD4D80/",
-      "source_match_id": 8891240327,
-      "source_match_start_time": "2026-07-11T10:45:00+00:00"
+      "source_match_id": 8896486914,
+      "source_match_start_time": "2026-07-14T14:56:01+00:00"
     }
   }
 }

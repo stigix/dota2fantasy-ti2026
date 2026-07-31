@@ -24,41 +24,39 @@ const COLOR_STATS = {
 }
 
 const SCORE_FACTORS = {
-  kills: 121,
-  deaths: 180,
+  kills: 107,
+  deaths: 195,
   creep_score: 3,
   gpm: 2,
-  madstone_collected: 57,
-  tower_kills: 340,
-  obs_placed: 113,
-  camps_stacked: 170,
-  runes_grabbed: 121,
-  watchers_taken: 90,
-  smokes_used: 283,
-  roshan_kills: 850,
-  teamfight_participation: 1895,
-  stuns: 15,
-  tormentor_kills: 850,
-  courier_kills: 850,
-  firstblood: 1700,
+  madstone_collected: 13,
+  tower_kills: 352,
+  obs_placed: 117,
+  camps_stacked: 234,
+  runes_grabbed: 141,
+  watchers_taken: 147,
+  lotuses_grabbed: 176,
+  roshan_kills: 1172,
+  teamfight_participation: 2124,
+  stuns: 10,
+  tormentor_kills: 879,
+  courier_kills: 703,
+  firstblood: 1934,
+  smokes_used: 293,
 }
 
-const TITLES = {
-  str: { percent: 13, en: ['Brawny', 'when playing a Strength hero'], ru: ['Крепкий', 'при игре на герое силы'] },
-  agi: { percent: 15, en: ['Dashing', 'when playing an Agility hero'], ru: ['Ловкий', 'при игре на герое ловкости'] },
-  int: { percent: 11, en: ['Canny', 'when playing an Intelligence hero'], ru: ['Смекалистый', 'при игре на герое интеллекта'] },
-  all: { percent: 15, en: ['Balanced', 'when playing a Universal hero'], ru: ['Сбалансированный', 'при игре на универсальном герое'] },
-  green: { percent: 18, en: ['Emerald', 'when playing a green hero'], ru: ['Изумрудный', 'при игре на зелёном герое'] },
-  blue: { percent: 19, en: ['Cerulean', 'when playing a blue hero'], ru: ['Лазурный', 'при игре на синем герое'] },
-  red: { percent: 13, en: ['Crimson', 'when playing a red hero'], ru: ['Багряный', 'при игре на красном герое'] },
-  undead: { percent: 13, en: ['Otherworldly', 'when playing an undead, demon, or spirit hero'], ru: ['Потусторонний', 'при игре на нежити, демоне или духе'] },
-  horns: { percent: 15, en: ['Bestial', 'when playing a horned or winged hero'], ru: ['Звериный', 'при игре на герое с рогами или крыльями'] },
-  bearded: { percent: 10, en: ['Hirsute', 'when playing a bearded or fuzzy hero'], ru: ['Мохнатый', 'при игре на бородатом или пушистом герое'] },
-  aquatic: { percent: 15, en: ['Elemental', 'when playing an aquatic, fiery, or icy hero'], ru: ['Стихийный', 'при игре на водном, огненном или ледяном герое'] },
-  first_pick: { percent: 15, en: ['Sacrificial', "when the player's hero is picked first"], ru: ['Жертвенный', 'если героя игрока выбрали первым'] },
-  last_pick: { percent: 15, en: ['Coveted', "when the player's hero is picked last"], ru: ['Желанный', 'если героя игрока выбрали последним'] },
-  games_with_arcana: { percent: 25, en: ['Glamorous', "when the player's hero has an Arcana equipped"], ru: ['Роскошный', 'если на герое игрока надета Arcana'] },
-  games_with_hero_master: { percent: 13, en: ['Virtuoso', 'when the hero has Master or Grandmaster tier'], ru: ['Виртуоз', 'если у героя уровень Master или Grandmaster'] },
+const TITLE_COUNT_LABELS = {
+  red: ['Crimson (red)', 'Багряный (красные)'],
+  blue: ['Cerulean (blue)', 'Лазурный (синие)'],
+  green: ['Emerald (green)', 'Изумрудный (зелёные)'],
+  purple: ['Royal (purple)', 'Королевский (фиолетовые)'],
+  golden: ['Golden (yellow/brown)', 'Золотой (жёлт./коричн.)'],
+  heroic: ['Heroic (cape/mask)', 'Героический (плащ/маска)'],
+  undead: ['Otherworldly', 'Потусторонний'],
+  aquatic: ['Elemental', 'Стихийный'],
+}
+
+const SUBTITLE_COUNT_LABELS = {
+  lost_games: ['Underdog (losses)', 'Аутсайдер (поражения)'],
 }
 
 const SUBTITLES = {
@@ -75,6 +73,30 @@ const SUBTITLES = {
   firstblood_before_10min: { percent: 13, global: true, en: ['Patient', 'if first blood happens after minute 10'], ru: ['Терпеливый', 'если первая кровь случилась после 10-й минуты'] },
   firstblood_before_horn: { percent: 7, global: true, en: ['Flayed Twins Acolyte', 'if first blood happens before the horn'], ru: ['Аколит Близнецов Живодёров', 'если первая кровь случилась до сигнала рога'] },
   'games<25min': { percent: 25, global: true, en: ['Decisive', 'in games shorter than 25 minutes'], ru: ['Решительный', 'в играх короче 25 минут'] },
+}
+
+// TI 2026 Fantasy — coach titles (на всю fantasy-команду)
+const COACH_PREFIXES = {
+  crimson: { percent: 6, en: ['Crimson', 'when playing a red hero'], ru: ['Багряный', 'при игре на красном герое'] },
+  cerulean: { percent: 11, en: ['Cerulean', 'when playing a blue hero'], ru: ['Лазурный', 'при игре на синем герое'] },
+  emerald: { percent: 6, en: ['Emerald', 'when playing a green hero'], ru: ['Изумрудный', 'при игре на зелёном герое'] },
+  royal: { percent: 10, en: ['Royal', 'when playing a purple hero'], ru: ['Королевский', 'при игре на фиолетовом герое'] },
+  golden: { percent: 8, en: ['Golden', 'when playing a yellow or brown hero'], ru: ['Золотой', 'при игре на жёлтом или коричневом герое'] },
+  elemental: { percent: 8, en: ['Elemental', 'when playing an Aquatic, Fiery, or Icy hero'], ru: ['Стихийный', 'при игре на водном, огненном или ледяном герое'] },
+  otherworldly: { percent: 7, en: ['Otherworldly', 'when playing an Undead, Demon, or Spirit hero'], ru: ['Потусторонний', 'при игре на нежити, демоне или духе'] },
+  heroic: { percent: 9, en: ['Heroic', 'when playing a Caped or Masked hero'], ru: ['Героический', 'при игре на герое с плащом или маской'] },
+}
+
+const COACH_SUFFIXES = {
+  tormented: { percent: 23, global: true, key: 'total_deaths_from_torm', en: ['the Tormented', 'if any player dies to a Tormentor'], ru: ['Истязаемый', 'если кто-то умирает от Терзателя'] },
+  flayed: { percent: 9, global: true, key: 'firstblood_before_horn', en: ['the Flayed Twins Acolyte', 'if any player gets first blood before the starting horn'], ru: ['Аколит Близнецов', 'если FB до горна'] },
+  patient: { percent: 23, global: true, key: 'firstblood_before_10min', en: ['the Patient', 'if first blood does not happen until after 10 minutes'], ru: ['Терпеливый', 'если FB после 10 минуты'] },
+  underdog: { percent: 6, playerKey: 'lost_games', en: ['the Underdog', 'in games where the player loses'], ru: ['Аутсайдер', 'когда игрок проигрывает'] },
+  decisive: { percent: 24, global: true, key: 'games<25min', en: ['the Decisive', 'in games that last less than 25 minutes'], ru: ['Решительный', 'в играх короче 25 минут'] },
+  // Clutch: один раз +16% на серию (Bo2/Bo3 last map) — не умножаем на частоту матчей
+  clutch: { percent: 16, flat: true, en: ['the Clutch', 'when playing the last possible match of a series'], ru: ['Клатч', 'на последней карте серии'] },
+  lucky: { percent: 21, global: true, key: 'lucky_matches', en: ['the Lucky', 'if the match time ends with an 8'], ru: ['Везучий', 'если время матча оканчивается на 8'] },
+  cruel: { percent: 13, flat: true, en: ['the Cruel', 'if a player is killed while in their own fountain'], ru: ['Жестокий', 'если убийство у своего фонтана'] },
 }
 
 const TEXT = {
@@ -245,35 +267,6 @@ const ROLE_GROUPS = {
   2: ['blue', 'green'],
 }
 
-const TITLE_COUNT_LABELS = {
-  str: ['Strength heroes played', 'Героев силы сыграно'],
-  agi: ['Agility heroes played', 'Героев ловкости сыграно'],
-  int: ['Intelligence heroes played', 'Героев интеллекта сыграно'],
-  all: ['Universal heroes played', 'Универсальных героев сыграно'],
-  green: ['Green heroes played', 'Зелёных героев сыграно'],
-  blue: ['Blue heroes played', 'Синих героев сыграно'],
-  red: ['Red heroes played', 'Красных героев сыграно'],
-  undead: ['Undead/demon/spirit heroes played', 'Нежить/демоны/духи сыграно'],
-  horns: ['Horned/winged heroes played', 'Героев с рогами/крыльями сыграно'],
-  bearded: ['Bearded/fuzzy heroes played', 'Бородатых/пушистых героев сыграно'],
-  aquatic: ['Aquatic/fiery/icy heroes played', 'Водных/огненных/ледяных героев сыграно'],
-  first_pick: ['First picked', 'Выбран первым'],
-  last_pick: ['Last picked', 'Выбран последним'],
-  games_with_arcana: ['Arcana equipped', 'Игр с Arcana'],
-  games_with_hero_master: ['Master/Grandmaster hero', 'Игр с Master/Grandmaster героем'],
-}
-
-const SUBTITLE_COUNT_LABELS = {
-  '0_kills': ['Games without kills', 'Игр без убийств'],
-  lowest_networth: ['Lowest net worth', 'Самый низкий net worth'],
-  bbs_before_30min: ['Buyback before minute 30', 'Выкуп до 30-й минуты'],
-  most_deaths: ['Most deaths', 'Больше всего смертей'],
-  '4+_active_items': ['4+ active items', '4+ активных предмета'],
-  most_assists: ['Most assists', 'Больше всего помощи'],
-  '9_slots': ['All 9 slots occupied', 'Заняты все 9 слотов'],
-  lost_games: ['Lost games', 'Проигранные игры'],
-  most_voice_lines: ['Most voice lines', 'Больше всего реплик'],
-}
 function App() {
   const [language, setLanguage] = useState(() => localStorage.getItem('d2f-language') || 'ru')
   const [dataMode, setDataMode] = useState(() => {
@@ -373,7 +366,7 @@ function App() {
 
   const statPoints = (info, color, statKey, multiplier = 1) => {
     const avg = statAverage(info, color, statKey)
-    if (statKey === 'deaths') return Math.max(0, 1800 - avg * SCORE_FACTORS.deaths) * multiplier
+    if (statKey === 'deaths') return Math.max(0, 1950 - avg * SCORE_FACTORS.deaths) * multiplier
     return avg * Number(SCORE_FACTORS[statKey] || 1) * multiplier
   }
 
@@ -395,35 +388,6 @@ function App() {
     return result
   }
 
-  const titleBonus = (info, titleKey) => {
-    if (!titleKey) return 0
-    const title = TITLES[titleKey]
-    const parts = selectedLeagueRecords(info).map(([, record, weight]) => {
-      const matches = recordMatchCount(record)
-      return { value: matches ? (Number(record.titles?.[titleKey] || 0) * title.percent) / matches : 0, weight: matches * weight }
-    }).filter((part) => part.weight > 0)
-    return weightedAverageParts(parts)
-  }
-
-  const subtitleBonus = (info, subtitleKey) => {
-    if (!subtitleKey) return 0
-    const subtitle = SUBTITLES[subtitleKey]
-    const parts = effectiveLeagueIds.map((leagueId) => {
-      const league = leagues[leagueId] || {}
-      const freshnessWeight = leagueWeightForPlayer(info, leagueId)
-      if (subtitle.global) {
-        const totalMatches = Number(league.total_matches_parsed || 0)
-        const occurrences = Number(league[subtitleKey] || 0)
-        return totalMatches ? { value: (occurrences * subtitle.percent) / totalMatches, weight: totalMatches * freshnessWeight } : null
-      }
-
-      const record = info?.[leagueId]
-      if (!record?.stats) return null
-      const matches = recordMatchCount(record)
-      return matches ? { value: (Number(record.subtitles?.[subtitleKey] || 0) * subtitle.percent) / matches, weight: matches * freshnessWeight } : null
-    }).filter(Boolean)
-    return weightedAverageParts(parts)
-  }
 
   const scoreForPlayer = (info) => {
     const role = Number(info.general.pos)
@@ -436,14 +400,71 @@ function App() {
       return total + statPoints(info, color, statKey, multiplier)
     }, 0)
 
-    const bonus = titleBonus(info, selectedTitles[role]) + subtitleBonus(info, selectedSubtitles[role])
+const prefixKey = selectedTitles[role]
+const suffixKey = selectedSubtitles[role]
+let bonus = 0
+if (prefixKey && COACH_PREFIXES[prefixKey]) {
+  // приближение: берём % prefix как есть (реальный дроп героя неизвестен до драфта)
+  bonus += COACH_PREFIXES[prefixKey].percent
+}
+if (suffixKey && COACH_SUFFIXES[suffixKey]) {
+  const meta = COACH_SUFFIXES[suffixKey]
+  if (meta.flat) {
+    bonus += meta.percent
+  } else if (meta.playerKey) {
+    const lost = Number(aggregateCounts(info, 'subtitles')[meta.playerKey] || 0)
+    const total = matchCount(info) || 1
+    bonus += (lost / total) * meta.percent
+  } else if (meta.global && meta.key) {
+    const parts = effectiveLeagueIds.map((leagueId) => {
+      const league = leagues[leagueId] || {}
+      const total = Number(league.total_matches_parsed || 0)
+      const hit = Number(league[meta.key] || 0)
+      const w = leagueWeightForPlayer(info, leagueId)
+      return total ? { value: (hit * meta.percent) / total, weight: total * w } : null
+    }).filter(Boolean)
+    bonus += weightedAverageParts(parts)
+  } else {
+    bonus += meta.percent
+  }
+}
     return statScore * (1 + bonus / 100)
   }
 
-  const rankedPlayersForRole = (role) => players
-    .filter(([, info]) => Number(info.general.pos) === role)
-    .map(([name, info]) => ({ name, info, score: scoreForPlayer(info) }))
-    .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+  const rankedPlayersForRole = (role) => {
+    // Mid — соло; Core/Support — пары одной команды
+    if (role === 1) {
+      return players
+        .filter(([, info]) => Number(info.general.pos) === role)
+        .map(([name, info]) => ({ name, info, score: scoreForPlayer(info) }))
+        .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+    }
+
+    const byTeam = {}
+    players.forEach(([name, info]) => {
+      if (Number(info.general.pos) !== role) return
+      const team = info.general.team_name || '—'
+      if (!byTeam[team]) byTeam[team] = []
+      byTeam[team].push([name, info])
+    })
+
+    return Object.entries(byTeam)
+      .filter(([, list]) => list.length >= 2)
+      .map(([team, list]) => {
+        const scored = list
+          .map(([name, info]) => ({ name, info, score: scoreForPlayer(info) }))
+          .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+        const a = scored[0]
+        const b = scored[1]
+        return {
+          name: `${a.name} & ${b.name}`,
+          info: a.info,
+          score: (a.score + b.score) / 2,
+          team,
+        }
+      })
+      .sort((a, b) => b.score - a.score || a.name.localeCompare(b.name))
+  }
 
   const setSlotCount = (role, nextCount) => {
     const bounded = Math.max(3, Math.min(5, nextCount))
@@ -472,6 +493,7 @@ function App() {
       if (sortBy === 'deaths') return valueA - valueB || nameA.localeCompare(nameB)
       return valueB - valueA || nameA.localeCompare(nameB)
     })
+
 
   const bestSetupForPlayer = (name, info, role) => {
     const slotColors = ROLE_COLORS[role].slice(0, visibleSlots[role])
@@ -502,16 +524,67 @@ function App() {
 
     searchStats(0, new Set(), 0, [])
 
-    const bestTitle = Object.keys(TITLES)
-      .map((key) => ({ key, bonus: titleBonus(info, key) }))
+    const bestCoachSuffix = Object.entries(COACH_SUFFIXES)
+      .map(([key, meta]) => {
+        // Clutch / Cruel: фиксированный бонус один раз
+        if (meta.flat) return { key, bonus: meta.percent }
+
+        // Underdog: доля поражений игрока
+        if (meta.playerKey) {
+          const lost = Number(aggregateCounts(info, 'subtitles')[meta.playerKey] || 0)
+          const total = matchCount(info) || 1
+          return { key, bonus: (lost / total) * meta.percent }
+        }
+
+        // Global (Tormented / Patient / Lucky / …): частота по лигам
+        if (!meta.global || !meta.key) return { key, bonus: 0 }
+        const parts = effectiveLeagueIds.map((leagueId) => {
+          const league = leagues[leagueId] || {}
+          const total = Number(league.total_matches_parsed || 0)
+          const hit = Number(league[meta.key] || 0)
+          const w = leagueWeightForPlayer(info, leagueId)
+          return total ? { value: (hit * meta.percent) / total, weight: total * w } : null
+        }).filter(Boolean)
+        return { key, bonus: weightedAverageParts(parts) }
+      })
       .sort((a, b) => b.bonus - a.bonus)[0] || { key: null, bonus: 0 }
 
-    const bestSubtitle = Object.keys(SUBTITLES)
-      .map((key) => ({ key, bonus: subtitleBonus(info, key) }))
+    const PREFIX_MAP = {
+      red: 'crimson',
+      blue: 'cerulean',
+      green: 'emerald',
+      purple: 'royal',
+      golden: 'golden',
+      undead: 'otherworldly',
+      aquatic: 'elemental',
+      heroic: 'heroic',
+    }
+
+    const titleCounts = aggregateCounts(info, 'titles')
+    const games = matchCount(info) || 1
+
+    const bestCoachPrefix = Object.entries(PREFIX_MAP)
+      .map(([oldKey, coachKey]) => {
+        const rate = Number(titleCounts[oldKey] || 0) / games
+        const pct = COACH_PREFIXES[coachKey]?.percent || 0
+        return { key: coachKey, bonus: rate * pct }
+      })
       .sort((a, b) => b.bonus - a.bonus)[0] || { key: null, bonus: 0 }
 
-    const score = Math.max(0, bestStatScore) * (1 + (bestTitle.bonus + bestSubtitle.bonus) / 100)
-    return { name, info, stats: bestStats, title: bestTitle.key, subtitle: bestSubtitle.key, score, matches: matchCount(info) }
+    const coachBonus = (bestCoachPrefix.bonus || 0) + (bestCoachSuffix.bonus || 0)
+    const score = Math.max(0, bestStatScore) * (1 + coachBonus / 100)
+
+    return {
+      name,
+      info,
+      stats: bestStats,
+      title: null,
+      subtitle: null,
+      coachPrefix: bestCoachPrefix.key,
+      coachSuffix: bestCoachSuffix.key,
+      score,
+      matches: matchCount(info),
+    }
   }
 
   const recommendationsForRole = (role) => players
@@ -519,6 +592,42 @@ function App() {
     .map(([name, info]) => bestSetupForPlayer(name, info, role))
     .sort((a, b) => b.score - a.score || b.matches - a.matches)
     .slice(0, 5)
+  const recommendationsForDuo = (rolePos) => {
+    // rolePos 0 = Core (carry+off), 2 = Support (4+5)
+    const byTeam = {}
+    players.forEach(([name, info]) => {
+      if (Number(info.general.pos) !== rolePos) return
+      if (matchCount(info) === 0) return
+      const team = info.general.team_name || '—'
+      if (!byTeam[team]) byTeam[team] = []
+      byTeam[team].push([name, info])
+    })
+
+    return Object.entries(byTeam)
+      .filter(([, list]) => list.length >= 2)
+      .map(([team, list]) => {
+        const scored = list
+          .map(([name, info]) => bestSetupForPlayer(name, info, rolePos))
+          .sort((a, b) => b.score - a.score || b.matches - a.matches)
+        const a = scored[0]
+        const b = scored[1]
+        return {
+          team,
+          name: `${a.name} & ${b.name}`,
+          players: [a, b],
+          info: a.info,
+          stats: a.stats,
+          title: a.title,
+          subtitle: a.subtitle,
+          score: (a.score + b.score) / 2,
+          matches: Math.min(a.matches, b.matches),
+          coachPrefix: a.coachPrefix,
+          coachSuffix: a.coachSuffix,
+        }
+      })
+      .sort((x, y) => y.score - x.score || y.matches - x.matches)
+      .slice(0, 5)
+  }
 
   const applyRecommendation = (role, recommendation) => {
     const baseIndex = role * 5
@@ -600,8 +709,8 @@ function App() {
         <div>
           <h4 className="mb-1 font-black">{t.titlesBlock}:</h4>
           <div className="space-y-0.5 text-sm text-zinc-200">
-            {Object.entries(titles).filter(([, value]) => value > 0).map(([key, value]) => (
-              <div key={key}>{TITLE_COUNT_LABELS[key]?.[languageIndex] || key}: {value}</div>
+            {Object.entries(titles).filter(([key, value]) => value > 0 && TITLE_COUNT_LABELS[key]).map(([key, value]) => (
+              <div key={key}>{TITLE_COUNT_LABELS[key][languageIndex]}: {value}</div>
             ))}
             {Object.values(titles).every((value) => !value) && <span className="text-zinc-600">—</span>}
           </div>
@@ -610,8 +719,8 @@ function App() {
         <div>
           <h4 className="mb-1 font-black">{t.subtitlesBlock}:</h4>
           <div className="space-y-0.5 text-sm text-zinc-200">
-            {Object.entries(subtitles).filter(([, value]) => value > 0).map(([key, value]) => (
-              <div key={key}>{SUBTITLE_COUNT_LABELS[key]?.[languageIndex] || key}: {value}</div>
+            {Object.entries(subtitles).filter(([key, value]) => value > 0 && SUBTITLE_COUNT_LABELS[key]).map(([key, value]) => (
+              <div key={key}>{SUBTITLE_COUNT_LABELS[key][languageIndex]}: {value}</div>
             ))}
             {Object.values(subtitles).every((value) => !value) && <span className="text-zinc-600">—</span>}
           </div>
@@ -803,17 +912,17 @@ function App() {
 
                       <div className="mt-5 grid gap-3">
                         <label>
-                          <span className="mb-1.5 block text-xs font-black uppercase tracking-wider text-zinc-500">{t.title}</span>
-                          <select value={selectedTitles[role] || ''} onChange={(event) => updateArray(setSelectedTitles, role, event.target.value || null)} className="w-full rounded-lg border border-white/10 bg-zinc-950 px-3 py-2.5 text-sm outline-none focus:border-violet-500">
+                          <span className="mb-1.5 block text-xs font-black uppercase tracking-wider text-zinc-500">Coach prefix</span>
+                          <select value={selectedTitles[role] || ''} onChange={(event) => updateArray(setSelectedTitles, role, event.target.value || null)} className="w-full rounded-lg border border-white/10 bg-zinc-950 px-3 py-2.5 text-sm outline none focus:border-violet-500">
                             <option value="">{t.noSelection}</option>
-                            {Object.entries(TITLES).map(([key, value]) => <option key={key} value={key}>{value[language][0]} (+{value.percent}%) — {value[language][1]}</option>)}
+                            {Object.entries(COACH_PREFIXES).map(([key, value]) => <option key={key} value={key}>{value[language][0]} (+{value.percent}%) — {value[language][1]}</option>)}
                           </select>
                         </label>
                         <label>
-                          <span className="mb-1.5 block text-xs font-black uppercase tracking-wider text-zinc-500">{t.subtitle}</span>
+                          <span className="mb-1.5 block text-xs font-black uppercase tracking-wider text-zinc-500">Coach suffix</span>
                           <select value={selectedSubtitles[role] || ''} onChange={(event) => updateArray(setSelectedSubtitles, role, event.target.value || null)} className="w-full rounded-lg border border-white/10 bg-zinc-950 px-3 py-2.5 text-sm outline-none focus:border-violet-500">
                             <option value="">{t.noSelection}</option>
-                            {Object.entries(SUBTITLES).map(([key, value]) => <option key={key} value={key}>{value[language][0]} (+{value.percent}%) — {value[language][1]}</option>)}
+                            {Object.entries(COACH_SUFFIXES).map(([key, value]) => <option key={key} value={key}>{value[language][0]} (+{value.percent}%) — {value[language][1]}</option>)}
                           </select>
                         </label>
                       </div>
@@ -940,7 +1049,9 @@ function App() {
 
             <div className="grid items-start gap-6 xl:grid-cols-3">
               {[0, 1, 2].map((role) => {
-                const recommendations = recommendationsForRole(role)
+                const recommendations = role === 1
+                  ? recommendationsForRole(1)
+                  : recommendationsForDuo(role)
                 const top = recommendations[0]
                 return (
                   <article key={role} className="overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/75 shadow-2xl shadow-black/30">
@@ -958,7 +1069,7 @@ function App() {
                           <div className="mt-2 flex items-start justify-between gap-3">
                             <div>
                               <h4 className="text-3xl font-black text-white">{top.name}</h4>
-                              <p className="mt-1 text-sm text-zinc-500">{top.info.general.team_name || '—'} · {top.matches} {t.matches}</p>
+                              <p className="mt-1 text-sm text-zinc-500">{(top.team || top.info?.general?.team_name || '—')} · {top.matches} · {t.matches}{top.players ? ` · ${t.roleTabs[role]} duo` : ''}</p>
                             </div>
                             <div className="text-right">
                               <p className="text-xs text-zinc-500">{t.projectedScore}</p>
@@ -981,8 +1092,8 @@ function App() {
                               })}
                             </div>
                             <div className="mt-4 border-t border-white/10 pt-3 text-sm text-zinc-300">
-                              <p><strong>{t.title}:</strong> {TITLES[top.title]?.[language]?.[0] || '—'}</p>
-                              <p className="mt-1"><strong>{t.subtitle}:</strong> {SUBTITLES[top.subtitle]?.[language]?.[0] || '—'}</p>
+                              <p><strong>Coach prefix:</strong> {COACH_PREFIXES[top.coachPrefix]?.[language]?.[0] || '—'}</p>
+                              <p className="mt-1"><strong>Coach suffix:</strong> {COACH_SUFFIXES[top.coachSuffix]?.[language]?.[0] || '—'}</p>
                             </div>
                           </div>
 

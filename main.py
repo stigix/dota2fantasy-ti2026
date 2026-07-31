@@ -33,6 +33,9 @@ TITLE_KEYS = (
     "green",
     "blue",
     "red",
+    "purple",
+    "golden",
+    "heroic",
     "undead",
     "horns",
     "bearded",
@@ -284,6 +287,7 @@ def new_league_payload(event: dict[str, Any]) -> dict[str, Any]:
         "games<25min": 0,
         "total_matches_parsed": 0,
         "processed_match_ids": [],
+        "lucky_matches": 0,
     }
 
 
@@ -533,6 +537,7 @@ def reset_selected_leagues(
         league["games<25min"] = 0
         league["total_matches_parsed"] = 0
         league["processed_match_ids"] = []
+        league["lucky_matches"] = 0
 
 
 def pick_first_and_last(match: dict[str, Any]) -> tuple[dict[int, int], int | None]:
@@ -582,6 +587,7 @@ def add_title_stats(
         "green": "isgreen",
         "blue": "isblue",
         "red": "isred",
+        "purple": "ispurple",
         "undead": "isundead",
         "horns": "ishorns",
         "bearded": "isbearded",
@@ -590,6 +596,11 @@ def add_title_stats(
     for title_key, hero_key in flags.items():
         if hero.get(hero_key):
             titles[title_key] += 1
+
+    if hero.get("isyellow") or hero.get("isbrown"):
+        titles["golden"] += 1
+    if hero.get("iscaped") or hero.get("ismasked"):
+        titles["heroic"] += 1
 
 
 def add_player_stats(
@@ -741,6 +752,7 @@ def process_match(
         "firstblood_after_10": firstblood_time is not None and firstblood_time > 600,
         "firstblood_before_horn": firstblood_time is not None and firstblood_time < 0,
         "under_25": 0 < float(match.get("duration") or 0) < 1500,
+        "lucky": int(match.get("duration") or 0) % 10 == 8,
     }
 
 
@@ -869,6 +881,8 @@ def main() -> None:
                     league["firstblood_before_horn"] += 1
                 if flags["under_25"]:
                     league["games<25min"] += 1
+                if flags.get("lucky"):
+                    league["lucky_matches"] = int(league.get("lucky_matches") or 0) + 1
 
                 processed.add(match_id)
                 league["total_matches_parsed"] = len(processed)

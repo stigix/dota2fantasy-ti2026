@@ -136,7 +136,8 @@
       8730561637,
       8730713168,
       8730786393
-    ]
+    ],
+    "lucky_matches": 15
   },
   "19422": {
     "name": "ESL One Birmingham 2026",
@@ -293,7 +294,8 @@
       8749401157,
       8749533801,
       8749655300
-    ]
+    ],
+    "lucky_matches": 14
   },
   "19543": {
     "name": "PGL Wallachia Season 8",
@@ -427,7 +429,8 @@
       8787054928,
       8787185127,
       8787299097
-    ]
+    ],
+    "lucky_matches": 10
   },
   "19696": {
     "name": "DreamLeague Season 29",
@@ -627,7 +630,8 @@
       8824011004,
       8824123966,
       8824218541
-    ]
+    ],
+    "lucky_matches": 15
   },
   "19101": {
     "name": "BLAST Slam VII",
@@ -744,7 +748,8 @@
       8842596730,
       8842722527,
       8842845018
-    ]
+    ],
+    "lucky_matches": 11
   },
   "19785": {
     "name": "Esports World Cup 2026",
@@ -916,7 +921,8 @@
       8904157676,
       8904322271,
       8904419709
-    ]
+    ],
+    "lucky_matches": 11
   },
   "19255": {
     "name": "PREMIER SERIES",
@@ -1101,7 +1107,8 @@
       8767039368,
       8767122402,
       8767261875
-    ]
+    ],
+    "lucky_matches": 16
   },
   "19656": {
     "name": "1win Essence I",
@@ -1208,7 +1215,8 @@
       8807061841,
       8807150359,
       8807232081
-    ]
+    ],
+    "lucky_matches": 9
   },
   "19575": {
     "name": "ESL Challenger China Season 3 x ACL 2026",
@@ -1274,7 +1282,8 @@
       8796321705,
       8796420980,
       8796537475
-    ]
+    ],
+    "lucky_matches": 8
   },
   "19719": {
     "name": "The International 2026",
@@ -1290,6 +1299,7 @@
     "firstblood_before_horn": 0,
     "games<25min": 0,
     "total_matches_parsed": 0,
+<<<<<<< HEAD
     "processed_match_ids": []
   },
   "19951": {
@@ -1310,6 +1320,10 @@
     "games<25min": 0,
     "total_matches_parsed": 0,
     "processed_match_ids": []
+=======
+    "processed_match_ids": [],
+    "lucky_matches": 0
+>>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
   },
   "20009": {
     "name": "1win Essence II",
@@ -1323,7 +1337,7 @@
     "fantasy_weight": 1.0,
     "coverage_threshold_maps": 20,
     "minimum_weight_factor": 0.25,
-    "total_deaths_from_torm": 1,
+    "total_deaths_from_torm": 0,
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 1,
@@ -1347,6 +1361,31 @@
       8922795717,
       8922914090,
       8923000652
+<<<<<<< HEAD
     ]
+=======
+    ],
+    "lucky_matches": 4
+  },
+  "19951": {
+    "name": "Games of the Future 2026",
+    "short_name": "Games of the Future 2026",
+    "link": "https://liquipedia.net/dota2/Games_of_the_Future/2026",
+    "start_date": "2026-07-31",
+    "end_date": "2026-08-05",
+    "status": "ongoing",
+    "tier": 2,
+    "catalog_key": "games_of_the_future_2026",
+    "fantasy_weight": 0.45,
+    "coverage_threshold_maps": 20,
+    "minimum_weight_factor": 0.25,
+    "total_deaths_from_torm": 0,
+    "firstblood_before_10min": 0,
+    "firstblood_before_horn": 0,
+    "games<25min": 0,
+    "total_matches_parsed": 0,
+    "processed_match_ids": [],
+    "lucky_matches": 0
+>>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
   }
 }

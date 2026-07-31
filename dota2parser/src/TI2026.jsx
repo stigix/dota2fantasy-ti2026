@@ -11,23 +11,23 @@ const getTeamLogo = (teamName, fallback = '') => (
 )
 
 const SCORE_FACTORS = {
-  kills: 121,
-  deaths: 180,
+  kills: 107,
+  deaths: 195,
   creep_score: 3,
   gpm: 2,
-  madstone_collected: 57,
-  tower_kills: 340,
-  obs_placed: 113,
-  camps_stacked: 170,
-  runes_grabbed: 121,
-  watchers_taken: 90,
-  smokes_used: 283,
-  roshan_kills: 850,
-  teamfight_participation: 1895,
-  stuns: 15,
-  tormentor_kills: 850,
-  courier_kills: 850,
-  firstblood: 1700,
+  madstone_collected: 13,
+  tower_kills: 352,
+  obs_placed: 117,
+  camps_stacked: 234,
+  runes_grabbed: 141,
+  watchers_taken: 147,
+  smokes_used: 293,
+  roshan_kills: 1172,
+  teamfight_participation: 2124,
+  stuns: 10,
+  tormentor_kills: 879,
+  courier_kills: 703,
+  firstblood: 1934,
 }
 
 const ROLE_FORM_STATS = {
@@ -263,7 +263,7 @@ function formatDateTime(value, language) {
 }
 
 function scoreForStat(statKey, value) {
-  if (statKey === 'deaths') return Math.max(0, 1800 - Number(value || 0) * SCORE_FACTORS.deaths)
+  if (statKey === 'deaths') return Math.max(0, 1950 - Number(value || 0) * SCORE_FACTORS.deaths)
   return Number(value || 0) * Number(SCORE_FACTORS[statKey] || 1)
 }
 
