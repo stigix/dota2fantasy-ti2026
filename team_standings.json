@@ -59,10 +59,10 @@
   },
   "BoomBoys": {
     "wins": 76,
-    "losses": 46,
-    "matches": 122,
-    "winrate": 62.3,
-    "weighted_winrate": 62.3,
+    "losses": 47,
+    "matches": 123,
+    "winrate": 61.8,
+    "weighted_winrate": 61.8,
     "by_league": {
       "19101": {
         "wins": 12,
@@ -96,8 +96,8 @@
       },
       "20009": {
         "wins": 2,
-        "losses": 1,
-        "matches": 3
+        "losses": 2,
+        "matches": 4
       }
     }
   },
@@ -141,11 +141,11 @@
     }
   },
   "Team Falcons": {
-    "wins": 66,
+    "wins": 67,
     "losses": 39,
-    "matches": 105,
-    "winrate": 62.9,
-    "weighted_winrate": 62.9,
+    "matches": 106,
+    "winrate": 63.2,
+    "weighted_winrate": 63.2,
     "by_league": {
       "19101": {
         "wins": 10,
@@ -178,18 +178,18 @@
         "matches": 12
       },
       "20009": {
-        "wins": 2,
+        "wins": 3,
         "losses": 0,
-        "matches": 2
+        "matches": 3
       }
     }
   },
   "Team Liquid": {
-    "wins": 62,
+    "wins": 63,
     "losses": 50,
-    "matches": 112,
-    "winrate": 55.4,
-    "weighted_winrate": 55.6,
+    "matches": 113,
+    "winrate": 55.8,
+    "weighted_winrate": 56.0,
     "by_league": {
       "19101": {
         "wins": 6,
@@ -222,9 +222,9 @@
         "matches": 16
       },
       "20009": {
-        "wins": 2,
+        "wins": 3,
         "losses": 1,
-        "matches": 3
+        "matches": 4
       }
     }
   },
@@ -430,10 +430,10 @@
   },
   "Nigma Galaxy": {
     "wins": 45,
-    "losses": 59,
-    "matches": 104,
-    "winrate": 43.3,
-    "weighted_winrate": 42.0,
+    "losses": 60,
+    "matches": 105,
+    "winrate": 42.9,
+    "weighted_winrate": 41.5,
     "by_league": {
       "19255": {
         "wins": 5,
@@ -467,8 +467,8 @@
       },
       "20009": {
         "wins": 0,
-        "losses": 4,
-        "matches": 4
+        "losses": 5,
+        "matches": 5
       }
     }
   },
