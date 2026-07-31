@@ -141,11 +141,11 @@
     }
   },
   "Team Falcons": {
-    "wins": 67,
+    "wins": 68,
     "losses": 39,
-    "matches": 106,
-    "winrate": 63.2,
-    "weighted_winrate": 63.2,
+    "matches": 107,
+    "winrate": 63.6,
+    "weighted_winrate": 63.6,
     "by_league": {
       "19101": {
         "wins": 10,
@@ -178,9 +178,9 @@
         "matches": 12
       },
       "20009": {
-        "wins": 3,
+        "wins": 4,
         "losses": 0,
-        "matches": 3
+        "matches": 4
       }
     }
   },
@@ -430,10 +430,10 @@
   },
   "Nigma Galaxy": {
     "wins": 45,
-    "losses": 60,
-    "matches": 105,
-    "winrate": 42.9,
-    "weighted_winrate": 41.5,
+    "losses": 61,
+    "matches": 106,
+    "winrate": 42.5,
+    "weighted_winrate": 41.1,
     "by_league": {
       "19255": {
         "wins": 5,
@@ -467,8 +467,8 @@
       },
       "20009": {
         "wins": 0,
-        "losses": 5,
-        "matches": 5
+        "losses": 6,
+        "matches": 6
       }
     }
   },
