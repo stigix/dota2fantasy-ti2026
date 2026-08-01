@@ -272,6 +272,55 @@
       }
     }
   },
+  "1win Team": {
+    "wins": 63,
+    "losses": 60,
+    "matches": 123,
+    "winrate": 51.2,
+    "weighted_winrate": 52.1,
+    "by_league": {
+      "19101": {
+        "wins": 4,
+        "losses": 10,
+        "matches": 14
+      },
+      "19422": {
+        "wins": 18,
+        "losses": 5,
+        "matches": 23
+      },
+      "19435": {
+        "wins": 11,
+        "losses": 11,
+        "matches": 22
+      },
+      "19543": {
+        "wins": 3,
+        "losses": 6,
+        "matches": 9
+      },
+      "19656": {
+        "wins": 1,
+        "losses": 4,
+        "matches": 5
+      },
+      "19696": {
+        "wins": 14,
+        "losses": 17,
+        "matches": 31
+      },
+      "19785": {
+        "wins": 8,
+        "losses": 5,
+        "matches": 13
+      },
+      "20009": {
+        "wins": 4,
+        "losses": 2,
+        "matches": 6
+      }
+    }
+  },
   "OG": {
     "wins": 18,
     "losses": 34,
@@ -307,21 +356,100 @@
     }
   },
   "TEAM VISION": {
-    "wins": 24,
-    "losses": 6,
-    "matches": 30,
-    "winrate": 80.0,
-    "weighted_winrate": 80.0,
+    "wins": 93,
+    "losses": 42,
+    "matches": 135,
+    "winrate": 68.9,
+    "weighted_winrate": 66.7,
     "by_league": {
       "19101": {
         "wins": 8,
         "losses": 3,
         "matches": 11
       },
+      "19255": {
+        "wins": 9,
+        "losses": 0,
+        "matches": 9
+      },
+      "19422": {
+        "wins": 13,
+        "losses": 10,
+        "matches": 23
+      },
+      "19435": {
+        "wins": 6,
+        "losses": 6,
+        "matches": 12
+      },
+      "19543": {
+        "wins": 10,
+        "losses": 8,
+        "matches": 18
+      },
+      "19656": {
+        "wins": 9,
+        "losses": 1,
+        "matches": 10
+      },
+      "19696": {
+        "wins": 22,
+        "losses": 11,
+        "matches": 33
+      },
       "19785": {
         "wins": 16,
         "losses": 3,
         "matches": 19
+      }
+    }
+  },
+  "Xtreme Gaming": {
+    "wins": 52,
+    "losses": 61,
+    "matches": 113,
+    "winrate": 46.0,
+    "weighted_winrate": 44.9,
+    "by_league": {
+      "19101": {
+        "wins": 3,
+        "losses": 8,
+        "matches": 11
+      },
+      "19422": {
+        "wins": 13,
+        "losses": 13,
+        "matches": 26
+      },
+      "19435": {
+        "wins": 7,
+        "losses": 8,
+        "matches": 15
+      },
+      "19543": {
+        "wins": 6,
+        "losses": 6,
+        "matches": 12
+      },
+      "19575": {
+        "wins": 4,
+        "losses": 4,
+        "matches": 8
+      },
+      "19696": {
+        "wins": 10,
+        "losses": 13,
+        "matches": 23
+      },
+      "19785": {
+        "wins": 5,
+        "losses": 8,
+        "matches": 13
+      },
+      "19917": {
+        "wins": 4,
+        "losses": 1,
+        "matches": 5
       }
     }
   },
@@ -361,6 +489,30 @@
         "wins": 0,
         "losses": 2,
         "matches": 2
+      }
+    }
+  },
+  "HULIGANI": {
+    "wins": 29,
+    "losses": 27,
+    "matches": 56,
+    "winrate": 51.8,
+    "weighted_winrate": 53.4,
+    "by_league": {
+      "19255": {
+        "wins": 21,
+        "losses": 13,
+        "matches": 34
+      },
+      "19656": {
+        "wins": 6,
+        "losses": 10,
+        "matches": 16
+      },
+      "19917": {
+        "wins": 2,
+        "losses": 4,
+        "matches": 6
       }
     }
   },
@@ -452,60 +604,18 @@
       }
     }
   },
-  "1win Team": {
-    "wins": 12,
+  "Team Resilience": {
+    "wins": 11,
     "losses": 7,
-    "matches": 19,
-    "winrate": 63.2,
-    "weighted_winrate": 63.2,
+    "matches": 18,
+    "winrate": 61.1,
+    "weighted_winrate": 58.5,
     "by_league": {
-      "19785": {
-        "wins": 8,
-        "losses": 5,
+      "19575": {
+        "wins": 9,
+        "losses": 4,
         "matches": 13
       },
-      "20009": {
-        "wins": 4,
-        "losses": 2,
-        "matches": 6
-      }
-    }
-  },
-  "Xtreme Gaming": {
-    "wins": 4,
-    "losses": 1,
-    "matches": 5,
-    "winrate": 80.0,
-    "weighted_winrate": 80.0,
-    "by_league": {
-      "19917": {
-        "wins": 4,
-        "losses": 1,
-        "matches": 5
-      }
-    }
-  },
-  "HULIGANI": {
-    "wins": 2,
-    "losses": 4,
-    "matches": 6,
-    "winrate": 33.3,
-    "weighted_winrate": 33.3,
-    "by_league": {
-      "19917": {
-        "wins": 2,
-        "losses": 4,
-        "matches": 6
-      }
-    }
-  },
-  "Team Resilience": {
-    "wins": 2,
-    "losses": 3,
-    "matches": 5,
-    "winrate": 40.0,
-    "weighted_winrate": 40.0,
-    "by_league": {
       "19917": {
         "wins": 2,
         "losses": 3,
