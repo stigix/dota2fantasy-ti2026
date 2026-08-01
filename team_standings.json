@@ -302,46 +302,16 @@
     }
   },
   "TEAM VISION": {
-    "wins": 93,
-    "losses": 42,
-    "matches": 135,
-    "winrate": 68.9,
-    "weighted_winrate": 66.7,
+    "wins": 24,
+    "losses": 6,
+    "matches": 30,
+    "winrate": 80.0,
+    "weighted_winrate": 80.0,
     "by_league": {
       "19101": {
         "wins": 8,
         "losses": 3,
         "matches": 11
-      },
-      "19255": {
-        "wins": 9,
-        "losses": 0,
-        "matches": 9
-      },
-      "19422": {
-        "wins": 13,
-        "losses": 10,
-        "matches": 23
-      },
-      "19435": {
-        "wins": 6,
-        "losses": 6,
-        "matches": 12
-      },
-      "19543": {
-        "wins": 10,
-        "losses": 8,
-        "matches": 18
-      },
-      "19656": {
-        "wins": 9,
-        "losses": 1,
-        "matches": 10
-      },
-      "19696": {
-        "wins": 22,
-        "losses": 11,
-        "matches": 33
       },
       "19785": {
         "wins": 16,
