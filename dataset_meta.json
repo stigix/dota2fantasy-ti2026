@@ -1,10 +1,7 @@
 {
   "event": "The International 2026",
-<<<<<<< HEAD
   "generated_at": "2026-07-31T21:42:33.759248+00:00",
-=======
   "generated_at": "2026-07-31T22:28:11.810871+00:00",
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
   "leagues": [
     "19435",
     "19422",

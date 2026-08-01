@@ -11591,7 +11591,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             5.0,
             16.0,
             4.0,
@@ -11625,8 +11624,7 @@
             4.0,
             7.0,
             0.0,
-            1.0
-=======
+            1.0,
             12.0,
             4.0,
             5.0,
@@ -11661,12 +11659,10 @@
             0.0,
             4.0,
             7.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
           "roshan_kills": [
-<<<<<<< HEAD
             0.0,
             1.0,
             0.0,
@@ -11682,8 +11678,7 @@
             47.267525,
             22.500591,
             0.0,
-            0.0
-=======
+            0.0,
             1.0,
             0.0,
             0.0,
@@ -11700,12 +11695,10 @@
             0.0,
             47.267525,
             22.500591
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             1.0,
             0.0,
-<<<<<<< HEAD
             0.0,
             1.0
           ],
@@ -11713,7 +11706,6 @@
             1.0,
             0.0,
             0.0,
-=======
             1.0,
             0.0
           ],
@@ -11721,7 +11713,6 @@
             0.0,
             0.0,
             1.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ],
           "firstblood": [
@@ -11737,14 +11728,12 @@
         "agi": 1,
         "int": 0,
         "all": 2,
-<<<<<<< HEAD
         "green": 2,
         "blue": 1,
         "red": 0,
         "undead": 1,
         "horns": 0,
         "bearded": 1,
-=======
         "green": 1,
         "blue": 1,
         "red": 1,
@@ -11754,7 +11743,6 @@
         "undead": 1,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 1,
         "first_pick": 0,
         "last_pick": 1,
@@ -14258,7 +14246,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             13.0,
             4.0,
             7.0,
@@ -14292,8 +14279,7 @@
             2.0,
             1.0,
             0.0,
-            0.0
-=======
+            0.0,
             5.0,
             7.0,
             13.0,
@@ -14328,12 +14314,10 @@
             0.0,
             2.0,
             1.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             2.0,
             2.0,
             2.0,
@@ -14355,7 +14339,6 @@
             0.0,
             1.0,
             0.0,
-=======
             1.0,
             2.0,
             2.0,
@@ -14377,7 +14360,6 @@
             1.0,
             0.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             1.0
           ],
           "smokes_used": [
@@ -14390,7 +14372,6 @@
         "green": {
           "roshan_kills": [
             0.0,
-<<<<<<< HEAD
             0.0,
             1.0,
             0.0
@@ -14411,8 +14392,7 @@
             0.0,
             2.0,
             0.0,
-            1.0
-=======
+            1.0,
             1.0,
             0.0,
             0.0
@@ -14434,7 +14414,6 @@
             0.0,
             0.0,
             2.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tormentor_kills": [
             0.0,
@@ -14443,15 +14422,12 @@
             0.0
           ],
           "firstblood": [
-<<<<<<< HEAD
             1.0,
             0.0,
             0.0,
-=======
             0.0,
             0.0,
             1.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ]
         }
@@ -14461,14 +14437,12 @@
         "agi": 0,
         "int": 2,
         "all": 1,
-<<<<<<< HEAD
         "green": 2,
         "blue": 1,
         "red": 0,
         "undead": 1,
         "horns": 1,
         "bearded": 2,
-=======
         "green": 0,
         "blue": 2,
         "red": 0,
@@ -14478,7 +14452,6 @@
         "undead": 1,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 0,
         "last_pick": 3,
@@ -16315,7 +16288,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             8.0,
             9.0,
             1.0,
@@ -16343,8 +16315,7 @@
             10.0,
             13.0,
             15.0,
-            15.0
-=======
+            15.0,
             0.0,
             1.0,
             8.0,
@@ -16373,7 +16344,6 @@
             15.0,
             10.0,
             13.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tower_kills": [
             0.0,
@@ -16384,7 +16354,6 @@
         },
         "green": {
           "roshan_kills": [
-<<<<<<< HEAD
             1.0,
             0.0,
             0.0,
@@ -16400,8 +16369,7 @@
             0.0,
             87.533066,
             11.832424,
-            18.732502
-=======
+            18.732502,
             0.0,
             0.0,
             1.0,
@@ -16418,7 +16386,6 @@
             11.832424,
             0.0,
             87.533066
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -16448,18 +16415,15 @@
         "green": 1,
         "blue": 0,
         "red": 1,
-<<<<<<< HEAD
         "undead": 0,
         "horns": 1,
         "bearded": 3,
-=======
         "purple": 2,
         "golden": 0,
         "heroic": 0,
         "undead": 0,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 2,
         "last_pick": 0,
@@ -18165,7 +18129,6 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             4.0,
             8.0,
             3.0,
@@ -18187,7 +18150,6 @@
             7.0,
             6.0,
             2.0,
-=======
             8.0,
             3.0,
             4.0,
@@ -18209,19 +18171,15 @@
             6.0,
             2.0,
             7.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             6.0
           ],
           "smokes_used": [
             4.0,
             3.0,
-<<<<<<< HEAD
             3.0,
-            4.0
-=======
+            4.0,
             4.0,
             3.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -18232,7 +18190,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.48387095,
             0.6363636,
             0.7368421,
@@ -18248,8 +18205,7 @@
             0.0,
             0.0,
             0.0,
-            1.0
-=======
+            1.0,
             0.65217394,
             0.7368421,
             0.48387095,
@@ -18266,7 +18222,6 @@
             0.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tormentor_kills": [
             0.0,
@@ -18287,13 +18242,11 @@
         "agi": 0,
         "int": 4,
         "all": 0,
-<<<<<<< HEAD
         "green": 3,
         "blue": 0,
         "red": 0,
         "undead": 0,
         "horns": 2,
-=======
         "green": 0,
         "blue": 2,
         "red": 0,
@@ -18302,7 +18255,6 @@
         "heroic": 0,
         "undead": 0,
         "horns": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "bearded": 0,
         "aquatic": 0,
         "first_pick": 0,
@@ -20009,7 +19961,6 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             14.0,
             13.0,
             9.0,
@@ -20037,8 +19988,7 @@
             2.0,
             3.0,
             2.0,
-            2.0
-=======
+            2.0,
             11.0,
             9.0,
             14.0,
@@ -20067,7 +20017,6 @@
             2.0,
             2.0,
             3.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -20078,7 +20027,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.4516129,
             0.75757575,
             0.6315789,
@@ -20088,8 +20036,7 @@
             28.46628,
             38.846478,
             0.0,
-            0.0
-=======
+            0.0,
             0.73913044,
             0.6315789,
             0.4516129,
@@ -20100,7 +20047,6 @@
             0.0,
             28.46628,
             38.846478
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -20130,16 +20076,13 @@
         "green": 2,
         "blue": 2,
         "red": 0,
-<<<<<<< HEAD
         "undead": 2,
         "horns": 1,
-=======
         "purple": 0,
         "golden": 0,
         "heroic": 0,
         "undead": 3,
         "horns": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "bearded": 0,
         "aquatic": 2,
         "first_pick": 2,
@@ -21785,7 +21728,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             6.0,
             0.0,
             6.0,
@@ -21819,7 +21761,6 @@
             0.0,
             0.0,
             5.0,
-=======
             4.0,
             6.0,
             0.0,
@@ -21853,13 +21794,11 @@
             3.0,
             5.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             3.0
           ]
         },
         "green": {
           "roshan_kills": [
-<<<<<<< HEAD
             0.0,
             0.0,
             1.0,
@@ -21875,8 +21814,7 @@
             0.0,
             0.0,
             23.265472,
-            9.93318
-=======
+            9.93318,
             1.0,
             1.0,
             0.0,
@@ -21893,7 +21831,6 @@
             23.265472,
             0.0,
             9.800488
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -21903,15 +21840,12 @@
           ],
           "tormentor_kills": [
             0.0,
-<<<<<<< HEAD
             0.0,
             1.0,
-            0.0
-=======
+            0.0,
             1.0,
             0.0,
             1.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "firstblood": [
             0.0,
@@ -21926,14 +21860,12 @@
         "agi": 2,
         "int": 0,
         "all": 0,
-<<<<<<< HEAD
         "green": 0,
         "blue": 1,
         "red": 0,
         "undead": 1,
         "horns": 0,
         "bearded": 1,
-=======
         "green": 1,
         "blue": 1,
         "red": 2,
@@ -21943,7 +21875,6 @@
         "undead": 1,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 0,
         "last_pick": 4,
@@ -23921,7 +23852,6 @@
         "red": {
           "kills": [
             14.0,
-<<<<<<< HEAD
             3.0,
             10.0,
             14.0
@@ -23954,7 +23884,6 @@
             0.0,
             0.0,
             1.0,
-=======
             10.0,
             3.0,
             14.0
@@ -23987,13 +23916,11 @@
             1.0,
             1.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             1.0
           ]
         },
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             0.0,
             0.0,
             2.0,
@@ -24015,8 +23942,7 @@
             0.0,
             0.0,
             2.0,
-            2.0
-=======
+            2.0,
             1.0,
             2.0,
             0.0,
@@ -24039,7 +23965,6 @@
             2.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "smokes_used": [
             0.0,
@@ -24056,7 +23981,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.0,
             0.5555556,
             0.65384614,
@@ -24072,8 +23996,7 @@
             0.0,
             0.0,
             0.0,
-            1.0
-=======
+            1.0,
             0.7777778,
             0.65384614,
             0.5555556,
@@ -24090,7 +24013,6 @@
             0.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tormentor_kills": [
             0.0,
@@ -24111,18 +24033,15 @@
         "agi": 0,
         "int": 1,
         "all": 3,
-<<<<<<< HEAD
         "green": 0,
         "blue": 0,
         "red": 3,
-=======
         "green": 1,
         "blue": 0,
         "red": 3,
         "purple": 0,
         "golden": 0,
         "heroic": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "undead": 0,
         "horns": 0,
         "bearded": 0,
@@ -24141,11 +24060,8 @@
         "most_assists": 0,
         "9_slots": 0,
         "lost_games": 0,
-<<<<<<< HEAD
-        "most_voice_lines": 3
-=======
+        "most_voice_lines": 3,
         "most_voice_lines": 4
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
       }
     }
   },
@@ -25945,7 +25861,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             10.0,
             12.0,
             4.0,
@@ -25979,8 +25894,7 @@
             0.0,
             1.0,
             0.0,
-            0.0
-=======
+            0.0,
             3.0,
             4.0,
             12.0,
@@ -26015,7 +25929,6 @@
             0.0,
             1.0,
             4.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -26026,7 +25939,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.0,
             0.7777778,
             0.46153846,
@@ -26036,8 +25948,7 @@
             0.0,
             3.0665526,
             45.134068,
-            36.000496
-=======
+            36.000496,
             0.37037036,
             0.46153846,
             0.7777778,
@@ -26048,7 +25959,6 @@
             45.134068,
             3.0665526,
             71.935646
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -26063,17 +25973,14 @@
             0.0
           ],
           "firstblood": [
-<<<<<<< HEAD
             0.0,
             1.0,
             1.0,
-            1.0
-=======
+            1.0,
             1.0,
             1.0,
             1.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         }
       },
@@ -26085,18 +25992,15 @@
         "green": 1,
         "blue": 0,
         "red": 0,
-<<<<<<< HEAD
         "undead": 1,
         "horns": 3,
         "bearded": 4,
-=======
         "purple": 0,
         "golden": 3,
         "heroic": 0,
         "undead": 1,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 1,
         "last_pick": 0,
@@ -26112,11 +26016,8 @@
         "most_assists": 0,
         "9_slots": 0,
         "lost_games": 0,
-<<<<<<< HEAD
-        "most_voice_lines": 0
-=======
+        "most_voice_lines": 0,
         "most_voice_lines": 1
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
       }
     }
   },
@@ -27630,7 +27531,6 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             0.0,
             2.0,
             3.0,
@@ -27658,7 +27558,6 @@
             0.0,
             0.0,
             3.0,
-=======
             3.0,
             3.0,
             2.0,
@@ -27686,7 +27585,6 @@
             3.0,
             3.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             3.0
           ]
         },
@@ -27698,7 +27596,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.0,
             0.5555556,
             0.7692308,
@@ -27714,8 +27611,7 @@
             0.0,
             2.0,
             0.0,
-            0.0
-=======
+            0.0,
             0.6296296,
             0.7692308,
             0.5555556,
@@ -27732,7 +27628,6 @@
             0.0,
             2.0,
             1.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tormentor_kills": [
             0.0,
@@ -27753,14 +27648,12 @@
         "agi": 1,
         "int": 1,
         "all": 0,
-<<<<<<< HEAD
         "green": 1,
         "blue": 0,
         "red": 3,
         "undead": 0,
         "horns": 0,
         "bearded": 1,
-=======
         "green": 0,
         "blue": 0,
         "red": 0,
@@ -27770,7 +27663,6 @@
         "undead": 1,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 0,
         "last_pick": 0,
@@ -29300,7 +29192,6 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             0.0,
             3.0,
             9.0,
@@ -29328,8 +29219,7 @@
             0.0,
             1.0,
             1.0,
-            1.0
-=======
+            1.0,
             11.0,
             9.0,
             3.0,
@@ -29358,7 +29248,6 @@
             1.0,
             1.0,
             3.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -29369,7 +29258,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.0,
             0.33333334,
             0.5769231,
@@ -29379,8 +29267,7 @@
             0.0,
             2.0998886,
             0.0,
-            2.0
-=======
+            2.0,
             0.6296296,
             0.5769231,
             0.33333334,
@@ -29391,7 +29278,6 @@
             0.0,
             2.0998886,
             34.333202
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -29400,17 +29286,14 @@
             0.0
           ],
           "tormentor_kills": [
-<<<<<<< HEAD
             0.0,
             0.0,
             0.0,
-            1.0
-=======
+            1.0,
             1.0,
             0.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "firstblood": [
             0.0,
@@ -29428,18 +29311,15 @@
         "green": 3,
         "blue": 0,
         "red": 0,
-<<<<<<< HEAD
         "undead": 0,
         "horns": 3,
         "bearded": 3,
-=======
         "purple": 0,
         "golden": 0,
         "heroic": 0,
         "undead": 0,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 1,
         "last_pick": 0,
@@ -31156,7 +31036,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             9.0,
             2.0,
             11.0,
@@ -31190,8 +31069,7 @@
             0.0,
             1.0,
             2.0,
-            5.0
-=======
+            5.0,
             14.0,
             11.0,
             2.0,
@@ -31226,13 +31104,11 @@
             2.0,
             1.0,
             4.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
           "roshan_kills": [
             0.0,
-<<<<<<< HEAD
             0.0,
             1.0,
             0.0
@@ -31247,8 +31123,7 @@
             0.0,
             0.0,
             4.416747,
-            11.2175045
-=======
+            11.2175045,
             1.0,
             0.0,
             1.0
@@ -31264,7 +31139,6 @@
             4.416747,
             0.0,
             52.03453
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -31273,7 +31147,6 @@
             0.0
           ],
           "tormentor_kills": [
-<<<<<<< HEAD
             0.0,
             0.0,
             0.0,
@@ -31283,8 +31156,7 @@
             0.0,
             0.0,
             0.0,
-            1.0
-=======
+            1.0,
             2.0,
             0.0,
             0.0,
@@ -31295,7 +31167,6 @@
             0.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         }
       },
@@ -31304,14 +31175,12 @@
         "agi": 3,
         "int": 0,
         "all": 0,
-<<<<<<< HEAD
         "green": 0,
         "blue": 0,
         "red": 2,
         "undead": 3,
         "horns": 0,
         "bearded": 1,
-=======
         "green": 1,
         "blue": 0,
         "red": 3,
@@ -31321,7 +31190,6 @@
         "undead": 3,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 3,
         "last_pick": 0,
@@ -33655,7 +33523,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             14.0,
             3.0,
             13.0,
@@ -33687,7 +33554,6 @@
           ],
           "tower_kills": [
             0.0,
-=======
             10.0,
             13.0,
             3.0,
@@ -33719,7 +33585,6 @@
           ],
           "tower_kills": [
             2.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             2.0,
             2.0,
             2.0
@@ -33727,7 +33592,6 @@
         },
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             0.0,
             2.0,
             0.0,
@@ -33749,8 +33613,7 @@
             0.0,
             2.0,
             1.0,
-            6.0
-=======
+            6.0,
             1.0,
             0.0,
             2.0,
@@ -33773,7 +33636,6 @@
             1.0,
             2.0,
             3.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "smokes_used": [
             0.0,
@@ -33790,7 +33652,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.0,
             0.8235294,
             0.78125,
@@ -33800,8 +33661,7 @@
             0.0,
             90.60259,
             74.06503,
-            58.63662
-=======
+            58.63662,
             0.6792453,
             0.78125,
             0.8235294,
@@ -33812,7 +33672,6 @@
             74.06503,
             90.60259,
             30.667135
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -33839,7 +33698,6 @@
         "agi": 1,
         "int": 2,
         "all": 1,
-<<<<<<< HEAD
         "green": 0,
         "blue": 0,
         "red": 3,
@@ -33847,7 +33705,6 @@
         "horns": 0,
         "bearded": 1,
         "aquatic": 3,
-=======
         "green": 1,
         "blue": 0,
         "red": 2,
@@ -33858,7 +33715,6 @@
         "horns": 0,
         "bearded": 0,
         "aquatic": 2,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "first_pick": 0,
         "last_pick": 0,
         "games_with_arcana": 0,
@@ -35574,7 +35430,6 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
             15.0,
             4.0,
             2.0,
@@ -35606,7 +35461,6 @@
           ],
           "tower_kills": [
             0.0,
-=======
             20.0,
             2.0,
             4.0,
@@ -35638,7 +35492,6 @@
           ],
           "tower_kills": [
             2.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0,
             2.0
@@ -35646,7 +35499,6 @@
         },
         "green": {
           "roshan_kills": [
-<<<<<<< HEAD
             0.0,
             0.0,
             0.0,
@@ -35668,8 +35520,7 @@
             0.0,
             0.0,
             0.0,
-            1.0
-=======
+            1.0,
             1.0,
             0.0,
             0.0,
@@ -35692,17 +35543,13 @@
             0.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tormentor_kills": [
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            0.0
-=======
+            0.0,
             1.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "firstblood": [
             0.0,
@@ -35717,13 +35564,11 @@
         "agi": 1,
         "int": 0,
         "all": 1,
-<<<<<<< HEAD
         "green": 2,
         "blue": 1,
         "red": 0,
         "undead": 1,
         "horns": 1,
-=======
         "green": 3,
         "blue": 0,
         "red": 0,
@@ -35732,7 +35577,6 @@
         "heroic": 0,
         "undead": 1,
         "horns": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "bearded": 0,
         "aquatic": 0,
         "first_pick": 0,
@@ -36899,7 +36743,6 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             0.0,
             9.0,
             8.0,
@@ -36927,8 +36770,7 @@
             0.0,
             3.0,
             1.0,
-            4.0
-=======
+            4.0,
             11.0,
             8.0,
             9.0,
@@ -36957,7 +36799,6 @@
             1.0,
             3.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -36968,7 +36809,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.0,
             0.7647059,
             0.65625,
@@ -36984,8 +36824,7 @@
             0.0,
             0.0,
             0.0,
-            1.0
-=======
+            1.0,
             0.6603774,
             0.65625,
             0.7647059,
@@ -37002,7 +36841,6 @@
             0.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tormentor_kills": [
             0.0,
@@ -37012,13 +36850,10 @@
           ],
           "firstblood": [
             0.0,
-<<<<<<< HEAD
             0.0,
             1.0,
-=======
             1.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ]
         }
@@ -37029,13 +36864,11 @@
         "int": 1,
         "all": 0,
         "green": 0,
-<<<<<<< HEAD
         "blue": 0,
         "red": 2,
         "undead": 0,
         "horns": 0,
         "bearded": 2,
-=======
         "blue": 1,
         "red": 0,
         "purple": 0,
@@ -37044,7 +36877,6 @@
         "undead": 0,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 1,
         "first_pick": 1,
         "last_pick": 0,
@@ -38640,7 +38472,6 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
             0.0,
             8.0,
             6.0,
@@ -38668,7 +38499,6 @@
             0.0,
             3.0,
             1.0,
-=======
             7.0,
             6.0,
             8.0,
@@ -38696,7 +38526,6 @@
             2.0,
             1.0,
             3.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             2.0
           ]
         },
@@ -38708,7 +38537,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
             0.0,
             0.8235294,
             0.875,
@@ -38730,7 +38558,6 @@
             0.0,
             0.0,
             1.0,
-=======
             0.6792453,
             0.875,
             0.8235294,
@@ -38752,7 +38579,7 @@
             0.0,
             1.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
+
             0.0
           ],
           "firstblood": [
@@ -38771,16 +38598,16 @@
         "green": 0,
         "blue": 2,
         "red": 0,
-<<<<<<< HEAD
+
         "undead": 0,
         "horns": 2,
-=======
+
         "purple": 0,
         "golden": 0,
         "heroic": 0,
         "undead": 0,
         "horns": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
+
         "bearded": 0,
         "aquatic": 2,
         "first_pick": 0,
@@ -40242,7 +40069,7 @@
           ],
           "tormentor_kills": [
             0.0,
-<<<<<<< HEAD
+
             3.0,
             0.0,
             0.0
@@ -40251,7 +40078,7 @@
             0.0,
             0.0,
             1.0,
-=======
+
             0.0,
             0.0,
             3.0
@@ -40260,7 +40087,7 @@
             0.0,
             1.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
+
             0.0
           ]
         }
@@ -42917,13 +42744,8 @@
           "roshan_kills": [
             1.0,
             0.0,
-<<<<<<< HEAD
             0.0,
             1.0
-=======
-            1.0,
-            0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "teamfight_participation": [
             0.6923077,
@@ -42973,12 +42795,6 @@
         "green": 1,
         "blue": 2,
         "red": 1,
-<<<<<<< HEAD
-        "undead": 2,
-        "horns": 1,
-        "bearded": 1,
-        "aquatic": 1,
-=======
         "purple": 0,
         "golden": 0,
         "heroic": 0,
@@ -42986,7 +42802,6 @@
         "horns": 0,
         "bearded": 0,
         "aquatic": 2,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "first_pick": 0,
         "last_pick": 1,
         "games_with_arcana": 0,
@@ -44935,15 +44750,12 @@
           "courier_kills": [
             0.0,
             1.0,
-<<<<<<< HEAD
-=======
             0.0,
             1.0
           ],
           "tormentor_kills": [
             0.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             1.0,
             0.0
           ],
@@ -44968,13 +44780,6 @@
         "all": 0,
         "green": 0,
         "blue": 0,
-<<<<<<< HEAD
-        "red": 3,
-        "undead": 1,
-        "horns": 1,
-        "bearded": 3,
-        "aquatic": 1,
-=======
         "red": 4,
         "purple": 0,
         "golden": 0,
@@ -44983,7 +44788,6 @@
         "horns": 0,
         "bearded": 0,
         "aquatic": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "first_pick": 0,
         "last_pick": 0,
         "games_with_arcana": 0,
@@ -46760,15 +46564,9 @@
           ],
           "smokes_used": [
             3.0,
-<<<<<<< HEAD
-            4.0,
-            2.0,
-            3.0
-=======
             2.0,
             3.0,
             4.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -46796,15 +46594,11 @@
           ],
           "courier_kills": [
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
             0.0,
             1.0
           ],
           "tormentor_kills": [
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             1.0,
             0.0,
@@ -46837,11 +46631,7 @@
         "heroic": 2,
         "undead": 0,
         "horns": 0,
-<<<<<<< HEAD
-        "bearded": 4,
-=======
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 4,
         "last_pick": 0,
@@ -48681,18 +48471,12 @@
         "green": 0,
         "blue": 2,
         "red": 0,
-<<<<<<< HEAD
-        "undead": 0,
-        "horns": 1,
-        "bearded": 1,
-=======
         "purple": 2,
         "golden": 0,
         "heroic": 0,
         "undead": 1,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 2,
         "first_pick": 0,
         "last_pick": 0,
@@ -85455,14 +85239,7 @@
             4.0,
             2.0,
             9.0,
-<<<<<<< HEAD
-            7.0,
-            4.0,
-            2.0,
-            3.0
-=======
             7.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "deaths": [
             3.0,
@@ -85470,14 +85247,7 @@
             3.0,
             4.0,
             7.0,
-<<<<<<< HEAD
-            6.0,
-            3.0,
-            2.0,
-            3.0
-=======
             6.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "creep_score": [
             299.0,
@@ -85485,14 +85255,7 @@
             493.0,
             643.0,
             531.0,
-<<<<<<< HEAD
-            748.0,
-            493.0,
-            361.0,
-            299.0
-=======
             748.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "gpm": [
             519.0,
@@ -85500,14 +85263,7 @@
             641.0,
             743.0,
             691.0,
-<<<<<<< HEAD
-            731.0,
-            641.0,
-            562.0,
-            519.0
-=======
             731.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "madstone_collected": [
             9.0,
@@ -85515,14 +85271,7 @@
             0.0,
             26.0,
             19.0,
-<<<<<<< HEAD
-            33.0,
-            20.0,
-            14.0,
-            9.0
-=======
             33.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tower_kills": [
             0.0,
@@ -85530,14 +85279,7 @@
             0.0,
             0.0,
             1.0,
-<<<<<<< HEAD
-            3.0,
-            1.0,
-            2.0,
-            0.0
-=======
             3.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -85546,10 +85288,7 @@
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-=======
             1.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ],
           "teamfight_participation": [
@@ -85558,14 +85297,7 @@
             0.0,
             0.6086956,
             0.74285716,
-<<<<<<< HEAD
-            0.6060606,
-            0.6666667,
-            0.5,
-            0.85714287
-=======
             0.6060606
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "stuns": [
             0.0,
@@ -85573,14 +85305,7 @@
             0.0,
             0.0,
             50.232784,
-<<<<<<< HEAD
-            10.317822,
-            21.03252,
-            46.30044,
-            0.0
-=======
             10.317822
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -85594,10 +85319,7 @@
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-=======
             1.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0
           ],
@@ -85618,12 +85340,6 @@
         "all": 2,
         "green": 3,
         "blue": 0,
-<<<<<<< HEAD
-        "red": 1,
-        "undead": 2,
-        "horns": 0,
-        "bearded": 2,
-=======
         "red": 2,
         "purple": 0,
         "golden": 0,
@@ -85631,7 +85347,6 @@
         "undead": 2,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 1,
         "last_pick": 0,
@@ -86487,14 +86202,7 @@
             4.0,
             5.0,
             15.0,
-<<<<<<< HEAD
-            14.0,
-            4.0,
-            6.0,
-            2.0
-=======
             14.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "deaths": [
             4.0,
@@ -86502,14 +86210,7 @@
             2.0,
             5.0,
             8.0,
-<<<<<<< HEAD
-            5.0,
-            2.0,
-            3.0,
-            4.0
-=======
             5.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "creep_score": [
             230.0,
@@ -86517,14 +86218,7 @@
             556.0,
             353.0,
             571.0,
-<<<<<<< HEAD
-            631.0,
-            556.0,
-            277.0,
-            230.0
-=======
             631.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "gpm": [
             435.0,
@@ -86532,14 +86226,7 @@
             704.0,
             582.0,
             779.0,
-<<<<<<< HEAD
-            734.0,
-            704.0,
-            552.0,
-            435.0
-=======
             734.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "madstone_collected": [
             11.0,
@@ -86547,14 +86234,7 @@
             0.0,
             11.0,
             20.0,
-<<<<<<< HEAD
-            14.0,
-            23.0,
-            8.0,
-            11.0
-=======
             14.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tower_kills": [
             0.0,
@@ -86562,14 +86242,7 @@
             0.0,
             1.0,
             3.0,
-<<<<<<< HEAD
-            2.0,
-            2.0,
-            1.0,
-            0.0
-=======
             2.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "blue": {
@@ -86578,31 +86251,6 @@
             2.0,
             0.0,
             2.0,
-<<<<<<< HEAD
-            2.0,
-            2.0
-          ],
-          "camps_stacked": [
-            0.0,
-            7.0,
-            0.0,
-            1.0,
-            1.0,
-            3.0
-          ],
-          "runes_grabbed": [
-            14.0,
-            8.0,
-            12.0,
-            16.0,
-            7.0,
-            6.0
-          ],
-          "watchers_taken": [
-            0.0,
-            0.0,
-=======
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             2.0,
             0.0,
             3.0,
@@ -86646,11 +86294,7 @@
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0
           ],
@@ -86660,14 +86304,7 @@
             0.0,
             0.6086956,
             0.7714286,
-<<<<<<< HEAD
-            0.8787879,
-            0.7777778,
-            0.5714286,
-            0.71428573
-=======
             0.8787879
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "stuns": [
             3.5,
@@ -86675,14 +86312,7 @@
             0.0,
             77.53221,
             2.5008743,
-<<<<<<< HEAD
-            58.533276,
-            33.801086,
-            9.0,
-            3.5
-=======
             58.533276
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -86690,23 +86320,13 @@
             0.0,
             1.0,
             2.0,
-<<<<<<< HEAD
-            0.0,
-            0.0,
-            0.0,
-=======
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ],
           "tormentor_kills": [
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0
           ],
@@ -86726,13 +86346,6 @@
         "int": 4,
         "all": 0,
         "green": 0,
-<<<<<<< HEAD
-        "blue": 3,
-        "red": 3,
-        "undead": 2,
-        "horns": 2,
-        "bearded": 2,
-=======
         "blue": 1,
         "red": 2,
         "purple": 0,
@@ -86741,7 +86354,6 @@
         "undead": 2,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 2,
         "first_pick": 1,
         "last_pick": 2,
@@ -88940,12 +88552,6 @@
             7.0,
             8.0,
             3.0,
-<<<<<<< HEAD
-            0.0,
-            7.0,
-            3.0,
-=======
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ],
           "deaths": [
@@ -88954,14 +88560,7 @@
             2.0,
             6.0,
             19.0,
-<<<<<<< HEAD
-            13.0,
-            2.0,
-            8.0,
-            6.0
-=======
             13.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "creep_score": [
             264.0,
@@ -88969,14 +88568,7 @@
             363.0,
             276.0,
             351.0,
-<<<<<<< HEAD
-            418.0,
-            363.0,
-            264.0,
-            264.0
-=======
             418.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "gpm": [
             473.0,
@@ -88984,14 +88576,7 @@
             606.0,
             531.0,
             544.0,
-<<<<<<< HEAD
-            528.0,
-            606.0,
-            493.0,
-            473.0
-=======
             528.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "madstone_collected": [
             19.0,
@@ -88999,14 +88584,7 @@
             0.0,
             12.0,
             18.0,
-<<<<<<< HEAD
-            10.0,
-            10.0,
-            14.0,
-            19.0
-=======
             10.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tower_kills": [
             0.0,
@@ -89032,14 +88610,7 @@
             0.0,
             0.6956522,
             0.54285717,
-<<<<<<< HEAD
-            0.6060606,
-            0.6666667,
-            0.42857143,
-            0.2857143
-=======
             0.6060606
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "stuns": [
             3.133203,
@@ -89047,14 +88618,7 @@
             0.0,
             71.70017,
             145.26508,
-<<<<<<< HEAD
-            51.634266,
-            41.999657,
-            3.2330809,
-            3.133203
-=======
             51.634266
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -89090,18 +88654,12 @@
         "green": 3,
         "blue": 0,
         "red": 2,
-<<<<<<< HEAD
-        "undead": 3,
-        "horns": 2,
-        "bearded": 5,
-=======
         "purple": 0,
         "golden": 1,
         "heroic": 0,
         "undead": 2,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 2,
         "last_pick": 0,
@@ -89111,11 +88669,7 @@
       "subtitles": {
         "0_kills": 2,
         "lowest_networth": 0,
-<<<<<<< HEAD
-        "bbs_before_30min": 1,
-=======
         "bbs_before_30min": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "most_deaths": 2,
         "4+_active_items": 4,
         "most_assists": 0,
@@ -90359,14 +89913,7 @@
             0.0,
             10.0,
             13.0,
-<<<<<<< HEAD
-            17.0,
-            7.0,
-            7.0,
-            5.0
-=======
             17.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "camps_stacked": [
             2.0,
@@ -90374,14 +89921,7 @@
             0.0,
             4.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-            2.0,
-            5.0,
-            2.0
-=======
             1.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "runes_grabbed": [
             0.0,
@@ -90389,14 +89929,7 @@
             0.0,
             4.0,
             7.0,
-<<<<<<< HEAD
-            2.0,
-            0.0,
-            4.0,
-            0.0
-=======
             2.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "watchers_taken": [
             9.0,
@@ -90404,14 +89937,7 @@
             0.0,
             12.0,
             11.0,
-<<<<<<< HEAD
-            12.0,
-            14.0,
-            4.0,
-            9.0
-=======
             12.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "smokes_used": [
             3.0,
@@ -90419,14 +89945,7 @@
             0.0,
             4.0,
             3.0,
-<<<<<<< HEAD
-            5.0,
-            4.0,
-            2.0,
-            3.0
-=======
             5.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -90444,14 +89963,7 @@
             0.0,
             0.7826087,
             0.74285716,
-<<<<<<< HEAD
-            0.6666667,
-            0.6666667,
-            0.71428573,
-            0.71428573
-=======
             0.6666667
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "stuns": [
             39.499557,
@@ -90459,14 +89971,7 @@
             0.0,
             52.53313,
             78.63246,
-<<<<<<< HEAD
-            209.93452,
-            32.66754,
-            14.633596,
-            39.499557
-=======
             209.93452
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -90474,12 +89979,7 @@
             0.0,
             2.0,
             0.0,
-<<<<<<< HEAD
-            0.0,
-            0.0
-=======
             2.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tormentor_kills": [
             0.0,
@@ -90504,14 +90004,6 @@
         "agi": 2,
         "int": 3,
         "all": 0,
-<<<<<<< HEAD
-        "green": 3,
-        "blue": 0,
-        "red": 1,
-        "undead": 0,
-        "horns": 1,
-        "bearded": 2,
-=======
         "green": 0,
         "blue": 1,
         "red": 0,
@@ -90521,7 +90013,6 @@
         "undead": 0,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 0,
         "first_pick": 1,
         "last_pick": 0,
@@ -90537,11 +90028,7 @@
         "most_assists": 0,
         "9_slots": 0,
         "lost_games": 6,
-<<<<<<< HEAD
-        "most_voice_lines": 3
-=======
         "most_voice_lines": 2
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
       }
     }
   },
@@ -91779,14 +91266,7 @@
             0.0,
             6.0,
             8.0,
-<<<<<<< HEAD
-            9.0,
-            9.0,
-            4.0,
-            7.0
-=======
             9.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "camps_stacked": [
             2.0,
@@ -91794,14 +91274,7 @@
             0.0,
             3.0,
             0.0,
-<<<<<<< HEAD
-            8.0,
-            1.0,
-            0.0,
-            2.0
-=======
             8.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "runes_grabbed": [
             2.0,
@@ -91809,14 +91282,7 @@
             0.0,
             1.0,
             6.0,
-<<<<<<< HEAD
-            5.0,
-            1.0,
-            2.0,
-            2.0
-=======
             5.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "watchers_taken": [
             6.0,
@@ -91824,14 +91290,7 @@
             0.0,
             12.0,
             14.0,
-<<<<<<< HEAD
-            13.0,
-            14.0,
-            5.0,
-            6.0
-=======
             13.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "smokes_used": [
             2.0,
@@ -91839,14 +91298,7 @@
             0.0,
             0.0,
             3.0,
-<<<<<<< HEAD
-            4.0,
-            3.0,
-            1.0,
-            2.0
-=======
             4.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -91864,14 +91316,7 @@
             0.0,
             0.47826087,
             0.82857144,
-<<<<<<< HEAD
-            0.57575756,
-            0.8333333,
-            0.9285714,
-            0.71428573
-=======
             0.57575756
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "stuns": [
             0.0,
@@ -91879,14 +91324,7 @@
             0.0,
             16.932985,
             187.56572,
-<<<<<<< HEAD
-            4.0,
-            0.0,
-            38.267326,
-            0.0
-=======
             4.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -91908,10 +91346,7 @@
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-=======
             1.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0
           ]
@@ -91923,13 +91358,6 @@
         "int": 0,
         "all": 2,
         "green": 1,
-<<<<<<< HEAD
-        "blue": 0,
-        "red": 2,
-        "undead": 1,
-        "horns": 2,
-        "bearded": 1,
-=======
         "blue": 1,
         "red": 2,
         "purple": 1,
@@ -91938,7 +91366,6 @@
         "undead": 2,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 3,
         "first_pick": 1,
         "last_pick": 0,
@@ -99350,64 +98777,16 @@
       "stats": {
         "red": {
           "kills": [
-<<<<<<< HEAD
-            15.0,
-            8.0,
-            2.0,
-            0.0,
-            7.0,
-            2.0
-=======
             2.0,
             7.0,
             0.0,
             2.0,
             8.0,
             15.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "deaths": [
             2.0,
             1.0,
-<<<<<<< HEAD
-            4.0,
-            5.0,
-            3.0,
-            1.0,
-            2.0
-          ],
-          "creep_score": [
-            606.0,
-            551.0,
-            529.0,
-            56.0,
-            550.0,
-            408.0
-          ],
-          "gpm": [
-            984.0,
-            799.0,
-            658.0,
-            268.0,
-            833.0,
-            670.0
-          ],
-          "madstone_collected": [
-            26.0,
-            19.0,
-            0.0,
-            3.0,
-            25.0,
-            12.0
-          ],
-          "tower_kills": [
-            9.0,
-            1.0,
-            0.0,
-            0.0,
-            7.0,
-            1.0
-=======
             3.0,
             5.0,
             4.0,
@@ -99444,35 +98823,11 @@
             1.0,
             0.0,
             9.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
           "roshan_kills": [
             0.0,
-<<<<<<< HEAD
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-            0.0
-          ],
-          "teamfight_participation": [
-            0.8,
-            0.72727275,
-            0.0,
-            0.0,
-            0.6666667,
-            0.25
-          ],
-          "stuns": [
-            7.6835685,
-            18.699404,
-            0.0,
-            5.4,
-            22.333443,
-            20.900364
-=======
             1.0,
             0.0,
             0.0,
@@ -99494,7 +98849,6 @@
             38.30089,
             0.0,
             7.6835685
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -99510,12 +98864,7 @@
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-            0.0
-=======
             1.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "firstblood": [
             1.0,
@@ -99538,12 +98887,6 @@
         "all": 0,
         "green": 4,
         "blue": 0,
-<<<<<<< HEAD
-        "red": 1,
-        "undead": 3,
-        "horns": 0,
-        "bearded": 2,
-=======
         "red": 2,
         "purple": 0,
         "golden": 0,
@@ -99551,7 +98894,6 @@
         "undead": 3,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 1,
         "first_pick": 2,
         "last_pick": 2,
@@ -101380,45 +100722,6 @@
             1.0
           ],
           "deaths": [
-<<<<<<< HEAD
-            6.0,
-            3.0,
-            4.0,
-            5.0,
-            3.0,
-            5.0
-          ],
-          "creep_score": [
-            345.0,
-            428.0,
-            270.0,
-            56.0,
-            358.0,
-            288.0
-          ],
-          "gpm": [
-            665.0,
-            693.0,
-            478.0,
-            315.0,
-            673.0,
-            520.0
-          ],
-          "madstone_collected": [
-            9.0,
-            9.0,
-            0.0,
-            0.0,
-            11.0,
-            8.0
-          ],
-          "tower_kills": [
-            0.0,
-            9.0,
-            0.0,
-            0.0,
-            1.0,
-=======
             5.0,
             3.0,
             5.0,
@@ -101456,7 +100759,6 @@
             0.0,
             1.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ]
         },
@@ -101464,27 +100766,6 @@
           "obs_placed": [
             2.0,
             2.0,
-<<<<<<< HEAD
-            0.0,
-            2.0,
-            2.0,
-            2.0
-          ],
-          "camps_stacked": [
-            1.0,
-            1.0,
-            0.0,
-            0.0,
-            2.0,
-            0.0
-          ],
-          "runes_grabbed": [
-            8.0,
-            5.0,
-            0.0,
-            4.0,
-            13.0,
-=======
             2.0,
             1.0,
             0.0,
@@ -101504,7 +100785,6 @@
             4.0,
             9.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             8.0
           ],
           "watchers_taken": [
@@ -101512,22 +100792,14 @@
             1.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             2.0
           ],
           "smokes_used": [
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            0.0,
-=======
             1.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0
           ]
@@ -101542,22 +100814,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
-            0.6333333,
-            0.5,
-            0.0,
-            1.0,
-            0.8095238,
-            0.625
-          ],
-          "stuns": [
-            16.932812,
-            0.0,
-            0.0,
-            13.066407,
-            12.300244,
-            40.633644
-=======
             0.625,
             0.8095238,
             1.0,
@@ -101572,18 +100828,13 @@
             18.766138,
             0.0,
             16.932812
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
             1.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ],
           "tormentor_kills": [
@@ -101609,15 +100860,6 @@
         "agi": 3,
         "int": 0,
         "all": 1,
-<<<<<<< HEAD
-        "green": 2,
-        "blue": 0,
-        "red": 2,
-        "undead": 4,
-        "horns": 2,
-        "bearded": 1,
-        "aquatic": 2,
-=======
         "green": 3,
         "blue": 0,
         "red": 2,
@@ -101628,7 +100870,6 @@
         "horns": 0,
         "bearded": 0,
         "aquatic": 1,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "first_pick": 0,
         "last_pick": 0,
         "games_with_arcana": 0,
@@ -102974,22 +102215,7 @@
             0.0,
             3.0,
             4.0,
-<<<<<<< HEAD
-            3.0,
-            0.0,
-            2.0,
-            0.0
-          ],
-          "deaths": [
-            5.0,
-            3.0,
-            8.0,
-            2.0,
-            5.0,
-            4.0
-=======
             3.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "deaths": [
             4.0,
@@ -103000,30 +102226,6 @@
             5.0
           ],
           "creep_score": [
-<<<<<<< HEAD
-            389.0,
-            433.0,
-            404.0,
-            47.0,
-            260.0,
-            197.0
-          ],
-          "gpm": [
-            732.0,
-            717.0,
-            605.0,
-            274.0,
-            543.0,
-            415.0
-          ],
-          "madstone_collected": [
-            7.0,
-            16.0,
-            0.0,
-            1.0,
-            10.0,
-            10.0
-=======
             197.0,
             260.0,
             47.0,
@@ -103046,23 +102248,14 @@
             15.0,
             0.0,
             7.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "tower_kills": [
             1.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0
-=======
             0.0,
             0.0,
             0.0,
             0.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -103075,22 +102268,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
-            0.56666666,
-            0.8181818,
-            0.0,
-            1.0,
-            0.8095238,
-            0.125
-          ],
-          "stuns": [
-            14.899749,
-            44.167854,
-            0.0,
-            2.9999993,
-            8.599557,
-            3.6
-=======
             0.125,
             0.8095238,
             1.0,
@@ -103105,27 +102282,18 @@
             0.0,
             0.0,
             14.899749
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
             1.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ],
           "tormentor_kills": [
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0,
             0.0,
@@ -103142,11 +102310,7 @@
         }
       },
       "titles": {
-<<<<<<< HEAD
-        "str": 3,
-=======
         "str": 5,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "agi": 0,
         "int": 1,
         "all": 0,
@@ -103157,15 +102321,9 @@
         "golden": 1,
         "heroic": 0,
         "undead": 1,
-<<<<<<< HEAD
-        "horns": 2,
-        "bearded": 2,
-        "aquatic": 1,
-=======
         "horns": 0,
         "bearded": 0,
         "aquatic": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "first_pick": 2,
         "last_pick": 0,
         "games_with_arcana": 0,
@@ -104143,39 +103301,16 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
-            4.0,
-            2.0,
-            0.0,
-            2.0,
-            6.0,
-            2.0
-=======
             2.0,
             6.0,
             2.0,
             5.0,
             0.0,
             4.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "camps_stacked": [
             2.0,
             5.0,
-<<<<<<< HEAD
-            2.0,
-            0.0,
-            0.0,
-            5.0,
-            2.0
-          ],
-          "runes_grabbed": [
-            1.0,
-            7.0,
-            0.0,
-            0.0,
-            5.0,
-=======
             0.0,
             4.0,
             0.0,
@@ -104187,27 +103322,11 @@
             0.0,
             2.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             1.0
           ],
           "watchers_taken": [
             3.0,
             9.0,
-<<<<<<< HEAD
-            9.0,
-            0.0,
-            2.0,
-            9.0,
-            3.0
-          ],
-          "smokes_used": [
-            2.0,
-            2.0,
-            0.0,
-            0.0,
-            3.0,
-            0.0
-=======
             2.0,
             9.0,
             0.0,
@@ -104220,38 +103339,14 @@
             3.0,
             0.0,
             2.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
           "roshan_kills": [
-<<<<<<< HEAD
-            2.0,
-=======
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0,
             0.0,
             0.0,
-<<<<<<< HEAD
-            0.0
-          ],
-          "teamfight_participation": [
-            0.7,
-            0.8636364,
-            0.0,
-            0.5,
-            0.71428573,
-            0.625
-          ],
-          "stuns": [
-            35.233334,
-            16.166897,
-            0.0,
-            2.4,
-            42.76684,
-            34.698784
-=======
             0.0,
             2.0
           ],
@@ -104270,7 +103365,6 @@
             84.86829,
             0.0,
             35.233334
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "courier_kills": [
             0.0,
@@ -104290,11 +103384,7 @@
           ],
           "firstblood": [
             0.0,
-<<<<<<< HEAD
-            1.0,
-=======
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0,
             0.0,
             0.0,
@@ -104307,18 +103397,12 @@
         "agi": 1,
         "int": 2,
         "all": 2,
-<<<<<<< HEAD
-        "green": 2,
-        "blue": 0,
-        "red": 2,
-=======
         "green": 0,
         "blue": 0,
         "red": 2,
         "purple": 2,
         "golden": 1,
         "heroic": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "undead": 0,
         "horns": 0,
         "bearded": 1,
@@ -105570,55 +104654,16 @@
       "stats": {
         "blue": {
           "obs_placed": [
-<<<<<<< HEAD
-            12.0,
-            15.0,
-            0.0,
-            0.0,
-            11.0,
-            8.0
-=======
             8.0,
             11.0,
             0.0,
             11.0,
             0.0,
             12.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ],
           "camps_stacked": [
             1.0,
             2.0,
-<<<<<<< HEAD
-            0.0,
-            1.0,
-            2.0,
-            1.0
-          ],
-          "runes_grabbed": [
-            3.0,
-            3.0,
-            0.0,
-            2.0,
-            1.0,
-            2.0
-          ],
-          "watchers_taken": [
-            16.0,
-            19.0,
-            0.0,
-            1.0,
-            12.0,
-            6.0
-          ],
-          "smokes_used": [
-            4.0,
-            5.0,
-            0.0,
-            0.0,
-            3.0,
-            2.0
-=======
             1.0,
             1.0,
             0.0,
@@ -105647,7 +104692,6 @@
             3.0,
             0.0,
             4.0
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
           ]
         },
         "green": {
@@ -105660,29 +104704,6 @@
             0.0
           ],
           "teamfight_participation": [
-<<<<<<< HEAD
-            0.6333333,
-            0.5,
-            0.0,
-            1.0,
-            0.6666667,
-            0.75
-          ],
-          "stuns": [
-            35.66663,
-            29.266703,
-            0.0,
-            25.20037,
-            4.8,
-            0.0
-          ],
-          "courier_kills": [
-            0.0,
-            0.0,
-            0.0,
-            0.0,
-            1.0,
-=======
             0.75,
             0.6666667,
             1.0,
@@ -105704,7 +104725,6 @@
             0.0,
             0.0,
             0.0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
             0.0
           ],
           "tormentor_kills": [
@@ -105730,14 +104750,6 @@
         "agi": 1,
         "int": 1,
         "all": 1,
-<<<<<<< HEAD
-        "green": 3,
-        "blue": 0,
-        "red": 0,
-        "undead": 1,
-        "horns": 1,
-        "bearded": 4,
-=======
         "green": 2,
         "blue": 2,
         "red": 0,
@@ -105747,7 +104759,6 @@
         "undead": 2,
         "horns": 0,
         "bearded": 0,
->>>>>>> 7e61867 (TI2026 fantasy: coach prefixes/suffixes, hero flags, Lucky, clean player cards)
         "aquatic": 2,
         "first_pick": 1,
         "last_pick": 0,
