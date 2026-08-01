@@ -1,10 +1,6 @@
 {
   "event": "The International 2026",
-<<<<<<< HEAD
-  "generated_at": "2026-08-01T02:30:42.744262+00:00",
-=======
   "generated_at": "2026-08-01T00:06:26.398504+00:00",
->>>>>>> baf101d972e4f23a62273353fe3cb8fe5b8dd53a
   "leagues": [
     "19435",
     "19422",
@@ -20,15 +16,11 @@
     "20009"
   ],
   "updated_leagues": [
-<<<<<<< HEAD
-    "19917"
-=======
     "19255",
     "19575",
     "19656",
     "19951",
     "20009"
->>>>>>> baf101d972e4f23a62273353fe3cb8fe5b8dd53a
   ],
   "players": 80,
   "stratz_enabled": false
