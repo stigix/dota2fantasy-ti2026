@@ -1301,7 +1301,6 @@
     "total_matches_parsed": 0,
     "processed_match_ids": []
   },
-<<<<<<< HEAD
   "19917": {
     "name": "Games of the Future 2026",
     "short_name": "Games of the Future 2026",
@@ -1342,8 +1341,6 @@
     ],
     "lucky_matches": 2
   },
-=======
->>>>>>> baf101d972e4f23a62273353fe3cb8fe5b8dd53a
   "20009": {
     "name": "1win Essence II",
     "short_name": "1win Essence II",
@@ -1382,25 +1379,5 @@
       8923000652
     ],
     "lucky_matches": 4
-  },
-  "19951": {
-    "name": "Games of the Future 2026",
-    "short_name": "Games of the Future 2026",
-    "link": "https://liquipedia.net/dota2/Games_of_the_Future/2026",
-    "start_date": "2026-07-31",
-    "end_date": "2026-08-05",
-    "status": "ongoing",
-    "tier": 2,
-    "catalog_key": "games_of_the_future_2026",
-    "fantasy_weight": 0.45,
-    "coverage_threshold_maps": 20,
-    "minimum_weight_factor": 0.25,
-    "total_deaths_from_torm": 0,
-    "firstblood_before_10min": 0,
-    "firstblood_before_horn": 0,
-    "games<25min": 0,
-    "total_matches_parsed": 0,
-    "processed_match_ids": [],
-    "lucky_matches": 0
   }
 }
