@@ -35,10 +35,10 @@
   },
   "LGD Gaming": {
     "wins": 24,
-    "losses": 18,
-    "matches": 42,
-    "winrate": 57.1,
-    "weighted_winrate": 57.1,
+    "losses": 19,
+    "matches": 43,
+    "winrate": 55.8,
+    "weighted_winrate": 55.8,
     "by_league": {
       "19101": {
         "wins": 16,
@@ -52,17 +52,17 @@
       },
       "20009": {
         "wins": 1,
-        "losses": 1,
-        "matches": 2
+        "losses": 2,
+        "matches": 3
       }
     }
   },
   "BoomBoys": {
-    "wins": 76,
+    "wins": 77,
     "losses": 47,
-    "matches": 123,
-    "winrate": 61.8,
-    "weighted_winrate": 61.8,
+    "matches": 124,
+    "winrate": 62.1,
+    "weighted_winrate": 62.1,
     "by_league": {
       "19101": {
         "wins": 12,
@@ -95,9 +95,9 @@
         "matches": 20
       },
       "20009": {
-        "wins": 2,
+        "wins": 3,
         "losses": 2,
-        "matches": 4
+        "matches": 5
       }
     }
   },
@@ -399,11 +399,11 @@
     }
   },
   "Vici Gaming": {
-    "wins": 44,
+    "wins": 45,
     "losses": 48,
-    "matches": 92,
-    "winrate": 47.8,
-    "weighted_winrate": 45.0,
+    "matches": 93,
+    "winrate": 48.4,
+    "weighted_winrate": 45.3,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -431,9 +431,9 @@
         "matches": 19
       },
       "19917": {
-        "wins": 2,
+        "wins": 3,
         "losses": 1,
-        "matches": 3
+        "matches": 4
       },
       "20009": {
         "wins": 3,
@@ -462,16 +462,16 @@
     }
   },
   "Team Resilience": {
-    "wins": 0,
+    "wins": 2,
     "losses": 3,
-    "matches": 3,
-    "winrate": 0.0,
-    "weighted_winrate": 0.0,
+    "matches": 5,
+    "winrate": 40.0,
+    "weighted_winrate": 40.0,
     "by_league": {
       "19917": {
-        "wins": 0,
+        "wins": 2,
         "losses": 3,
-        "matches": 3
+        "matches": 5
       }
     }
   },
