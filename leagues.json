@@ -1317,7 +1317,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 1,
-    "total_matches_parsed": 19,
+    "total_matches_parsed": 20,
     "processed_match_ids": [
       8921931974,
       8921949036,
@@ -1337,7 +1337,8 @@
       8922722577,
       8922818221,
       8922940920,
-      8923040358
+      8923040358,
+      8923499263
     ],
     "lucky_matches": 2
   },
