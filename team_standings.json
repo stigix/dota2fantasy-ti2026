@@ -273,11 +273,11 @@
     }
   },
   "OG": {
-    "wins": 15,
-    "losses": 33,
-    "matches": 48,
-    "winrate": 31.2,
-    "weighted_winrate": 31.2,
+    "wins": 16,
+    "losses": 34,
+    "matches": 50,
+    "winrate": 32.0,
+    "weighted_winrate": 32.0,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -298,6 +298,11 @@
         "wins": 4,
         "losses": 6,
         "matches": 10
+      },
+      "20009": {
+        "wins": 1,
+        "losses": 1,
+        "matches": 2
       }
     }
   },
@@ -443,11 +448,11 @@
     }
   },
   "1win Team": {
-    "wins": 11,
-    "losses": 6,
-    "matches": 17,
-    "winrate": 64.7,
-    "weighted_winrate": 64.7,
+    "wins": 12,
+    "losses": 7,
+    "matches": 19,
+    "winrate": 63.2,
+    "weighted_winrate": 63.2,
     "by_league": {
       "19785": {
         "wins": 8,
@@ -455,9 +460,9 @@
         "matches": 13
       },
       "20009": {
-        "wins": 3,
-        "losses": 1,
-        "matches": 4
+        "wins": 4,
+        "losses": 2,
+        "matches": 6
       }
     }
   },
