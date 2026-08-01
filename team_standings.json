@@ -461,6 +461,20 @@
       }
     }
   },
+  "Team Resilience": {
+    "wins": 0,
+    "losses": 3,
+    "matches": 3,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19917": {
+        "wins": 0,
+        "losses": 3,
+        "matches": 3
+      }
+    }
+  },
   "Xtreme Gaming": {
     "wins": 2,
     "losses": 1,
@@ -486,20 +500,6 @@
         "wins": 1,
         "losses": 2,
         "matches": 3
-      }
-    }
-  },
-  "Team Resilience": {
-    "wins": 0,
-    "losses": 2,
-    "matches": 2,
-    "winrate": 0.0,
-    "weighted_winrate": 0.0,
-    "by_league": {
-      "19917": {
-        "wins": 0,
-        "losses": 2,
-        "matches": 2
       }
     }
   }
