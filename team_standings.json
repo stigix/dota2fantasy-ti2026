@@ -142,10 +142,10 @@
   },
   "Team Falcons": {
     "wins": 68,
-    "losses": 39,
-    "matches": 107,
-    "winrate": 63.6,
-    "weighted_winrate": 63.6,
+    "losses": 41,
+    "matches": 109,
+    "winrate": 62.4,
+    "weighted_winrate": 62.4,
     "by_league": {
       "19101": {
         "wins": 10,
@@ -179,8 +179,8 @@
       },
       "20009": {
         "wins": 4,
-        "losses": 0,
-        "matches": 4
+        "losses": 2,
+        "matches": 6
       }
     }
   },
@@ -273,11 +273,11 @@
     }
   },
   "OG": {
-    "wins": 16,
+    "wins": 18,
     "losses": 34,
-    "matches": 50,
-    "winrate": 32.0,
-    "weighted_winrate": 32.0,
+    "matches": 52,
+    "winrate": 34.6,
+    "weighted_winrate": 34.6,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -300,9 +300,9 @@
         "matches": 10
       },
       "20009": {
-        "wins": 1,
+        "wins": 3,
         "losses": 1,
-        "matches": 2
+        "matches": 4
       }
     }
   },
@@ -471,6 +471,20 @@
       }
     }
   },
+  "Xtreme Gaming": {
+    "wins": 4,
+    "losses": 1,
+    "matches": 5,
+    "winrate": 80.0,
+    "weighted_winrate": 80.0,
+    "by_league": {
+      "19917": {
+        "wins": 4,
+        "losses": 1,
+        "matches": 5
+      }
+    }
+  },
   "HULIGANI": {
     "wins": 2,
     "losses": 4,
@@ -496,20 +510,6 @@
         "wins": 2,
         "losses": 3,
         "matches": 5
-      }
-    }
-  },
-  "Xtreme Gaming": {
-    "wins": 2,
-    "losses": 1,
-    "matches": 3,
-    "winrate": 66.7,
-    "weighted_winrate": 66.7,
-    "by_league": {
-      "19917": {
-        "wins": 2,
-        "losses": 1,
-        "matches": 3
       }
     }
   }
