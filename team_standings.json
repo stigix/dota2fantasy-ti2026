@@ -58,11 +58,11 @@
     }
   },
   "BoomBoys": {
-    "wins": 79,
+    "wins": 80,
     "losses": 47,
-    "matches": 126,
-    "winrate": 62.7,
-    "weighted_winrate": 62.7,
+    "matches": 127,
+    "winrate": 63.0,
+    "weighted_winrate": 63.0,
     "by_league": {
       "19101": {
         "wins": 12,
@@ -95,9 +95,9 @@
         "matches": 20
       },
       "20009": {
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
-        "matches": 7
+        "matches": 8
       }
     }
   },
@@ -327,10 +327,10 @@
   },
   "GamerLegion": {
     "wins": 30,
-    "losses": 44,
-    "matches": 74,
-    "winrate": 40.5,
-    "weighted_winrate": 37.0,
+    "losses": 45,
+    "matches": 75,
+    "winrate": 40.0,
+    "weighted_winrate": 36.4,
     "by_league": {
       "19255": {
         "wins": 13,
@@ -359,8 +359,8 @@
       },
       "20009": {
         "wins": 0,
-        "losses": 1,
-        "matches": 1
+        "losses": 2,
+        "matches": 2
       }
     }
   },
@@ -472,16 +472,16 @@
     }
   },
   "HULIGANI": {
-    "wins": 1,
-    "losses": 3,
-    "matches": 4,
-    "winrate": 25.0,
-    "weighted_winrate": 25.0,
+    "wins": 2,
+    "losses": 4,
+    "matches": 6,
+    "winrate": 33.3,
+    "weighted_winrate": 33.3,
     "by_league": {
       "19917": {
-        "wins": 1,
-        "losses": 3,
-        "matches": 4
+        "wins": 2,
+        "losses": 4,
+        "matches": 6
       }
     }
   },
