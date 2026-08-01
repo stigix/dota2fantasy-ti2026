@@ -185,11 +185,11 @@
     }
   },
   "Team Liquid": {
-    "wins": 63,
+    "wins": 64,
     "losses": 50,
-    "matches": 113,
-    "winrate": 55.8,
-    "weighted_winrate": 56.0,
+    "matches": 114,
+    "winrate": 56.1,
+    "weighted_winrate": 56.4,
     "by_league": {
       "19101": {
         "wins": 6,
@@ -222,9 +222,9 @@
         "matches": 16
       },
       "20009": {
-        "wins": 3,
+        "wins": 4,
         "losses": 1,
-        "matches": 4
+        "matches": 5
       }
     }
   },
@@ -455,10 +455,10 @@
   },
   "GamerLegion": {
     "wins": 30,
-    "losses": 45,
-    "matches": 75,
-    "winrate": 40.0,
-    "weighted_winrate": 36.4,
+    "losses": 46,
+    "matches": 76,
+    "winrate": 39.5,
+    "weighted_winrate": 35.9,
     "by_league": {
       "19255": {
         "wins": 13,
@@ -487,8 +487,8 @@
       },
       "20009": {
         "wins": 0,
-        "losses": 2,
-        "matches": 2
+        "losses": 3,
+        "matches": 3
       }
     }
   },

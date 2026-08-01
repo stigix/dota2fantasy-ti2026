@@ -30860,37 +30860,43 @@
             14.0,
             11.0,
             2.0,
-            9.0
+            9.0,
+            11.0
           ],
           "deaths": [
             6.0,
             3.0,
             5.0,
-            2.0
+            2.0,
+            1.0
           ],
           "creep_score": [
             593.0,
             359.0,
             447.0,
-            310.0
+            310.0,
+            302.0
           ],
           "gpm": [
             851.0,
             769.0,
             580.0,
-            712.0
+            712.0,
+            715.0
           ],
           "madstone_collected": [
             18.0,
             23.0,
             19.0,
-            11.0
+            11.0,
+            14.0
           ],
           "tower_kills": [
             5.0,
             2.0,
             1.0,
-            4.0
+            4.0,
+            5.0
           ]
         },
         "green": {
@@ -30898,21 +30904,25 @@
             0.0,
             1.0,
             0.0,
+            1.0,
             1.0
           ],
           "teamfight_participation": [
             0.41509435,
             0.53125,
             0.4117647,
-            0.44680852
+            0.44680852,
+            0.7096774
           ],
           "stuns": [
             11.2175045,
             4.416747,
             0.0,
-            52.03453
+            52.03453,
+            36.69916
           ],
           "courier_kills": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -30922,10 +30932,12 @@
             2.0,
             0.0,
             0.0,
+            0.0,
             0.0
           ],
           "firstblood": [
             1.0,
+            0.0,
             0.0,
             0.0,
             0.0
@@ -30933,11 +30945,11 @@
         }
       },
       "titles": {
-        "str": 1,
+        "str": 2,
         "agi": 3,
         "int": 0,
         "all": 0,
-        "green": 1,
+        "green": 2,
         "blue": 0,
         "red": 3,
         "purple": 0,
@@ -30957,7 +30969,7 @@
         "lowest_networth": 0,
         "bbs_before_30min": 0,
         "most_deaths": 0,
-        "4+_active_items": 4,
+        "4+_active_items": 5,
         "most_assists": 0,
         "9_slots": 0,
         "lost_games": 1,
@@ -33282,37 +33294,43 @@
             10.0,
             13.0,
             3.0,
-            14.0
+            14.0,
+            9.0
           ],
           "deaths": [
             4.0,
             0.0,
             13.0,
+            1.0,
             1.0
           ],
           "creep_score": [
             456.0,
             191.0,
             452.0,
-            298.0
+            298.0,
+            238.0
           ],
           "gpm": [
             764.0,
             597.0,
             641.0,
-            771.0
+            771.0,
+            606.0
           ],
           "madstone_collected": [
             10.0,
             4.0,
             12.0,
-            12.0
+            12.0,
+            5.0
           ],
           "tower_kills": [
             2.0,
             2.0,
             2.0,
-            2.0
+            2.0,
+            1.0
           ]
         },
         "blue": {
@@ -33320,27 +33338,32 @@
             1.0,
             0.0,
             2.0,
-            2.0
+            2.0,
+            1.0
           ],
           "camps_stacked": [
             2.0,
             4.0,
             2.0,
-            4.0
+            4.0,
+            0.0
           ],
           "runes_grabbed": [
             15.0,
             11.0,
             6.0,
-            11.0
+            11.0,
+            4.0
           ],
           "watchers_taken": [
             6.0,
             1.0,
             2.0,
-            3.0
+            3.0,
+            0.0
           ],
           "smokes_used": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -33352,21 +33375,25 @@
             0.0,
             0.0,
             0.0,
+            0.0,
             0.0
           ],
           "teamfight_participation": [
             0.6792453,
             0.78125,
             0.8235294,
-            0.61702126
+            0.61702126,
+            0.7419355
           ],
           "stuns": [
             58.63662,
             74.06503,
             90.60259,
-            30.667135
+            30.667135,
+            45.736153
           ],
           "courier_kills": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -33376,32 +33403,34 @@
             0.0,
             0.0,
             0.0,
+            0.0,
             0.0
           ],
           "firstblood": [
             0.0,
             0.0,
             0.0,
-            0.0
+            0.0,
+            1.0
           ]
         }
       },
       "titles": {
         "str": 0,
         "agi": 1,
-        "int": 2,
+        "int": 3,
         "all": 1,
         "green": 1,
         "blue": 0,
         "red": 2,
-        "purple": 1,
+        "purple": 2,
         "golden": 0,
         "heroic": 0,
         "undead": 1,
         "horns": 0,
         "bearded": 0,
         "aquatic": 2,
-        "first_pick": 0,
+        "first_pick": 1,
         "last_pick": 0,
         "games_with_arcana": 0,
         "games_with_hero_master": 0
@@ -35119,42 +35148,49 @@
             20.0,
             2.0,
             4.0,
-            15.0
+            15.0,
+            2.0
           ],
           "deaths": [
             1.0,
             6.0,
             8.0,
-            2.0
+            2.0,
+            0.0
           ],
           "creep_score": [
             468.0,
             200.0,
             377.0,
-            227.0
+            227.0,
+            271.0
           ],
           "gpm": [
             817.0,
             432.0,
             525.0,
-            670.0
+            670.0,
+            568.0
           ],
           "madstone_collected": [
             21.0,
             5.0,
             15.0,
-            5.0
+            5.0,
+            15.0
           ],
           "tower_kills": [
             2.0,
             0.0,
             0.0,
-            2.0
+            2.0,
+            1.0
           ]
         },
         "green": {
           "roshan_kills": [
             1.0,
+            0.0,
             0.0,
             0.0,
             0.0
@@ -35163,16 +35199,19 @@
             0.7358491,
             0.5625,
             0.7058824,
-            0.59574467
+            0.59574467,
+            0.516129
           ],
           "stuns": [
             0.0,
             34.233406,
             0.0,
-            0.0
+            0.0,
+            24.833803
           ],
           "courier_kills": [
             1.0,
+            0.0,
             0.0,
             0.0,
             0.0
@@ -35181,9 +35220,11 @@
             0.0,
             0.0,
             0.0,
+            1.0,
             1.0
           ],
           "firstblood": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -35192,7 +35233,7 @@
         }
       },
       "titles": {
-        "str": 2,
+        "str": 3,
         "agi": 1,
         "int": 0,
         "all": 1,
@@ -35200,14 +35241,14 @@
         "blue": 0,
         "red": 0,
         "purple": 1,
-        "golden": 0,
+        "golden": 1,
         "heroic": 0,
         "undead": 1,
         "horns": 0,
         "bearded": 0,
         "aquatic": 0,
         "first_pick": 0,
-        "last_pick": 1,
+        "last_pick": 2,
         "games_with_arcana": 0,
         "games_with_hero_master": 0
       },
@@ -35216,7 +35257,7 @@
         "lowest_networth": 0,
         "bbs_before_30min": 0,
         "most_deaths": 0,
-        "4+_active_items": 2,
+        "4+_active_items": 3,
         "most_assists": 0,
         "9_slots": 0,
         "lost_games": 1,
@@ -36373,35 +36414,41 @@
             11.0,
             8.0,
             9.0,
-            5.0
+            5.0,
+            7.0
           ],
           "camps_stacked": [
             7.0,
             4.0,
             7.0,
-            0.0
+            0.0,
+            5.0
           ],
           "runes_grabbed": [
             3.0,
             1.0,
             2.0,
-            1.0
+            1.0,
+            0.0
           ],
           "watchers_taken": [
             4.0,
             5.0,
             2.0,
+            6.0,
             6.0
           ],
           "smokes_used": [
             4.0,
             1.0,
             3.0,
-            0.0
+            0.0,
+            2.0
           ]
         },
         "green": {
           "roshan_kills": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -36411,21 +36458,25 @@
             0.6603774,
             0.65625,
             0.7647059,
-            0.70212764
+            0.70212764,
+            0.61290324
           ],
           "stuns": [
             78.56302,
             41.099834,
             22.399998,
-            44.23592
+            44.23592,
+            9.266944
           ],
           "courier_kills": [
             1.0,
             0.0,
             0.0,
-            0.0
+            0.0,
+            1.0
           ],
           "tormentor_kills": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -36435,6 +36486,7 @@
             0.0,
             1.0,
             0.0,
+            0.0,
             0.0
           ]
         }
@@ -36442,12 +36494,12 @@
       "titles": {
         "str": 3,
         "agi": 0,
-        "int": 1,
+        "int": 2,
         "all": 0,
         "green": 0,
         "blue": 1,
         "red": 0,
-        "purple": 0,
+        "purple": 1,
         "golden": 2,
         "heroic": 0,
         "undead": 0,
@@ -38051,35 +38103,41 @@
             7.0,
             6.0,
             8.0,
-            6.0
+            6.0,
+            7.0
           ],
           "camps_stacked": [
             5.0,
             5.0,
             8.0,
-            2.0
+            2.0,
+            0.0
           ],
           "runes_grabbed": [
             2.0,
             1.0,
             2.0,
-            0.0
+            0.0,
+            2.0
           ],
           "watchers_taken": [
             11.0,
             7.0,
             9.0,
-            7.0
+            7.0,
+            4.0
           ],
           "smokes_used": [
             2.0,
             1.0,
             3.0,
-            2.0
+            2.0,
+            1.0
           ]
         },
         "green": {
           "roshan_kills": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -38089,27 +38147,32 @@
             0.6792453,
             0.875,
             0.8235294,
-            0.61702126
+            0.61702126,
+            0.7096774
           ],
           "stuns": [
             23.731834,
             22.600048,
             40.733616,
-            26.366161
+            26.366161,
+            17.399075
           ],
           "courier_kills": [
             0.0,
             2.0,
             0.0,
-            1.0
+            1.0,
+            2.0
           ],
           "tormentor_kills": [
             0.0,
             1.0,
             0.0,
+            0.0,
             0.0
           ],
           "firstblood": [
+            0.0,
             0.0,
             0.0,
             0.0,
@@ -38120,12 +38183,12 @@
       "titles": {
         "str": 0,
         "agi": 2,
-        "int": 2,
+        "int": 3,
         "all": 0,
         "green": 0,
         "blue": 2,
         "red": 0,
-        "purple": 0,
+        "purple": 1,
         "golden": 0,
         "heroic": 0,
         "undead": 0,
@@ -38143,10 +38206,10 @@
         "bbs_before_30min": 0,
         "most_deaths": 0,
         "4+_active_items": 2,
-        "most_assists": 2,
+        "most_assists": 3,
         "9_slots": 0,
         "lost_games": 1,
-        "most_voice_lines": 0
+        "most_voice_lines": 1
       }
     }
   },
@@ -121208,51 +121271,63 @@
         "red": {
           "kills": [
             2.0,
+            1.0,
             1.0
           ],
           "deaths": [
             3.0,
-            3.0
+            3.0,
+            5.0
           ],
           "creep_score": [
             438.0,
-            503.0
+            503.0,
+            268.0
           ],
           "gpm": [
             608.0,
-            592.0
+            592.0,
+            490.0
           ],
           "madstone_collected": [
             21.0,
-            24.0
+            24.0,
+            14.0
           ],
           "tower_kills": [
             2.0,
-            0.0
+            0.0,
+            1.0
           ]
         },
         "green": {
           "roshan_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "teamfight_participation": [
             0.3,
-            0.09090909
+            0.09090909,
+            0.25
           ],
           "stuns": [
             36.833084,
-            0.0
+            0.0,
+            18.866121
           ],
           "courier_kills": [
+            0.0,
             0.0,
             0.0
           ],
           "tormentor_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "firstblood": [
+            0.0,
             0.0,
             0.0
           ]
@@ -121262,13 +121337,13 @@
         "str": 0,
         "agi": 1,
         "int": 0,
-        "all": 1,
+        "all": 2,
         "green": 0,
         "blue": 1,
         "red": 0,
         "purple": 0,
         "golden": 0,
-        "heroic": 2,
+        "heroic": 3,
         "undead": 0,
         "horns": 0,
         "bearded": 0,
@@ -121283,10 +121358,10 @@
         "lowest_networth": 0,
         "bbs_before_30min": 0,
         "most_deaths": 0,
-        "4+_active_items": 2,
+        "4+_active_items": 3,
         "most_assists": 0,
         "9_slots": 0,
-        "lost_games": 2,
+        "lost_games": 3,
         "most_voice_lines": 0
       }
     }
@@ -122919,47 +122994,58 @@
         "red": {
           "kills": [
             11.0,
-            4.0
+            4.0,
+            3.0
           ],
           "deaths": [
             4.0,
-            4.0
+            4.0,
+            3.0
           ],
           "creep_score": [
             264.0,
-            370.0
+            370.0,
+            242.0
           ],
           "gpm": [
             540.0,
-            608.0
+            608.0,
+            468.0
           ],
           "madstone_collected": [
             6.0,
-            8.0
+            8.0,
+            7.0
           ],
           "tower_kills": [
             1.0,
-            4.0
+            4.0,
+            1.0
           ]
         },
         "blue": {
           "obs_placed": [
             2.0,
+            1.0,
             1.0
           ],
           "camps_stacked": [
+            0.0,
             0.0,
             0.0
           ],
           "runes_grabbed": [
             13.0,
-            5.0
+            5.0,
+            9.0
           ],
           "watchers_taken": [
             2.0,
-            1.0
+            1.0,
+            3.0
           ],
           "smokes_used": [
+            0.0,
             0.0,
             0.0
           ]
@@ -122967,25 +123053,31 @@
         "green": {
           "roshan_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "teamfight_participation": [
             0.85,
-            0.90909094
+            0.90909094,
+            0.5
           ],
           "stuns": [
             0.0,
-            53.469227
+            53.469227,
+            1.9667969
           ],
           "courier_kills": [
             0.0,
-            0.0
+            0.0,
+            2.0
           ],
           "tormentor_kills": [
+            0.0,
             0.0,
             0.0
           ],
           "firstblood": [
+            0.0,
             0.0,
             0.0
           ]
@@ -122993,12 +123085,12 @@
       },
       "titles": {
         "str": 0,
-        "agi": 1,
+        "agi": 2,
         "int": 1,
         "all": 0,
         "green": 0,
         "blue": 0,
-        "red": 0,
+        "red": 1,
         "purple": 1,
         "golden": 0,
         "heroic": 0,
@@ -123016,10 +123108,10 @@
         "lowest_networth": 0,
         "bbs_before_30min": 0,
         "most_deaths": 0,
-        "4+_active_items": 1,
+        "4+_active_items": 2,
         "most_assists": 0,
         "9_slots": 0,
-        "lost_games": 2,
+        "lost_games": 3,
         "most_voice_lines": 0
       }
     }
@@ -124227,58 +124319,70 @@
         "red": {
           "kills": [
             1.0,
-            0.0
+            0.0,
+            1.0
           ],
           "deaths": [
             5.0,
-            5.0
+            5.0,
+            7.0
           ],
           "creep_score": [
             334.0,
-            332.0
+            332.0,
+            204.0
           ],
           "gpm": [
             539.0,
-            466.0
+            466.0,
+            377.0
           ],
           "madstone_collected": [
             16.0,
-            14.0
+            14.0,
+            16.0
           ],
           "tower_kills": [
             0.0,
-            1.0
+            1.0,
+            0.0
           ]
         },
         "green": {
           "roshan_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "teamfight_participation": [
             0.6,
-            0.45454547
+            0.45454547,
+            0.5
           ],
           "stuns": [
             4.2,
-            35.733723
+            35.733723,
+            27.965624
           ],
           "courier_kills": [
+            0.0,
             0.0,
             0.0
           ],
           "tormentor_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "firstblood": [
+            0.0,
             0.0,
             0.0
           ]
         }
       },
       "titles": {
-        "str": 2,
+        "str": 3,
         "agi": 0,
         "int": 0,
         "all": 0,
@@ -124291,7 +124395,7 @@
         "undead": 0,
         "horns": 0,
         "bearded": 0,
-        "aquatic": 0,
+        "aquatic": 1,
         "first_pick": 0,
         "last_pick": 0,
         "games_with_arcana": 0,
@@ -124302,10 +124406,10 @@
         "lowest_networth": 0,
         "bbs_before_30min": 0,
         "most_deaths": 0,
-        "4+_active_items": 1,
+        "4+_active_items": 2,
         "most_assists": 0,
         "9_slots": 0,
-        "lost_games": 2,
+        "lost_games": 3,
         "most_voice_lines": 0
       }
     }
@@ -125430,47 +125534,58 @@
         "blue": {
           "obs_placed": [
             8.0,
-            9.0
+            9.0,
+            8.0
           ],
           "camps_stacked": [
             0.0,
-            1.0
+            1.0,
+            2.0
           ],
           "runes_grabbed": [
             4.0,
-            2.0
+            2.0,
+            3.0
           ],
           "watchers_taken": [
             5.0,
-            7.0
+            7.0,
+            4.0
           ],
           "smokes_used": [
             4.0,
-            4.0
+            4.0,
+            2.0
           ]
         },
         "green": {
           "roshan_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "teamfight_participation": [
             0.6,
-            0.72727275
+            0.72727275,
+            0.875
           ],
           "stuns": [
             73.50024,
-            66.36679
+            66.36679,
+            51.633152
           ],
           "courier_kills": [
             1.0,
+            0.0,
             0.0
           ],
           "tormentor_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "firstblood": [
+            0.0,
             0.0,
             0.0
           ]
@@ -125478,15 +125593,15 @@
       },
       "titles": {
         "str": 0,
-        "agi": 0,
+        "agi": 1,
         "int": 1,
         "all": 1,
         "green": 0,
         "blue": 1,
         "red": 0,
         "purple": 1,
-        "golden": 0,
-        "heroic": 0,
+        "golden": 1,
+        "heroic": 1,
         "undead": 1,
         "horns": 0,
         "bearded": 0,
@@ -125501,10 +125616,10 @@
         "lowest_networth": 2,
         "bbs_before_30min": 0,
         "most_deaths": 1,
-        "4+_active_items": 1,
+        "4+_active_items": 2,
         "most_assists": 0,
         "9_slots": 0,
-        "lost_games": 2,
+        "lost_games": 3,
         "most_voice_lines": 0
       }
     }
@@ -126629,49 +126744,60 @@
         "blue": {
           "obs_placed": [
             8.0,
-            7.0
+            7.0,
+            5.0
           ],
           "camps_stacked": [
             6.0,
-            3.0
+            3.0,
+            0.0
           ],
           "runes_grabbed": [
             6.0,
-            4.0
+            4.0,
+            5.0
           ],
           "watchers_taken": [
             5.0,
-            5.0
+            5.0,
+            9.0
           ],
           "smokes_used": [
             2.0,
-            1.0
+            1.0,
+            2.0
           ]
         },
         "green": {
           "roshan_kills": [
             0.0,
+            0.0,
             0.0
           ],
           "teamfight_participation": [
             0.45,
-            0.54545456
+            0.54545456,
+            0.375
           ],
           "stuns": [
             0.0,
-            0.0
+            0.0,
+            48.66637
           ],
           "courier_kills": [
             1.0,
-            0.0
+            0.0,
+            1.0
           ],
           "tormentor_kills": [
+            0.0,
             0.0,
             0.0
           ],
           "firstblood": [
             0.0,
-            1.0
+            1.0,
+            0.0
           ]
         }
       },
@@ -126679,31 +126805,31 @@
         "str": 2,
         "agi": 0,
         "int": 0,
-        "all": 0,
+        "all": 1,
         "green": 2,
         "blue": 0,
         "red": 0,
-        "purple": 0,
+        "purple": 1,
         "golden": 0,
         "heroic": 0,
-        "undead": 2,
+        "undead": 3,
         "horns": 0,
         "bearded": 0,
         "aquatic": 0,
-        "first_pick": 2,
+        "first_pick": 3,
         "last_pick": 0,
         "games_with_arcana": 0,
         "games_with_hero_master": 0
       },
       "subtitles": {
         "0_kills": 0,
-        "lowest_networth": 0,
+        "lowest_networth": 1,
         "bbs_before_30min": 0,
-        "most_deaths": 0,
+        "most_deaths": 1,
         "4+_active_items": 2,
         "most_assists": 0,
         "9_slots": 0,
-        "lost_games": 2,
+        "lost_games": 3,
         "most_voice_lines": 0
       }
     }
