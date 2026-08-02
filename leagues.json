@@ -1318,7 +1318,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 1,
-    "total_matches_parsed": 43,
+    "total_matches_parsed": 45,
     "processed_match_ids": [
       8921931974,
       8921949036,
@@ -1362,7 +1362,9 @@
       8925210898,
       8925308090,
       8925425359,
-      8925543582
+      8925543582,
+      8925703946,
+      8925847726
     ],
     "lucky_matches": 3
   },
@@ -1381,8 +1383,8 @@
     "total_deaths_from_torm": 0,
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
-    "games<25min": 2,
-    "total_matches_parsed": 30,
+    "games<25min": 3,
+    "total_matches_parsed": 32,
     "processed_match_ids": [
       8920584549,
       8920668670,
@@ -1413,7 +1415,9 @@
       8924695153,
       8924770688,
       8925460065,
-      8925564849
+      8925564849,
+      8925659440,
+      8925788830
     ],
     "lucky_matches": 4
   }
