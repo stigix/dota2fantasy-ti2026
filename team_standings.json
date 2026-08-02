@@ -323,10 +323,10 @@
   },
   "OG": {
     "wins": 19,
-    "losses": 35,
-    "matches": 54,
-    "winrate": 35.2,
-    "weighted_winrate": 35.2,
+    "losses": 37,
+    "matches": 56,
+    "winrate": 33.9,
+    "weighted_winrate": 33.9,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -350,8 +350,8 @@
       },
       "20009": {
         "wins": 4,
-        "losses": 2,
-        "matches": 6
+        "losses": 4,
+        "matches": 8
       }
     }
   },
@@ -561,11 +561,11 @@
     }
   },
   "Vici Gaming": {
-    "wins": 46,
+    "wins": 48,
     "losses": 48,
-    "matches": 94,
-    "winrate": 48.9,
-    "weighted_winrate": 45.6,
+    "matches": 96,
+    "winrate": 50.0,
+    "weighted_winrate": 46.9,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -598,9 +598,9 @@
         "matches": 5
       },
       "20009": {
-        "wins": 3,
+        "wins": 5,
         "losses": 3,
-        "matches": 6
+        "matches": 8
       }
     }
   },
