@@ -1318,7 +1318,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 1,
-    "total_matches_parsed": 45,
+    "total_matches_parsed": 46,
     "processed_match_ids": [
       8921931974,
       8921949036,
@@ -1364,9 +1364,10 @@
       8925425359,
       8925543582,
       8925703946,
-      8925847726
+      8925847726,
+      8926022375
     ],
-    "lucky_matches": 3
+    "lucky_matches": 4
   },
   "20009": {
     "name": "1win Essence II",
@@ -1384,7 +1385,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 3,
-    "total_matches_parsed": 33,
+    "total_matches_parsed": 34,
     "processed_match_ids": [
       8920584549,
       8920668670,
@@ -1418,7 +1419,8 @@
       8925564849,
       8925659440,
       8925788830,
-      8925909470
+      8925909470,
+      8926048199
     ],
     "lucky_matches": 4
   }

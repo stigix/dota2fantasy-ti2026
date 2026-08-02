@@ -141,11 +141,11 @@
     }
   },
   "Team Falcons": {
-    "wins": 69,
+    "wins": 70,
     "losses": 41,
-    "matches": 110,
-    "winrate": 62.7,
-    "weighted_winrate": 62.7,
+    "matches": 111,
+    "winrate": 63.1,
+    "weighted_winrate": 63.1,
     "by_league": {
       "19101": {
         "wins": 10,
@@ -178,9 +178,9 @@
         "matches": 12
       },
       "20009": {
-        "wins": 5,
+        "wins": 6,
         "losses": 2,
-        "matches": 7
+        "matches": 8
       }
     }
   },
@@ -274,10 +274,10 @@
   },
   "1win Team": {
     "wins": 63,
-    "losses": 61,
-    "matches": 124,
-    "winrate": 50.8,
-    "weighted_winrate": 51.6,
+    "losses": 62,
+    "matches": 125,
+    "winrate": 50.4,
+    "weighted_winrate": 51.2,
     "by_league": {
       "19101": {
         "wins": 4,
@@ -316,8 +316,8 @@
       },
       "20009": {
         "wins": 4,
-        "losses": 3,
-        "matches": 7
+        "losses": 4,
+        "matches": 8
       }
     }
   },
