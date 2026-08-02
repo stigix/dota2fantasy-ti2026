@@ -322,11 +322,11 @@
     }
   },
   "OG": {
-    "wins": 18,
+    "wins": 19,
     "losses": 35,
-    "matches": 53,
-    "winrate": 34.0,
-    "weighted_winrate": 34.0,
+    "matches": 54,
+    "winrate": 35.2,
+    "weighted_winrate": 35.2,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -349,9 +349,9 @@
         "matches": 10
       },
       "20009": {
-        "wins": 3,
+        "wins": 4,
         "losses": 2,
-        "matches": 5
+        "matches": 6
       }
     }
   },
@@ -518,10 +518,10 @@
   },
   "Nigma Galaxy": {
     "wins": 46,
-    "losses": 61,
-    "matches": 107,
-    "winrate": 43.0,
-    "weighted_winrate": 41.7,
+    "losses": 62,
+    "matches": 108,
+    "winrate": 42.6,
+    "weighted_winrate": 41.3,
     "by_league": {
       "19255": {
         "wins": 5,
@@ -555,8 +555,8 @@
       },
       "20009": {
         "wins": 1,
-        "losses": 6,
-        "matches": 7
+        "losses": 7,
+        "matches": 8
       }
     }
   },
@@ -606,10 +606,10 @@
   },
   "Team Resilience": {
     "wins": 11,
-    "losses": 7,
-    "matches": 18,
-    "winrate": 61.1,
-    "weighted_winrate": 58.5,
+    "losses": 8,
+    "matches": 19,
+    "winrate": 57.9,
+    "weighted_winrate": 54.5,
     "by_league": {
       "19575": {
         "wins": 9,
@@ -618,8 +618,8 @@
       },
       "19917": {
         "wins": 2,
-        "losses": 3,
-        "matches": 5
+        "losses": 4,
+        "matches": 6
       }
     }
   }
