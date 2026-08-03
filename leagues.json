@@ -1318,7 +1318,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 1,
-    "total_matches_parsed": 57,
+    "total_matches_parsed": 59,
     "processed_match_ids": [
       8921931974,
       8921949036,
@@ -1376,7 +1376,9 @@
       8927207054,
       8927288399,
       8927380776,
-      8927539264
+      8927539264,
+      8927660975,
+      8927760296
     ],
     "lucky_matches": 5
   },
@@ -1396,7 +1398,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 4,
-    "total_matches_parsed": 40,
+    "total_matches_parsed": 42,
     "processed_match_ids": [
       8920584549,
       8920668670,
@@ -1437,7 +1439,9 @@
       8927177084,
       8927232410,
       8927374543,
-      8927466440
+      8927466440,
+      8927668869,
+      8927786392
     ],
     "lucky_matches": 4
   }
