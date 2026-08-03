@@ -322,11 +322,11 @@
     }
   },
   "OG": {
-    "wins": 19,
+    "wins": 21,
     "losses": 37,
-    "matches": 56,
-    "winrate": 33.9,
-    "weighted_winrate": 33.9,
+    "matches": 58,
+    "winrate": 36.2,
+    "weighted_winrate": 36.2,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -349,9 +349,9 @@
         "matches": 10
       },
       "20009": {
-        "wins": 4,
+        "wins": 6,
         "losses": 4,
-        "matches": 8
+        "matches": 10
       }
     }
   },
@@ -406,10 +406,10 @@
   },
   "Xtreme Gaming": {
     "wins": 53,
-    "losses": 62,
-    "matches": 115,
-    "winrate": 46.1,
-    "weighted_winrate": 45.0,
+    "losses": 63,
+    "matches": 116,
+    "winrate": 45.7,
+    "weighted_winrate": 44.8,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -448,17 +448,17 @@
       },
       "19917": {
         "wins": 5,
-        "losses": 2,
-        "matches": 7
+        "losses": 3,
+        "matches": 8
       }
     }
   },
   "GamerLegion": {
     "wins": 32,
-    "losses": 47,
-    "matches": 79,
-    "winrate": 40.5,
-    "weighted_winrate": 37.2,
+    "losses": 49,
+    "matches": 81,
+    "winrate": 39.5,
+    "weighted_winrate": 36.2,
     "by_league": {
       "19255": {
         "wins": 13,
@@ -487,8 +487,8 @@
       },
       "20009": {
         "wins": 2,
-        "losses": 4,
-        "matches": 6
+        "losses": 6,
+        "matches": 8
       }
     }
   },
@@ -561,11 +561,11 @@
     }
   },
   "Vici Gaming": {
-    "wins": 48,
+    "wins": 49,
     "losses": 48,
-    "matches": 96,
-    "winrate": 50.0,
-    "weighted_winrate": 46.9,
+    "matches": 97,
+    "winrate": 50.5,
+    "weighted_winrate": 47.2,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -593,9 +593,9 @@
         "matches": 19
       },
       "19917": {
-        "wins": 4,
+        "wins": 5,
         "losses": 1,
-        "matches": 5
+        "matches": 6
       },
       "20009": {
         "wins": 5,
@@ -605,11 +605,11 @@
     }
   },
   "Team Resilience": {
-    "wins": 14,
+    "wins": 15,
     "losses": 9,
-    "matches": 23,
-    "winrate": 60.9,
-    "weighted_winrate": 58.9,
+    "matches": 24,
+    "winrate": 62.5,
+    "weighted_winrate": 61.0,
     "by_league": {
       "19575": {
         "wins": 9,
@@ -617,9 +617,9 @@
         "matches": 13
       },
       "19917": {
-        "wins": 5,
+        "wins": 6,
         "losses": 5,
-        "matches": 10
+        "matches": 11
       }
     }
   }
