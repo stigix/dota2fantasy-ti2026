@@ -35,10 +35,10 @@
   },
   "LGD Gaming": {
     "wins": 24,
-    "losses": 20,
-    "matches": 44,
-    "winrate": 54.5,
-    "weighted_winrate": 54.5,
+    "losses": 22,
+    "matches": 46,
+    "winrate": 52.2,
+    "weighted_winrate": 52.2,
     "by_league": {
       "19101": {
         "wins": 16,
@@ -52,8 +52,8 @@
       },
       "20009": {
         "wins": 1,
-        "losses": 3,
-        "matches": 4
+        "losses": 5,
+        "matches": 6
       }
     }
   },
@@ -273,11 +273,11 @@
     }
   },
   "1win Team": {
-    "wins": 63,
+    "wins": 65,
     "losses": 62,
-    "matches": 125,
-    "winrate": 50.4,
-    "weighted_winrate": 51.2,
+    "matches": 127,
+    "winrate": 51.2,
+    "weighted_winrate": 52.0,
     "by_league": {
       "19101": {
         "wins": 4,
@@ -315,9 +315,9 @@
         "matches": 13
       },
       "20009": {
-        "wins": 4,
+        "wins": 6,
         "losses": 4,
-        "matches": 8
+        "matches": 10
       }
     }
   },
@@ -405,11 +405,11 @@
     }
   },
   "Xtreme Gaming": {
-    "wins": 52,
-    "losses": 61,
-    "matches": 113,
-    "winrate": 46.0,
-    "weighted_winrate": 44.9,
+    "wins": 53,
+    "losses": 62,
+    "matches": 115,
+    "winrate": 46.1,
+    "weighted_winrate": 45.0,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -447,9 +447,9 @@
         "matches": 13
       },
       "19917": {
-        "wins": 4,
-        "losses": 1,
-        "matches": 5
+        "wins": 5,
+        "losses": 2,
+        "matches": 7
       }
     }
   },
@@ -605,11 +605,11 @@
     }
   },
   "Team Resilience": {
-    "wins": 13,
-    "losses": 8,
-    "matches": 21,
-    "winrate": 61.9,
-    "weighted_winrate": 60.0,
+    "wins": 14,
+    "losses": 9,
+    "matches": 23,
+    "winrate": 60.9,
+    "weighted_winrate": 58.9,
     "by_league": {
       "19575": {
         "wins": 9,
@@ -617,9 +617,9 @@
         "matches": 13
       },
       "19917": {
-        "wins": 4,
-        "losses": 4,
-        "matches": 8
+        "wins": 5,
+        "losses": 5,
+        "matches": 10
       }
     }
   }
