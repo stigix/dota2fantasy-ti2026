@@ -186,10 +186,10 @@
   },
   "Team Liquid": {
     "wins": 66,
-    "losses": 50,
-    "matches": 116,
-    "winrate": 56.9,
-    "weighted_winrate": 57.1,
+    "losses": 51,
+    "matches": 117,
+    "winrate": 56.4,
+    "weighted_winrate": 56.6,
     "by_league": {
       "19101": {
         "wins": 6,
@@ -223,8 +223,8 @@
       },
       "20009": {
         "wins": 6,
-        "losses": 1,
-        "matches": 7
+        "losses": 2,
+        "matches": 8
       }
     }
   },
@@ -561,11 +561,11 @@
     }
   },
   "Vici Gaming": {
-    "wins": 49,
+    "wins": 50,
     "losses": 51,
-    "matches": 100,
-    "winrate": 49.0,
-    "weighted_winrate": 46.1,
+    "matches": 101,
+    "winrate": 49.5,
+    "weighted_winrate": 46.7,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -598,9 +598,9 @@
         "matches": 8
       },
       "20009": {
-        "wins": 5,
+        "wins": 6,
         "losses": 4,
-        "matches": 9
+        "matches": 10
       }
     }
   },
