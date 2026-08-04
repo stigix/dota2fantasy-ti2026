@@ -58,11 +58,11 @@
     }
   },
   "BoomBoys": {
-    "wins": 80,
+    "wins": 81,
     "losses": 49,
-    "matches": 129,
-    "winrate": 62.0,
-    "weighted_winrate": 62.0,
+    "matches": 130,
+    "winrate": 62.3,
+    "weighted_winrate": 62.3,
     "by_league": {
       "19101": {
         "wins": 12,
@@ -95,9 +95,9 @@
         "matches": 20
       },
       "20009": {
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "matches": 10
+        "matches": 11
       }
     }
   },
@@ -323,10 +323,10 @@
   },
   "OG": {
     "wins": 21,
-    "losses": 37,
-    "matches": 58,
-    "winrate": 36.2,
-    "weighted_winrate": 36.2,
+    "losses": 38,
+    "matches": 59,
+    "winrate": 35.6,
+    "weighted_winrate": 35.6,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -350,8 +350,8 @@
       },
       "20009": {
         "wins": 6,
-        "losses": 4,
-        "matches": 10
+        "losses": 5,
+        "matches": 11
       }
     }
   },
