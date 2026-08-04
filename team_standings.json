@@ -58,11 +58,11 @@
     }
   },
   "BoomBoys": {
-    "wins": 81,
-    "losses": 49,
-    "matches": 130,
-    "winrate": 62.3,
-    "weighted_winrate": 62.3,
+    "wins": 82,
+    "losses": 50,
+    "matches": 132,
+    "winrate": 62.1,
+    "weighted_winrate": 62.1,
     "by_league": {
       "19101": {
         "wins": 12,
@@ -95,9 +95,9 @@
         "matches": 20
       },
       "20009": {
-        "wins": 7,
-        "losses": 4,
-        "matches": 11
+        "wins": 8,
+        "losses": 5,
+        "matches": 13
       }
     }
   },
@@ -273,11 +273,11 @@
     }
   },
   "1win Team": {
-    "wins": 65,
+    "wins": 66,
     "losses": 62,
-    "matches": 127,
-    "winrate": 51.2,
-    "weighted_winrate": 52.0,
+    "matches": 128,
+    "winrate": 51.6,
+    "weighted_winrate": 52.4,
     "by_league": {
       "19101": {
         "wins": 4,
@@ -315,18 +315,18 @@
         "matches": 13
       },
       "20009": {
-        "wins": 6,
+        "wins": 7,
         "losses": 4,
-        "matches": 10
+        "matches": 11
       }
     }
   },
   "OG": {
-    "wins": 21,
-    "losses": 38,
-    "matches": 59,
-    "winrate": 35.6,
-    "weighted_winrate": 35.6,
+    "wins": 22,
+    "losses": 39,
+    "matches": 61,
+    "winrate": 36.1,
+    "weighted_winrate": 36.1,
     "by_league": {
       "19101": {
         "wins": 3,
@@ -349,9 +349,9 @@
         "matches": 10
       },
       "20009": {
-        "wins": 6,
-        "losses": 5,
-        "matches": 11
+        "wins": 7,
+        "losses": 6,
+        "matches": 13
       }
     }
   },
@@ -562,10 +562,10 @@
   },
   "Vici Gaming": {
     "wins": 50,
-    "losses": 52,
-    "matches": 102,
-    "winrate": 49.0,
-    "weighted_winrate": 46.2,
+    "losses": 53,
+    "matches": 103,
+    "winrate": 48.5,
+    "weighted_winrate": 45.7,
     "by_league": {
       "19435": {
         "wins": 8,
@@ -599,17 +599,17 @@
       },
       "20009": {
         "wins": 6,
-        "losses": 5,
-        "matches": 11
+        "losses": 6,
+        "matches": 12
       }
     }
   },
   "Team Resilience": {
     "wins": 15,
-    "losses": 9,
-    "matches": 24,
-    "winrate": 62.5,
-    "weighted_winrate": 61.0,
+    "losses": 11,
+    "matches": 26,
+    "winrate": 57.7,
+    "weighted_winrate": 55.4,
     "by_league": {
       "19575": {
         "wins": 9,
@@ -618,8 +618,8 @@
       },
       "19917": {
         "wins": 6,
-        "losses": 5,
-        "matches": 11
+        "losses": 7,
+        "matches": 13
       }
     }
   }
