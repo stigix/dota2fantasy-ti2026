@@ -1314,7 +1314,7 @@
     "fantasy_weight": 0.45,
     "coverage_threshold_maps": 20,
     "minimum_weight_factor": 0.25,
-    "total_deaths_from_torm": 1,
+    "total_deaths_from_torm": 2,
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 1,
