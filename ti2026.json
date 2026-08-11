@@ -1,7 +1,112 @@
 {
   "event": "The International 2026",
   "league_id": 19719,
-  "updated_at": "2026-07-17T11:23:22.684277+00:00",
+  "updated_at": "2026-08-10T15:00:00+00:00",
   "status": "upcoming",
-  "series": []
+  "series": [
+    {
+      "id": "ti2026-r1-1",
+      "team_a": "Team Falcons",
+      "team_b": "LGD Gaming",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786611600,
+      "map_ids": []
+    },
+    {
+      "id": "ti2026-r1-2",
+      "team_a": "Team Spirit",
+      "team_b": "Xtreme Gaming",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786622400,
+      "map_ids": []
+    },
+    {
+      "id": "ti2026-r1-3",
+      "team_a": "1win Team",
+      "team_b": "Nigma Galaxy",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786611600,
+      "map_ids": []
+    },
+    {
+      "id": "ti2026-r1-4",
+      "team_a": "Team Liquid",
+      "team_b": "Vici Gaming",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786622400,
+      "map_ids": []
+    },
+    {
+      "id": "ti2026-r1-5",
+      "team_a": "BoomBoys",
+      "team_b": "OG",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786611600,
+      "map_ids": []
+    },
+    {
+      "id": "ti2026-r1-6",
+      "team_a": "Aurora Gaming",
+      "team_b": "GamerLegion",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786622400,
+      "map_ids": []
+    },
+    {
+      "id": "ti2026-r1-7",
+      "team_a": "TEAM VISION",
+      "team_b": "Team Resilience",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786611600,
+      "map_ids": []
+    },
+    {
+      "id": "ti2026-r1-8",
+      "team_a": "Team Yandex",
+      "team_b": "HULIGANI",
+      "score_a": 0,
+      "score_b": 0,
+      "completed": false,
+      "winner": null,
+      "stage": "Swiss",
+      "round": 1,
+      "start_time": 1786622400,
+      "map_ids": []
+    }
+  ]
 }

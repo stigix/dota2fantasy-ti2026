@@ -525,9 +525,32 @@ function findNoRematchPairing(entries, teamMap) {
   return solve(entries)
 }
 
+const OFFICIAL_SWISS_R1 = [
+  ['Team Falcons', 'LGD Gaming'],
+  ['Team Spirit', 'Xtreme Gaming'],
+  ['1win Team', 'Nigma Galaxy'],
+  ['Team Liquid', 'Vici Gaming'],
+  ['BoomBoys', 'OG'],
+  ['Aurora Gaming', 'GamerLegion'],
+  ['TEAM VISION', 'Team Resilience'],
+  ['Team Yandex', 'HULIGANI'],
+]
+
 function pairTeams(teams, standings, roundNumber) {
   const teamMap = new Map(teams.map((team) => [team.name, team]))
   if (roundNumber === 1) {
+    const nameSet = new Set(teams.map((t) => t.name))
+    const official = OFFICIAL_SWISS_R1.filter(([a, b]) => nameSet.has(a) && nameSet.has(b))
+    if (official.length === 8) {
+      return official.map(([a, b], index) => ({
+        id: `swiss-${roundNumber}-${index + 1}`,
+        a,
+        b,
+        winner: null,
+        scoreA: 0,
+        scoreB: 0,
+      }))
+    }
     const seeded = [...teams].sort((a, b) => b.rating - a.rating || a.name.localeCompare(b.name))
     const half = seeded.length / 2
     return seeded.slice(0, half).map((team, index) => ({

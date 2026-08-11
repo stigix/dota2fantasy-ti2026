@@ -282,6 +282,20 @@ def main() -> None:
         return
 
     series = group_series(matches)
+    previous_series = payload.get("series") or []
+    if not series and previous_series:
+        series = previous_series
+        print(f"OpenDota has 0 maps — keeping {len(series)} scheduled series.")
+    elif series and previous_series:
+        def key_of(item: dict) -> tuple[str, str]:
+            a = normalize(item.get("team_a"))
+            b = normalize(item.get("team_b"))
+            return tuple(sorted((a, b)))
+
+        live_keys = {key_of(item) for item in series}
+        for item in previous_series:
+            if not item.get("completed") and not item.get("map_ids") and key_of(item) not in live_keys:
+                series.append(item)
     now = datetime.now(timezone.utc)
     start_date = datetime(2026, 8, 13, tzinfo=timezone.utc).date()
     end_date = datetime(2026, 8, 23, tzinfo=timezone.utc).date()
