@@ -1,7 +1,7 @@
 {
   "event": "The International 2026",
   "league_id": 19719,
-  "updated_at": "2026-08-13T08:41:52.609074+00:00",
+  "updated_at": "2026-08-13T10:19:54.368486+00:00",
   "status": "ongoing",
   "series": [
     {
@@ -86,41 +86,58 @@
       "team_a": "Team 9964962",
       "team_b": "Team 9467224",
       "score_a": 0,
-      "score_b": 1,
-      "completed": false,
-      "winner": null,
+      "score_b": 2,
+      "completed": true,
+      "winner": "Team 9467224",
       "stage": "Swiss",
       "start_time": 1786601346,
       "map_ids": [
-        8943097729
+        8943097729,
+        8943171995
       ]
     },
     {
       "id": "series-1130053",
       "team_a": "Team 9823272",
       "team_b": "Team 10149530",
-      "score_a": 1,
+      "score_a": 2,
       "score_b": 0,
-      "completed": false,
-      "winner": null,
+      "completed": true,
+      "winner": "Team 9823272",
       "stage": "Swiss",
       "start_time": 1786605492,
       "map_ids": [
-        8943142948
+        8943142948,
+        8943182700
       ]
     },
     {
       "id": "series-1130051",
       "team_a": "Team 7119388",
       "team_b": "Team 8261500",
+      "score_a": 2,
+      "score_b": 0,
+      "completed": true,
+      "winner": "Team 7119388",
+      "stage": "Swiss",
+      "start_time": 1786605530,
+      "map_ids": [
+        8943143428,
+        8943200897
+      ]
+    },
+    {
+      "id": "series-1130060",
+      "team_a": "Team 8255888",
+      "team_b": "Team 10150413",
       "score_a": 1,
       "score_b": 0,
       "completed": false,
       "winner": null,
       "stage": "Swiss",
-      "start_time": 1786605530,
+      "start_time": 1786610593,
       "map_ids": [
-        8943143428
+        8943202720
       ]
     },
     {
