@@ -1,1 +1,114 @@
-{}
+{
+  "BoomBoys": {
+    "wins": 1,
+    "losses": 0,
+    "matches": 1,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
+      }
+    }
+  },
+  "OG": {
+    "wins": 0,
+    "losses": 1,
+    "matches": 1,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 1,
+        "matches": 1
+      }
+    }
+  },
+  "Team Resilience": {
+    "wins": 0,
+    "losses": 1,
+    "matches": 1,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 1,
+        "matches": 1
+      }
+    }
+  },
+  "TEAM VISION": {
+    "wins": 1,
+    "losses": 0,
+    "matches": 1,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
+      }
+    }
+  },
+  "Nigma Galaxy": {
+    "wins": 0,
+    "losses": 1,
+    "matches": 1,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 1,
+        "matches": 1
+      }
+    }
+  },
+  "1win Team": {
+    "wins": 1,
+    "losses": 0,
+    "matches": 1,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
+      }
+    }
+  },
+  "Team Falcons": {
+    "wins": 0,
+    "losses": 1,
+    "matches": 1,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 1,
+        "matches": 1
+      }
+    }
+  },
+  "LGD Gaming": {
+    "wins": 1,
+    "losses": 0,
+    "matches": 1,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
+      }
+    }
+  }
+}
