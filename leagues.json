@@ -1294,11 +1294,11 @@
     "status": "ongoing",
     "is_ti": true,
     "fantasy_weight": 2.0,
-    "total_deaths_from_torm": 0,
+    "total_deaths_from_torm": 1,
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 0,
-    "total_matches_parsed": 9,
+    "total_matches_parsed": 15,
     "processed_match_ids": [
       8942993144,
       8943000927,
@@ -1308,7 +1308,13 @@
       8943038404,
       8943053016,
       8943055466,
-      8943072784
+      8943072784,
+      8943091110,
+      8943097729,
+      8943098449,
+      8943142948,
+      8943143428,
+      8943148045
     ],
     "lucky_matches": 1
   },

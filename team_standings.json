@@ -1,4 +1,144 @@
 {
+  "Vici Gaming": {
+    "wins": 0,
+    "losses": 2,
+    "matches": 2,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 2,
+        "matches": 2
+      }
+    }
+  },
+  "Team Liquid": {
+    "wins": 2,
+    "losses": 0,
+    "matches": 2,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 2,
+        "losses": 0,
+        "matches": 2
+      }
+    }
+  },
+  "Team Spirit": {
+    "wins": 1,
+    "losses": 0,
+    "matches": 1,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
+      }
+    }
+  },
+  "Xtreme Gaming": {
+    "wins": 0,
+    "losses": 1,
+    "matches": 1,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 1,
+        "matches": 1
+      }
+    }
+  },
+  "Team Yandex": {
+    "wins": 1,
+    "losses": 0,
+    "matches": 1,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
+      }
+    }
+  },
+  "HULIGANI": {
+    "wins": 0,
+    "losses": 1,
+    "matches": 1,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 1,
+        "matches": 1
+      }
+    }
+  },
+  "TEAM VISION": {
+    "wins": 2,
+    "losses": 1,
+    "matches": 3,
+    "winrate": 66.7,
+    "weighted_winrate": 66.7,
+    "by_league": {
+      "19719": {
+        "wins": 2,
+        "losses": 1,
+        "matches": 3
+      }
+    }
+  },
+  "Team Resilience": {
+    "wins": 1,
+    "losses": 2,
+    "matches": 3,
+    "winrate": 33.3,
+    "weighted_winrate": 33.3,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 2,
+        "matches": 3
+      }
+    }
+  },
+  "GamerLegion": {
+    "wins": 0,
+    "losses": 1,
+    "matches": 1,
+    "winrate": 0.0,
+    "weighted_winrate": 0.0,
+    "by_league": {
+      "19719": {
+        "wins": 0,
+        "losses": 1,
+        "matches": 1
+      }
+    }
+  },
+  "Aurora Gaming": {
+    "wins": 1,
+    "losses": 0,
+    "matches": 1,
+    "winrate": 100.0,
+    "weighted_winrate": 100.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 0,
+        "matches": 1
+      }
+    }
+  },
   "Team Falcons": {
     "wins": 2,
     "losses": 1,
@@ -51,34 +191,6 @@
       "19719": {
         "wins": 2,
         "losses": 0,
-        "matches": 2
-      }
-    }
-  },
-  "TEAM VISION": {
-    "wins": 1,
-    "losses": 1,
-    "matches": 2,
-    "winrate": 50.0,
-    "weighted_winrate": 50.0,
-    "by_league": {
-      "19719": {
-        "wins": 1,
-        "losses": 1,
-        "matches": 2
-      }
-    }
-  },
-  "Team Resilience": {
-    "wins": 1,
-    "losses": 1,
-    "matches": 2,
-    "winrate": 50.0,
-    "weighted_winrate": 50.0,
-    "by_league": {
-      "19719": {
-        "wins": 1,
-        "losses": 1,
         "matches": 2
       }
     }
