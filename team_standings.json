@@ -1,4 +1,116 @@
 {
+  "1win Team": {
+    "wins": 5,
+    "losses": 3,
+    "matches": 8,
+    "winrate": 62.5,
+    "weighted_winrate": 62.5,
+    "by_league": {
+      "19719": {
+        "wins": 5,
+        "losses": 3,
+        "matches": 8
+      }
+    }
+  },
+  "Team Falcons": {
+    "wins": 4,
+    "losses": 5,
+    "matches": 9,
+    "winrate": 44.4,
+    "weighted_winrate": 44.4,
+    "by_league": {
+      "19719": {
+        "wins": 4,
+        "losses": 5,
+        "matches": 9
+      }
+    }
+  },
+  "Team Spirit": {
+    "wins": 5,
+    "losses": 1,
+    "matches": 6,
+    "winrate": 83.3,
+    "weighted_winrate": 83.3,
+    "by_league": {
+      "19719": {
+        "wins": 5,
+        "losses": 1,
+        "matches": 6
+      }
+    }
+  },
+  "Team Liquid": {
+    "wins": 5,
+    "losses": 2,
+    "matches": 7,
+    "winrate": 71.4,
+    "weighted_winrate": 71.4,
+    "by_league": {
+      "19719": {
+        "wins": 5,
+        "losses": 2,
+        "matches": 7
+      }
+    }
+  },
+  "GamerLegion": {
+    "wins": 3,
+    "losses": 3,
+    "matches": 6,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 3,
+        "losses": 3,
+        "matches": 6
+      }
+    }
+  },
+  "Vici Gaming": {
+    "wins": 3,
+    "losses": 4,
+    "matches": 7,
+    "winrate": 42.9,
+    "weighted_winrate": 42.9,
+    "by_league": {
+      "19719": {
+        "wins": 3,
+        "losses": 4,
+        "matches": 7
+      }
+    }
+  },
+  "Xtreme Gaming": {
+    "wins": 1,
+    "losses": 4,
+    "matches": 5,
+    "winrate": 20.0,
+    "weighted_winrate": 20.0,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 4,
+        "matches": 5
+      }
+    }
+  },
+  "HULIGANI": {
+    "wins": 1,
+    "losses": 5,
+    "matches": 6,
+    "winrate": 16.7,
+    "weighted_winrate": 16.7,
+    "by_league": {
+      "19719": {
+        "wins": 1,
+        "losses": 5,
+        "matches": 6
+      }
+    }
+  },
   "OG": {
     "wins": 0,
     "losses": 6,
@@ -27,62 +139,6 @@
       }
     }
   },
-  "Team Liquid": {
-    "wins": 4,
-    "losses": 2,
-    "matches": 6,
-    "winrate": 66.7,
-    "weighted_winrate": 66.7,
-    "by_league": {
-      "19719": {
-        "wins": 4,
-        "losses": 2,
-        "matches": 6
-      }
-    }
-  },
-  "Team Spirit": {
-    "wins": 5,
-    "losses": 0,
-    "matches": 5,
-    "winrate": 100.0,
-    "weighted_winrate": 100.0,
-    "by_league": {
-      "19719": {
-        "wins": 5,
-        "losses": 0,
-        "matches": 5
-      }
-    }
-  },
-  "Vici Gaming": {
-    "wins": 2,
-    "losses": 4,
-    "matches": 6,
-    "winrate": 33.3,
-    "weighted_winrate": 33.3,
-    "by_league": {
-      "19719": {
-        "wins": 2,
-        "losses": 4,
-        "matches": 6
-      }
-    }
-  },
-  "GamerLegion": {
-    "wins": 3,
-    "losses": 2,
-    "matches": 5,
-    "winrate": 60.0,
-    "weighted_winrate": 60.0,
-    "by_league": {
-      "19719": {
-        "wins": 3,
-        "losses": 2,
-        "matches": 5
-      }
-    }
-  },
   "TEAM VISION": {
     "wins": 6,
     "losses": 2,
@@ -107,34 +163,6 @@
       "19719": {
         "wins": 4,
         "losses": 3,
-        "matches": 7
-      }
-    }
-  },
-  "1win Team": {
-    "wins": 4,
-    "losses": 2,
-    "matches": 6,
-    "winrate": 66.7,
-    "weighted_winrate": 66.7,
-    "by_league": {
-      "19719": {
-        "wins": 4,
-        "losses": 2,
-        "matches": 6
-      }
-    }
-  },
-  "Team Falcons": {
-    "wins": 3,
-    "losses": 4,
-    "matches": 7,
-    "winrate": 42.9,
-    "weighted_winrate": 42.9,
-    "by_league": {
-      "19719": {
-        "wins": 3,
-        "losses": 4,
         "matches": 7
       }
     }
@@ -191,20 +219,6 @@
       "19719": {
         "wins": 2,
         "losses": 2,
-        "matches": 4
-      }
-    }
-  },
-  "Xtreme Gaming": {
-    "wins": 0,
-    "losses": 4,
-    "matches": 4,
-    "winrate": 0.0,
-    "weighted_winrate": 0.0,
-    "by_league": {
-      "19719": {
-        "wins": 0,
-        "losses": 4,
         "matches": 4
       }
     }
