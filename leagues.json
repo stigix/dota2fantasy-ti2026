@@ -1297,8 +1297,8 @@
     "total_deaths_from_torm": 1,
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
-    "games<25min": 0,
-    "total_matches_parsed": 29,
+    "games<25min": 1,
+    "total_matches_parsed": 30,
     "processed_match_ids": [
       8942993144,
       8943000927,
@@ -1328,7 +1328,8 @@
       8943357930,
       8943364918,
       8943466067,
-      8943477775
+      8943477775,
+      8944476051
     ],
     "lucky_matches": 3
   },
