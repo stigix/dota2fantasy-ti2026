@@ -1,19 +1,19 @@
 {
-  "Aurora Gaming": {
-    "wins": 3,
-    "losses": 3,
-    "matches": 6,
+  "Team Yandex": {
+    "wins": 4,
+    "losses": 4,
+    "matches": 8,
     "winrate": 50.0,
     "weighted_winrate": 50.0,
     "by_league": {
       "19719": {
-        "wins": 3,
-        "losses": 3,
-        "matches": 6
+        "wins": 4,
+        "losses": 4,
+        "matches": 8
       }
     }
   },
-  "Team Yandex": {
+  "Aurora Gaming": {
     "wins": 4,
     "losses": 3,
     "matches": 7,
