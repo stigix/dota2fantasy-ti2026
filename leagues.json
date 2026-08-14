@@ -1298,7 +1298,7 @@
     "firstblood_before_10min": 0,
     "firstblood_before_horn": 0,
     "games<25min": 1,
-    "total_matches_parsed": 53,
+    "total_matches_parsed": 57,
     "processed_match_ids": [
       8942993144,
       8943000927,
@@ -1352,9 +1352,13 @@
       8944738770,
       8944742846,
       8944752572,
-      8944764687
+      8944764687,
+      8944814087,
+      8944819470,
+      8944834423,
+      8944841068
     ],
-    "lucky_matches": 5
+    "lucky_matches": 7
   },
   "19917": {
     "name": "Games of the Future 2026",
