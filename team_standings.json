@@ -1,4 +1,88 @@
 {
+  "Team Spirit": {
+    "wins": 6,
+    "losses": 2,
+    "matches": 8,
+    "winrate": 75.0,
+    "weighted_winrate": 75.0,
+    "by_league": {
+      "19719": {
+        "wins": 6,
+        "losses": 2,
+        "matches": 8
+      }
+    }
+  },
+  "TEAM VISION": {
+    "wins": 7,
+    "losses": 2,
+    "matches": 9,
+    "winrate": 77.8,
+    "weighted_winrate": 77.8,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 2,
+        "matches": 9
+      }
+    }
+  },
+  "BoomBoys": {
+    "wins": 4,
+    "losses": 4,
+    "matches": 8,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 4,
+        "losses": 4,
+        "matches": 8
+      }
+    }
+  },
+  "Aurora Gaming": {
+    "wins": 5,
+    "losses": 3,
+    "matches": 8,
+    "winrate": 62.5,
+    "weighted_winrate": 62.5,
+    "by_league": {
+      "19719": {
+        "wins": 5,
+        "losses": 3,
+        "matches": 8
+      }
+    }
+  },
+  "Team Liquid": {
+    "wins": 5,
+    "losses": 4,
+    "matches": 9,
+    "winrate": 55.6,
+    "weighted_winrate": 55.6,
+    "by_league": {
+      "19719": {
+        "wins": 5,
+        "losses": 4,
+        "matches": 9
+      }
+    }
+  },
+  "1win Team": {
+    "wins": 6,
+    "losses": 3,
+    "matches": 9,
+    "winrate": 66.7,
+    "weighted_winrate": 66.7,
+    "by_league": {
+      "19719": {
+        "wins": 6,
+        "losses": 3,
+        "matches": 9
+      }
+    }
+  },
   "Vici Gaming": {
     "wins": 4,
     "losses": 5,
@@ -83,20 +167,6 @@
       }
     }
   },
-  "HULIGANI": {
-    "wins": 2,
-    "losses": 8,
-    "matches": 10,
-    "winrate": 20.0,
-    "weighted_winrate": 20.0,
-    "by_league": {
-      "19719": {
-        "wins": 2,
-        "losses": 8,
-        "matches": 10
-      }
-    }
-  },
   "OG": {
     "wins": 2,
     "losses": 7,
@@ -136,90 +206,6 @@
         "wins": 5,
         "losses": 6,
         "matches": 11
-      }
-    }
-  },
-  "Aurora Gaming": {
-    "wins": 4,
-    "losses": 3,
-    "matches": 7,
-    "winrate": 57.1,
-    "weighted_winrate": 57.1,
-    "by_league": {
-      "19719": {
-        "wins": 4,
-        "losses": 3,
-        "matches": 7
-      }
-    }
-  },
-  "Team Liquid": {
-    "wins": 5,
-    "losses": 3,
-    "matches": 8,
-    "winrate": 62.5,
-    "weighted_winrate": 62.5,
-    "by_league": {
-      "19719": {
-        "wins": 5,
-        "losses": 3,
-        "matches": 8
-      }
-    }
-  },
-  "Team Spirit": {
-    "wins": 6,
-    "losses": 1,
-    "matches": 7,
-    "winrate": 85.7,
-    "weighted_winrate": 85.7,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 1,
-        "matches": 7
-      }
-    }
-  },
-  "1win Team": {
-    "wins": 5,
-    "losses": 3,
-    "matches": 8,
-    "winrate": 62.5,
-    "weighted_winrate": 62.5,
-    "by_league": {
-      "19719": {
-        "wins": 5,
-        "losses": 3,
-        "matches": 8
-      }
-    }
-  },
-  "TEAM VISION": {
-    "wins": 6,
-    "losses": 2,
-    "matches": 8,
-    "winrate": 75.0,
-    "weighted_winrate": 75.0,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 2,
-        "matches": 8
-      }
-    }
-  },
-  "BoomBoys": {
-    "wins": 4,
-    "losses": 3,
-    "matches": 7,
-    "winrate": 57.1,
-    "weighted_winrate": 57.1,
-    "by_league": {
-      "19719": {
-        "wins": 4,
-        "losses": 3,
-        "matches": 7
       }
     }
   }
