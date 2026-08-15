@@ -1,4 +1,32 @@
 {
+  "Team Spirit": {
+    "wins": 6,
+    "losses": 5,
+    "matches": 11,
+    "winrate": 54.5,
+    "weighted_winrate": 54.5,
+    "by_league": {
+      "19719": {
+        "wins": 6,
+        "losses": 5,
+        "matches": 11
+      }
+    }
+  },
+  "Nigma Galaxy": {
+    "wins": 8,
+    "losses": 2,
+    "matches": 10,
+    "winrate": 80.0,
+    "weighted_winrate": 80.0,
+    "by_league": {
+      "19719": {
+        "wins": 8,
+        "losses": 2,
+        "matches": 10
+      }
+    }
+  },
   "Team Yandex": {
     "wins": 7,
     "losses": 7,
@@ -80,34 +108,6 @@
         "wins": 5,
         "losses": 7,
         "matches": 12
-      }
-    }
-  },
-  "Nigma Galaxy": {
-    "wins": 7,
-    "losses": 2,
-    "matches": 9,
-    "winrate": 77.8,
-    "weighted_winrate": 77.8,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 2,
-        "matches": 9
-      }
-    }
-  },
-  "Team Spirit": {
-    "wins": 6,
-    "losses": 4,
-    "matches": 10,
-    "winrate": 60.0,
-    "weighted_winrate": 60.0,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 4,
-        "matches": 10
       }
     }
   },
