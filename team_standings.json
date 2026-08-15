@@ -1,4 +1,116 @@
 {
+  "Team Falcons": {
+    "wins": 7,
+    "losses": 7,
+    "matches": 14,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 7,
+        "matches": 14
+      }
+    }
+  },
+  "BoomBoys": {
+    "wins": 5,
+    "losses": 6,
+    "matches": 11,
+    "winrate": 45.5,
+    "weighted_winrate": 45.5,
+    "by_league": {
+      "19719": {
+        "wins": 5,
+        "losses": 6,
+        "matches": 11
+      }
+    }
+  },
+  "Aurora Gaming": {
+    "wins": 7,
+    "losses": 3,
+    "matches": 10,
+    "winrate": 70.0,
+    "weighted_winrate": 70.0,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 3,
+        "matches": 10
+      }
+    }
+  },
+  "Team Liquid": {
+    "wins": 7,
+    "losses": 5,
+    "matches": 12,
+    "winrate": 58.3,
+    "weighted_winrate": 58.3,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 5,
+        "matches": 12
+      }
+    }
+  },
+  "Team Yandex": {
+    "wins": 6,
+    "losses": 6,
+    "matches": 12,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 6,
+        "losses": 6,
+        "matches": 12
+      }
+    }
+  },
+  "1win Team": {
+    "wins": 7,
+    "losses": 5,
+    "matches": 12,
+    "winrate": 58.3,
+    "weighted_winrate": 58.3,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 5,
+        "matches": 12
+      }
+    }
+  },
+  "LGD Gaming": {
+    "wins": 7,
+    "losses": 6,
+    "matches": 13,
+    "winrate": 53.8,
+    "weighted_winrate": 53.8,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 6,
+        "matches": 13
+      }
+    }
+  },
+  "Vici Gaming": {
+    "wins": 4,
+    "losses": 8,
+    "matches": 12,
+    "winrate": 33.3,
+    "weighted_winrate": 33.3,
+    "by_league": {
+      "19719": {
+        "wins": 4,
+        "losses": 8,
+        "matches": 12
+      }
+    }
+  },
   "Xtreme Gaming": {
     "wins": 3,
     "losses": 8,
@@ -55,62 +167,6 @@
       }
     }
   },
-  "Vici Gaming": {
-    "wins": 4,
-    "losses": 7,
-    "matches": 11,
-    "winrate": 36.4,
-    "weighted_winrate": 36.4,
-    "by_league": {
-      "19719": {
-        "wins": 4,
-        "losses": 7,
-        "matches": 11
-      }
-    }
-  },
-  "LGD Gaming": {
-    "wins": 6,
-    "losses": 6,
-    "matches": 12,
-    "winrate": 50.0,
-    "weighted_winrate": 50.0,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 6,
-        "matches": 12
-      }
-    }
-  },
-  "Team Liquid": {
-    "wins": 7,
-    "losses": 4,
-    "matches": 11,
-    "winrate": 63.6,
-    "weighted_winrate": 63.6,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 4,
-        "matches": 11
-      }
-    }
-  },
-  "1win Team": {
-    "wins": 6,
-    "losses": 5,
-    "matches": 11,
-    "winrate": 54.5,
-    "weighted_winrate": 54.5,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 5,
-        "matches": 11
-      }
-    }
-  },
   "TEAM VISION": {
     "wins": 8,
     "losses": 2,
@@ -139,34 +195,6 @@
       }
     }
   },
-  "Aurora Gaming": {
-    "wins": 6,
-    "losses": 3,
-    "matches": 9,
-    "winrate": 66.7,
-    "weighted_winrate": 66.7,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 3,
-        "matches": 9
-      }
-    }
-  },
-  "BoomBoys": {
-    "wins": 4,
-    "losses": 5,
-    "matches": 9,
-    "winrate": 44.4,
-    "weighted_winrate": 44.4,
-    "by_league": {
-      "19719": {
-        "wins": 4,
-        "losses": 5,
-        "matches": 9
-      }
-    }
-  },
   "Nigma Galaxy": {
     "wins": 6,
     "losses": 2,
@@ -178,34 +206,6 @@
         "wins": 6,
         "losses": 2,
         "matches": 8
-      }
-    }
-  },
-  "Team Falcons": {
-    "wins": 6,
-    "losses": 6,
-    "matches": 12,
-    "winrate": 50.0,
-    "weighted_winrate": 50.0,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 6,
-        "matches": 12
-      }
-    }
-  },
-  "Team Yandex": {
-    "wins": 6,
-    "losses": 5,
-    "matches": 11,
-    "winrate": 54.5,
-    "weighted_winrate": 54.5,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 5,
-        "matches": 11
       }
     }
   }
