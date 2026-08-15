@@ -1,4 +1,60 @@
 {
+  "Team Yandex": {
+    "wins": 7,
+    "losses": 7,
+    "matches": 14,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 7,
+        "matches": 14
+      }
+    }
+  },
+  "1win Team": {
+    "wins": 8,
+    "losses": 6,
+    "matches": 14,
+    "winrate": 57.1,
+    "weighted_winrate": 57.1,
+    "by_league": {
+      "19719": {
+        "wins": 8,
+        "losses": 6,
+        "matches": 14
+      }
+    }
+  },
+  "Aurora Gaming": {
+    "wins": 7,
+    "losses": 5,
+    "matches": 12,
+    "winrate": 58.3,
+    "weighted_winrate": 58.3,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 5,
+        "matches": 12
+      }
+    }
+  },
+  "Team Liquid": {
+    "wins": 9,
+    "losses": 5,
+    "matches": 14,
+    "winrate": 64.3,
+    "weighted_winrate": 64.3,
+    "by_league": {
+      "19719": {
+        "wins": 9,
+        "losses": 5,
+        "matches": 14
+      }
+    }
+  },
   "Team Falcons": {
     "wins": 8,
     "losses": 7,
@@ -24,62 +80,6 @@
         "wins": 5,
         "losses": 7,
         "matches": 12
-      }
-    }
-  },
-  "Team Yandex": {
-    "wins": 7,
-    "losses": 6,
-    "matches": 13,
-    "winrate": 53.8,
-    "weighted_winrate": 53.8,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 6,
-        "matches": 13
-      }
-    }
-  },
-  "1win Team": {
-    "wins": 7,
-    "losses": 6,
-    "matches": 13,
-    "winrate": 53.8,
-    "weighted_winrate": 53.8,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 6,
-        "matches": 13
-      }
-    }
-  },
-  "Team Liquid": {
-    "wins": 8,
-    "losses": 5,
-    "matches": 13,
-    "winrate": 61.5,
-    "weighted_winrate": 61.5,
-    "by_league": {
-      "19719": {
-        "wins": 8,
-        "losses": 5,
-        "matches": 13
-      }
-    }
-  },
-  "Aurora Gaming": {
-    "wins": 7,
-    "losses": 4,
-    "matches": 11,
-    "winrate": 63.6,
-    "weighted_winrate": 63.6,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 4,
-        "matches": 11
       }
     }
   },

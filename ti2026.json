@@ -1,7 +1,7 @@
 {
   "event": "The International 2026",
   "league_id": 19719,
-  "updated_at": "2026-08-15T14:36:27.682101+00:00",
+  "updated_at": "2026-08-15T15:33:04.613318+00:00",
   "status": "ongoing",
   "series": [
     {
@@ -566,14 +566,15 @@
       "team_a": "Team 9823272",
       "team_b": "Team 10150413",
       "score_a": 1,
-      "score_b": 1,
-      "completed": false,
-      "winner": null,
+      "score_b": 2,
+      "completed": true,
+      "winner": "Team 10150413",
       "stage": "Swiss",
       "start_time": 1786794277,
       "map_ids": [
         8946735226,
-        8946872708
+        8946872708,
+        8947008125
       ]
     },
     {
@@ -581,14 +582,15 @@
       "team_a": "Team 9467224",
       "team_b": "Team 2163",
       "score_a": 1,
-      "score_b": 1,
-      "completed": false,
-      "winner": null,
+      "score_b": 2,
+      "completed": true,
+      "winner": "Team 2163",
       "stage": "Swiss",
       "start_time": 1786794757,
       "map_ids": [
         8946740853,
-        8946860406
+        8946860406,
+        8946996385
       ]
     },
     {
