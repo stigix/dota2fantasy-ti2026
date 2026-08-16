@@ -1,28 +1,28 @@
 {
-  "LGD Gaming": {
+  "Team Yandex": {
     "wins": 8,
-    "losses": 6,
-    "matches": 14,
-    "winrate": 57.1,
-    "weighted_winrate": 57.1,
+    "losses": 8,
+    "matches": 16,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
     "by_league": {
       "19719": {
         "wins": 8,
-        "losses": 6,
-        "matches": 14
+        "losses": 8,
+        "matches": 16
       }
     }
   },
-  "Team Yandex": {
-    "wins": 7,
-    "losses": 8,
+  "LGD Gaming": {
+    "wins": 8,
+    "losses": 7,
     "matches": 15,
-    "winrate": 46.7,
-    "weighted_winrate": 46.7,
+    "winrate": 53.3,
+    "weighted_winrate": 53.3,
     "by_league": {
       "19719": {
-        "wins": 7,
-        "losses": 8,
+        "wins": 8,
+        "losses": 7,
         "matches": 15
       }
     }
