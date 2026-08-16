@@ -1,4 +1,60 @@
 {
+  "Aurora Gaming": {
+    "wins": 7,
+    "losses": 7,
+    "matches": 14,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 7,
+        "matches": 14
+      }
+    }
+  },
+  "BoomBoys": {
+    "wins": 7,
+    "losses": 7,
+    "matches": 14,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 7,
+        "matches": 14
+      }
+    }
+  },
+  "Team Spirit": {
+    "wins": 7,
+    "losses": 5,
+    "matches": 12,
+    "winrate": 58.3,
+    "weighted_winrate": 58.3,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 5,
+        "matches": 12
+      }
+    }
+  },
+  "Team Resilience": {
+    "wins": 7,
+    "losses": 7,
+    "matches": 14,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 7,
+        "matches": 14
+      }
+    }
+  },
   "Team Falcons": {
     "wins": 10,
     "losses": 7,
@@ -24,48 +80,6 @@
         "wins": 4,
         "losses": 10,
         "matches": 14
-      }
-    }
-  },
-  "BoomBoys": {
-    "wins": 6,
-    "losses": 7,
-    "matches": 13,
-    "winrate": 46.2,
-    "weighted_winrate": 46.2,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 7,
-        "matches": 13
-      }
-    }
-  },
-  "Aurora Gaming": {
-    "wins": 7,
-    "losses": 6,
-    "matches": 13,
-    "winrate": 53.8,
-    "weighted_winrate": 53.8,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 6,
-        "matches": 13
-      }
-    }
-  },
-  "Team Spirit": {
-    "wins": 6,
-    "losses": 5,
-    "matches": 11,
-    "winrate": 54.5,
-    "weighted_winrate": 54.5,
-    "by_league": {
-      "19719": {
-        "wins": 6,
-        "losses": 5,
-        "matches": 11
       }
     }
   },
@@ -150,20 +164,6 @@
         "wins": 3,
         "losses": 8,
         "matches": 11
-      }
-    }
-  },
-  "Team Resilience": {
-    "wins": 7,
-    "losses": 6,
-    "matches": 13,
-    "winrate": 53.8,
-    "weighted_winrate": 53.8,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 6,
-        "matches": 13
       }
     }
   },
