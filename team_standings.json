@@ -1,4 +1,32 @@
 {
+  "LGD Gaming": {
+    "wins": 8,
+    "losses": 6,
+    "matches": 14,
+    "winrate": 57.1,
+    "weighted_winrate": 57.1,
+    "by_league": {
+      "19719": {
+        "wins": 8,
+        "losses": 6,
+        "matches": 14
+      }
+    }
+  },
+  "Team Yandex": {
+    "wins": 7,
+    "losses": 8,
+    "matches": 15,
+    "winrate": 46.7,
+    "weighted_winrate": 46.7,
+    "by_league": {
+      "19719": {
+        "wins": 7,
+        "losses": 8,
+        "matches": 15
+      }
+    }
+  },
   "GamerLegion": {
     "wins": 6,
     "losses": 8,
@@ -125,20 +153,6 @@
       }
     }
   },
-  "Team Yandex": {
-    "wins": 7,
-    "losses": 7,
-    "matches": 14,
-    "winrate": 50.0,
-    "weighted_winrate": 50.0,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 7,
-        "matches": 14
-      }
-    }
-  },
   "Team Liquid": {
     "wins": 9,
     "losses": 5,
@@ -150,20 +164,6 @@
         "wins": 9,
         "losses": 5,
         "matches": 14
-      }
-    }
-  },
-  "LGD Gaming": {
-    "wins": 7,
-    "losses": 6,
-    "matches": 13,
-    "winrate": 53.8,
-    "weighted_winrate": 53.8,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 6,
-        "matches": 13
       }
     }
   },
