@@ -1,7 +1,7 @@
 {
   "event": "The International 2026",
   "league_id": 19719,
-  "updated_at": "2026-08-20T07:54:29.045274+00:00",
+  "updated_at": "2026-08-20T08:53:38.143622+00:00",
   "status": "ongoing",
   "series": [
     {
@@ -717,14 +717,15 @@
       "id": "series-1132161",
       "team_a": "Team 8255888",
       "team_b": "Team 9572001",
-      "score_a": 0,
+      "score_a": 1,
       "score_b": 1,
       "completed": false,
       "winner": null,
       "stage": "Main Event",
       "start_time": 1787204896,
       "map_ids": [
-        8955304019
+        8955304019,
+        8955383956
       ]
     },
     {

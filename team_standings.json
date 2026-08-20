@@ -1,29 +1,29 @@
 {
-  "BoomBoys": {
-    "wins": 7,
-    "losses": 8,
-    "matches": 15,
-    "winrate": 46.7,
-    "weighted_winrate": 46.7,
-    "by_league": {
-      "19719": {
-        "wins": 7,
-        "losses": 8,
-        "matches": 15
-      }
-    }
-  },
   "TEAM VISION": {
     "wins": 9,
-    "losses": 2,
-    "matches": 11,
-    "winrate": 81.8,
-    "weighted_winrate": 81.8,
+    "losses": 3,
+    "matches": 12,
+    "winrate": 75.0,
+    "weighted_winrate": 75.0,
     "by_league": {
       "19719": {
         "wins": 9,
-        "losses": 2,
-        "matches": 11
+        "losses": 3,
+        "matches": 12
+      }
+    }
+  },
+  "BoomBoys": {
+    "wins": 8,
+    "losses": 8,
+    "matches": 16,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
+    "by_league": {
+      "19719": {
+        "wins": 8,
+        "losses": 8,
+        "matches": 16
       }
     }
   },
