@@ -1,29 +1,29 @@
 {
-  "Team Liquid": {
-    "wins": 9,
-    "losses": 8,
-    "matches": 17,
-    "winrate": 52.9,
-    "weighted_winrate": 52.9,
-    "by_league": {
-      "19719": {
-        "wins": 9,
-        "losses": 8,
-        "matches": 17
-      }
-    }
-  },
   "Team Falcons": {
     "wins": 12,
-    "losses": 9,
-    "matches": 21,
-    "winrate": 57.1,
-    "weighted_winrate": 57.1,
+    "losses": 10,
+    "matches": 22,
+    "winrate": 54.5,
+    "weighted_winrate": 54.5,
     "by_league": {
       "19719": {
         "wins": 12,
-        "losses": 9,
-        "matches": 21
+        "losses": 10,
+        "matches": 22
+      }
+    }
+  },
+  "Team Liquid": {
+    "wins": 10,
+    "losses": 8,
+    "matches": 18,
+    "winrate": 55.6,
+    "weighted_winrate": 55.6,
+    "by_league": {
+      "19719": {
+        "wins": 10,
+        "losses": 8,
+        "matches": 18
       }
     }
   },
