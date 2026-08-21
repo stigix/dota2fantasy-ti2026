@@ -1,29 +1,29 @@
 {
   "BoomBoys": {
-    "wins": 9,
+    "wins": 10,
     "losses": 10,
-    "matches": 19,
-    "winrate": 47.4,
-    "weighted_winrate": 47.4,
+    "matches": 20,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
     "by_league": {
       "19719": {
-        "wins": 9,
+        "wins": 10,
         "losses": 10,
-        "matches": 19
+        "matches": 20
       }
     }
   },
   "1win Team": {
     "wins": 11,
-    "losses": 9,
-    "matches": 20,
-    "winrate": 55.0,
-    "weighted_winrate": 55.0,
+    "losses": 10,
+    "matches": 21,
+    "winrate": 52.4,
+    "weighted_winrate": 52.4,
     "by_league": {
       "19719": {
         "wins": 11,
-        "losses": 9,
-        "matches": 20
+        "losses": 10,
+        "matches": 21
       }
     }
   },
