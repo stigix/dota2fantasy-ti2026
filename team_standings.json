@@ -1,29 +1,29 @@
 {
-  "Team Yandex": {
+  "Nigma Galaxy": {
     "wins": 11,
-    "losses": 9,
-    "matches": 20,
-    "winrate": 55.0,
-    "weighted_winrate": 55.0,
+    "losses": 4,
+    "matches": 15,
+    "winrate": 73.3,
+    "weighted_winrate": 73.3,
     "by_league": {
       "19719": {
         "wins": 11,
-        "losses": 9,
-        "matches": 20
+        "losses": 4,
+        "matches": 15
       }
     }
   },
-  "Nigma Galaxy": {
-    "wins": 11,
-    "losses": 3,
-    "matches": 14,
-    "winrate": 78.6,
-    "weighted_winrate": 78.6,
+  "Team Yandex": {
+    "wins": 12,
+    "losses": 9,
+    "matches": 21,
+    "winrate": 57.1,
+    "weighted_winrate": 57.1,
     "by_league": {
       "19719": {
-        "wins": 11,
-        "losses": 3,
-        "matches": 14
+        "wins": 12,
+        "losses": 9,
+        "matches": 21
       }
     }
   },
