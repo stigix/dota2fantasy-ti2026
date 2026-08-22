@@ -1,29 +1,29 @@
 {
-  "Team Liquid": {
-    "wins": 11,
-    "losses": 9,
-    "matches": 20,
-    "winrate": 55.0,
-    "weighted_winrate": 55.0,
+  "Team Spirit": {
+    "wins": 13,
+    "losses": 8,
+    "matches": 21,
+    "winrate": 61.9,
+    "weighted_winrate": 61.9,
     "by_league": {
       "19719": {
-        "wins": 11,
-        "losses": 9,
-        "matches": 20
+        "wins": 13,
+        "losses": 8,
+        "matches": 21
       }
     }
   },
-  "Team Spirit": {
-    "wins": 12,
-    "losses": 8,
-    "matches": 20,
-    "winrate": 60.0,
-    "weighted_winrate": 60.0,
+  "Team Liquid": {
+    "wins": 11,
+    "losses": 10,
+    "matches": 21,
+    "winrate": 52.4,
+    "weighted_winrate": 52.4,
     "by_league": {
       "19719": {
-        "wins": 12,
-        "losses": 8,
-        "matches": 20
+        "wins": 11,
+        "losses": 10,
+        "matches": 21
       }
     }
   },
