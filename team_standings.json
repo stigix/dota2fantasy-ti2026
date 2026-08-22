@@ -1,29 +1,29 @@
 {
   "TEAM VISION": {
-    "wins": 13,
+    "wins": 14,
     "losses": 5,
-    "matches": 18,
-    "winrate": 72.2,
-    "weighted_winrate": 72.2,
+    "matches": 19,
+    "winrate": 73.7,
+    "weighted_winrate": 73.7,
     "by_league": {
       "19719": {
-        "wins": 13,
+        "wins": 14,
         "losses": 5,
-        "matches": 18
+        "matches": 19
       }
     }
   },
   "Team Yandex": {
     "wins": 14,
-    "losses": 10,
-    "matches": 24,
-    "winrate": 58.3,
-    "weighted_winrate": 58.3,
+    "losses": 11,
+    "matches": 25,
+    "winrate": 56.0,
+    "weighted_winrate": 56.0,
     "by_league": {
       "19719": {
         "wins": 14,
-        "losses": 10,
-        "matches": 24
+        "losses": 11,
+        "matches": 25
       }
     }
   },
