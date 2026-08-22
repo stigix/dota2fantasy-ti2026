@@ -1,29 +1,29 @@
 {
-  "BoomBoys": {
-    "wins": 11,
-    "losses": 10,
-    "matches": 21,
-    "winrate": 52.4,
-    "weighted_winrate": 52.4,
+  "Nigma Galaxy": {
+    "wins": 12,
+    "losses": 6,
+    "matches": 18,
+    "winrate": 66.7,
+    "weighted_winrate": 66.7,
     "by_league": {
       "19719": {
-        "wins": 11,
-        "losses": 10,
-        "matches": 21
+        "wins": 12,
+        "losses": 6,
+        "matches": 18
       }
     }
   },
-  "Nigma Galaxy": {
+  "BoomBoys": {
     "wins": 11,
-    "losses": 6,
-    "matches": 17,
-    "winrate": 64.7,
-    "weighted_winrate": 64.7,
+    "losses": 11,
+    "matches": 22,
+    "winrate": 50.0,
+    "weighted_winrate": 50.0,
     "by_league": {
       "19719": {
         "wins": 11,
-        "losses": 6,
-        "matches": 17
+        "losses": 11,
+        "matches": 22
       }
     }
   },
