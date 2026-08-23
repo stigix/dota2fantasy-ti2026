@@ -1,29 +1,29 @@
 {
-  "Team Yandex": {
-    "wins": 14,
-    "losses": 12,
-    "matches": 26,
-    "winrate": 53.8,
-    "weighted_winrate": 53.8,
+  "Team Spirit": {
+    "wins": 16,
+    "losses": 8,
+    "matches": 24,
+    "winrate": 66.7,
+    "weighted_winrate": 66.7,
     "by_league": {
       "19719": {
-        "wins": 14,
-        "losses": 12,
-        "matches": 26
+        "wins": 16,
+        "losses": 8,
+        "matches": 24
       }
     }
   },
-  "Team Spirit": {
-    "wins": 15,
-    "losses": 8,
-    "matches": 23,
-    "winrate": 65.2,
-    "weighted_winrate": 65.2,
+  "Team Yandex": {
+    "wins": 14,
+    "losses": 13,
+    "matches": 27,
+    "winrate": 51.9,
+    "weighted_winrate": 51.9,
     "by_league": {
       "19719": {
-        "wins": 15,
-        "losses": 8,
-        "matches": 23
+        "wins": 14,
+        "losses": 13,
+        "matches": 27
       }
     }
   },
