@@ -1,29 +1,29 @@
 {
-  "TEAM VISION": {
-    "wins": 15,
-    "losses": 6,
-    "matches": 21,
-    "winrate": 71.4,
-    "weighted_winrate": 71.4,
+  "Team Spirit": {
+    "wins": 18,
+    "losses": 9,
+    "matches": 27,
+    "winrate": 66.7,
+    "weighted_winrate": 66.7,
     "by_league": {
       "19719": {
-        "wins": 15,
-        "losses": 6,
-        "matches": 21
+        "wins": 18,
+        "losses": 9,
+        "matches": 27
       }
     }
   },
-  "Team Spirit": {
-    "wins": 17,
-    "losses": 9,
-    "matches": 26,
-    "winrate": 65.4,
-    "weighted_winrate": 65.4,
+  "TEAM VISION": {
+    "wins": 15,
+    "losses": 7,
+    "matches": 22,
+    "winrate": 68.2,
+    "weighted_winrate": 68.2,
     "by_league": {
       "19719": {
-        "wins": 17,
-        "losses": 9,
-        "matches": 26
+        "wins": 15,
+        "losses": 7,
+        "matches": 22
       }
     }
   },
